@@ -1,0 +1,4270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flati WordPress Theme\n"
+"POT-Creation-Date: 2013-12-12 13:24-0000\n"
+"PO-Revision-Date: 2013-12-12 13:25-0000\n"
+"Last-Translator: \n"
+"Language-Team: UBL Designs & Spiral Pixel\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.2\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:20
+msgid "Whoops!"
+msgstr "Whoops!"
+
+#: ../404.php:21 ../404.php:40
+msgid "Error 404"
+msgstr "Error 404"
+
+#: ../404.php:23
+msgid "The page you are "
+msgstr "The page you are "
+
+#: ../404.php:23
+msgid "looking for "
+msgstr "looking for "
+
+#: ../404.php:23
+msgid "seems to be missing, please "
+msgstr "seems to be missing, please "
+
+#: ../404.php:23
+msgid "continue browsing!"
+msgstr "continue browsing!"
+
+#: ../comments.php:4
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Please do not load this page directly. Thanks!"
+
+#: ../comments.php:8
+msgid "Password Is Needed To View This Post"
+msgstr "Password Is Needed To View This Post"
+
+#: ../comments.php:13 ../single.php:42
+msgid "comments"
+msgstr "comments"
+
+#: ../comments.php:13
+msgid "comment"
+msgstr "comment"
+
+#: ../comments.php:17
+msgid "Previous"
+msgstr "Previous"
+
+#: ../comments.php:17
+msgid "Next"
+msgstr "Next"
+
+#: ../comments.php:28 ../comments.php:39
+msgid "Have your say!"
+msgstr "Have your say!"
+
+#: ../comments.php:42 ../page-contact.php:168
+msgid "name"
+msgstr "name"
+
+#: ../comments.php:43 ../page-contact.php:171
+msgid "email"
+msgstr "email"
+
+#: ../comments.php:47 ../page-contact.php:177
+msgid "message"
+msgstr "message"
+
+#: ../index.php:153 ../index.php:265 ../page-blog.php:162 ../page-blog.php:275
+msgid "Posted by "
+msgstr "Posted by "
+
+#: ../index.php:154 ../index.php:266 ../page-blog.php:163 ../page-blog.php:276
+#: ../single.php:334
+msgid "in "
+msgstr "in "
+
+#: ../index.php:155 ../index.php:267 ../page-blog.php:164 ../page-blog.php:277
+msgid "tags "
+msgstr "tags "
+
+#: ../index.php:161 ../index.php:273 ../page-blog.php:170 ../page-blog.php:283
+msgid "READ MORE &rarr;"
+msgstr "READ MORE &rarr;"
+
+#: ../index.php:290 ../page-blog.php:301
+msgid "&larr; Older"
+msgstr "&larr; Older"
+
+#: ../index.php:291 ../page-blog.php:302
+msgid "Newer &rarr;"
+msgstr "Newer &rarr;"
+
+#: ../page-contact.php:174
+msgid "subject"
+msgstr "subject"
+
+#: ../page-contact.php:181
+msgid "submit"
+msgstr "submit"
+
+#: ../page-contact.php:182
+msgid "reset"
+msgstr "reset"
+
+#: ../page-contact.php:326
+msgid "Your message has been sent. Thank you!"
+msgstr "Your message has been sent. Thank you!"
+
+#: ../page-portfolio.php:56 ../page-portfolio3.php:56
+#: ../page-portfolio4.php:56
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_teaser_grid.php:322
+#: ../wpbakery/js_composer/composer/shortcodes_templates/teaser/_filter.php:10
+msgid "All"
+msgstr "All"
+
+#: ../single-flatiportfolio.php:74 ../single-flatiportfolio.php:196
+#: ../single-flatiportfolio.php:274
+msgid "View"
+msgstr "View"
+
+#: ../single.php:42 ../single.php:210
+msgid " comments"
+msgstr " comments"
+
+#: ../single.php:42 ../single.php:210
+msgid " comment"
+msgstr " comment"
+
+#: ../single.php:206
+msgid "Posted"
+msgstr "Posted"
+
+#: ../single.php:208
+msgid "In "
+msgstr "In "
+
+#: ../single.php:209
+msgid "<li>Tags "
+msgstr "<li>Tags "
+
+#: ../single.php:214 ../single.php:363
+msgid "Page Pagination"
+msgstr "Page Pagination"
+
+#: ../single.php:333
+msgid "Posted by"
+msgstr "Posted by"
+
+#: ../single.php:335
+msgid "<li>tags "
+msgstr "<li>tags "
+
+#: ../single.php:380
+msgid "About The Author"
+msgstr "About The Author"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:164
+#: ../ThemeFunctions/InstallTheme.php:206
+msgid "Install Required Plugins"
+msgstr "Install Required Plugins"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:165
+#: ../ThemeFunctions/InstallTheme.php:207
+msgid "Install Plugins"
+msgstr "Install Plugins"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:166
+#: ../ThemeFunctions/InstallTheme.php:208
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installing Plugin: %s"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr "Something went wrong."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:180
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:510
+#: ../ThemeFunctions/InstallTheme.php:220
+msgid "Return to Required Plugins Installer"
+msgstr "Return to Required Plugins Installer"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:181
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1908
+#: ../ThemeFunctions/InstallTheme.php:221
+msgid "Plugin activated successfully."
+msgstr "Plugin activated successfully."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:182
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "All plugins installed and activated successfully. %1$s"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:537
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2120
+msgid "Return to the Dashboard"
+msgstr "Return to the Dashboard"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:565
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr "The following plugin was activated successfully: %s."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:738
+msgid "Dismiss this notice"
+msgstr "Dismiss this notice"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1125
+msgid "External Link"
+msgstr "External Link"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1130
+msgid "Private Repository"
+msgstr "Private Repository"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1133
+msgid "Pre-Packaged"
+msgstr "Pre-Packaged"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1137
+msgid "WordPress Repository"
+msgstr "WordPress Repository"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1140
+msgid "Required"
+msgstr "Required"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1140
+msgid "Recommended"
+msgstr "Recommended"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1143
+msgid "Not Installed"
+msgstr "Not Installed"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1145
+msgid "Installed But Not Activated"
+msgstr "Installed But Not Activated"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1147
+msgid "Not Updated"
+msgstr "Not Updated"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1149
+msgid "Active"
+msgstr "Active"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1343
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1359
+msgid "Plugin"
+msgstr "Plugin"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1360
+msgid "Source"
+msgstr "Source"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1361
+#: ../wpbakery/js_composer/config/map.php:1216
+msgid "Type"
+msgstr "Type"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1362
+msgid "Status"
+msgstr "Status"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1380
+msgid "Install"
+msgstr "Install"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1381
+msgid "Activate"
+msgstr "Activate"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1891
+msgid "Install package not available."
+msgstr "Install package not available."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1892
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1893
+msgid "Unpacking the package&#8230;"
+msgstr "Unpacking the package&#8230;"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1894
+msgid "Installing the plugin&#8230;"
+msgstr "Installing the plugin&#8230;"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1895
+msgid "Plugin install failed."
+msgstr "Plugin install failed."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1896
+msgid "Plugin installed successfully."
+msgstr "Plugin installed successfully."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:1907
+msgid "Plugin activation failed."
+msgstr "Plugin activation failed."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2017
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2018
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s installed and activated successfully."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2018
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2027
+msgid "Show Details"
+msgstr "Show Details"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2018
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2027
+msgid "Hide Details"
+msgstr "Hide Details"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2019
+msgid "All installations and activations have been completed."
+msgstr "All installations and activations have been completed."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2020
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2024
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2025
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "An error occurred while installing %1$s: <strong>%2$s</strong>."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2026
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "The installation of %1$s failed."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2027
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s installed successfully."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2028
+msgid "All installations have been completed."
+msgstr "All installations have been completed."
+
+#: ../ThemeFunctions/class-tgm-plugin-activation.php:2029
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing Plugin %1$s (%2$d/%3$d)"
+
+#: ../ThemeFunctions/commentArea.php:14
+msgid "Reply"
+msgstr "Reply"
+
+#: ../ThemeFunctions/contact.php:34
+msgid "Please enter your name.<br />"
+msgstr "Please enter your name.<br />"
+
+#: ../ThemeFunctions/contact.php:37
+msgid "Please enter an e-mail address.<br />"
+msgstr "Please enter an e-mail address.<br />"
+
+#: ../ThemeFunctions/contact.php:39
+msgid "Please enter a valid e-mail address.<br />"
+msgstr "Please enter a valid e-mail address.<br />"
+
+#: ../ThemeFunctions/contact.php:43
+msgid "Please enter your message. It should have at least 10 characters.<br />"
+msgstr ""
+"Please enter your message. It should have at least 10 characters.<br />"
+
+#: ../ThemeFunctions/contact.php:60
+msgid "There was a problem sending your email, please try again!"
+msgstr "There was a problem sending your email, please try again!"
+
+#: ../ThemeFunctions/customizer.php:20
+msgid "Flati Header Option"
+msgstr "Flati Header Option"
+
+#: ../ThemeFunctions/customizer.php:21
+msgid "A few options regarding the header and navigation"
+msgstr "A few options regarding the header and navigation"
+
+#: ../ThemeFunctions/customizer.php:38
+msgid "Sticky Header Option"
+msgstr "Sticky Header Option"
+
+#: ../ThemeFunctions/customizer.php:43
+msgid "Have Sticky Header"
+msgstr "Have Sticky Header"
+
+#: ../ThemeFunctions/customizer.php:44
+msgid "No Sticky Header"
+msgstr "No Sticky Header"
+
+#: ../ThemeFunctions/customizer.php:49
+msgid ""
+"Choose which mobile version you would like to use for when in mobile view"
+msgstr ""
+"Choose which mobile version you would like to use for when in mobile view"
+
+#: ../ThemeFunctions/customizer.php:54
+msgid "Fishy Style Navigation"
+msgstr "Fishy Style Navigation"
+
+#: ../ThemeFunctions/customizer.php:55
+msgid "Bootstrap Navigation"
+msgstr "Bootstrap Navigation"
+
+#: ../ThemeFunctions/customizer.php:61 ../ThemeFunctions/customizer.php:157
+msgid "Theme Colours"
+msgstr "Theme Colours"
+
+#: ../ThemeFunctions/customizer.php:62
+msgid "Change the theme general colours"
+msgstr "Change the theme general colours"
+
+#: ../ThemeFunctions/customizer.php:117
+msgid "Body Background Colour"
+msgstr "Body Background Colour"
+
+#: ../ThemeFunctions/customizer.php:125
+msgid "Header Colour"
+msgstr "Header Colour"
+
+#: ../ThemeFunctions/customizer.php:133
+msgid "Header Text Colour"
+msgstr "Header Text Colour"
+
+#: ../ThemeFunctions/customizer.php:141
+msgid "Page Title Area In The Header Background"
+msgstr "Page Title Area In The Header Background"
+
+#: ../ThemeFunctions/customizer.php:149
+msgid "Page Title Area In The Header Text"
+msgstr "Page Title Area In The Header Text"
+
+#: ../ThemeFunctions/customizer.php:165
+msgid "Theme Colours Shadow Effects"
+msgstr "Theme Colours Shadow Effects"
+
+#: ../ThemeFunctions/customizer.php:173
+msgid "Theme Branding"
+msgstr "Theme Branding"
+
+#: ../ThemeFunctions/customizer.php:174
+msgid "Upload your logo and favicon here!"
+msgstr "Upload your logo and favicon here!"
+
+#: ../ThemeFunctions/customizer.php:191
+msgid "Upload Your Logo"
+msgstr "Upload Your Logo"
+
+#: ../ThemeFunctions/customizer.php:197
+msgid "Upload Your Favicon"
+msgstr "Upload Your Favicon"
+
+#: ../ThemeFunctions/customizer.php:204 ../ThemeFunctions/customizer.php:205
+msgid "Frontpage Slider Options"
+msgstr "Frontpage Slider Options"
+
+#: ../ThemeFunctions/customizer.php:216
+msgid "Slider Option"
+msgstr "Slider Option"
+
+#: ../ThemeFunctions/customizer.php:221
+msgid "No Slider"
+msgstr "No Slider"
+
+#: ../ThemeFunctions/customizer.php:222 ../ThemeFunctions/pagebuilder.php:723
+msgid "Nivo Slider"
+msgstr "Nivo Slider"
+
+#: ../ThemeFunctions/customizer.php:223 ../ThemeFunctions/pagebuilder.php:759
+msgid "Nerve Slider"
+msgstr "Nerve Slider"
+
+#: ../ThemeFunctions/customizer.php:224
+#: ../wpbakery/js_composer/config/map.php:1464
+#: ../wpbakery/js_composer/config/map.php:1476
+msgid "Revolution Slider"
+msgstr "Revolution Slider"
+
+#: ../ThemeFunctions/customizer.php:225
+msgid "Layor Slider"
+msgstr "Layor Slider"
+
+#: ../ThemeFunctions/customizer.php:231
+msgid "Main Titles Typography Section"
+msgstr "Main Titles Typography Section"
+
+#: ../ThemeFunctions/customizer.php:232 ../ThemeFunctions/customizer.php:288
+msgid "Change the typography of your theme"
+msgstr "Change the typography of your theme"
+
+#: ../ThemeFunctions/customizer.php:263
+msgid "Title Colours"
+msgstr "Title Colours"
+
+#: ../ThemeFunctions/customizer.php:270
+msgid "Titles Font Name"
+msgstr "Titles Font Name"
+
+#: ../ThemeFunctions/customizer.php:275
+msgid "Title Font Css Value"
+msgstr "Title Font Css Value"
+
+#: ../ThemeFunctions/customizer.php:280
+msgid "Titles Css Url Input"
+msgstr "Titles Css Url Input"
+
+#: ../ThemeFunctions/customizer.php:287
+msgid "General Text Typography Section"
+msgstr "General Text Typography Section"
+
+#: ../ThemeFunctions/customizer.php:319
+msgid "General Text Colours"
+msgstr "General Text Colours"
+
+#: ../ThemeFunctions/customizer.php:326
+msgid "General Text - Font Name"
+msgstr "General Text - Font Name"
+
+#: ../ThemeFunctions/customizer.php:331
+msgid "General Text - Font Css Value"
+msgstr "General Text - Font Css Value"
+
+#: ../ThemeFunctions/customizer.php:336
+msgid "General Text Css Url Input"
+msgstr "General Text Css Url Input"
+
+#: ../ThemeFunctions/customizer.php:343
+msgid "Blog Options"
+msgstr "Blog Options"
+
+#: ../ThemeFunctions/customizer.php:344
+msgid "Themes Blog Options"
+msgstr "Themes Blog Options"
+
+#: ../ThemeFunctions/customizer.php:385
+msgid "Choose Which Version Of The Blog You Would Like"
+msgstr "Choose Which Version Of The Blog You Would Like"
+
+#: ../ThemeFunctions/customizer.php:390 ../ThemeFunctions/customizer.php:427
+#: ../ThemeFunctions/customizer.php:439 ../ThemeFunctions/customizer.php:557
+msgid "Version 1"
+msgstr "Version 1"
+
+#: ../ThemeFunctions/customizer.php:391 ../ThemeFunctions/customizer.php:428
+#: ../ThemeFunctions/customizer.php:440 ../ThemeFunctions/customizer.php:558
+msgid "Version 2"
+msgstr "Version 2"
+
+#: ../ThemeFunctions/customizer.php:397
+msgid "Blog Title For Blog Detail Page, Search Page & Tag Pages"
+msgstr "Blog Title For Blog Detail Page, Search Page & Tag Pages"
+
+#: ../ThemeFunctions/customizer.php:403
+msgid "Blog Excerpt For Search Page & Tag Pages"
+msgstr "Blog Excerpt For Search Page & Tag Pages"
+
+#: ../ThemeFunctions/customizer.php:409
+msgid "Column Positioning"
+msgstr "Column Positioning"
+
+#: ../ThemeFunctions/customizer.php:414
+msgid "Left"
+msgstr "Left"
+
+#: ../ThemeFunctions/customizer.php:415
+msgid "Right"
+msgstr "Right"
+
+#: ../ThemeFunctions/customizer.php:416
+msgid "No Sidebars"
+msgstr "No Sidebars"
+
+#: ../ThemeFunctions/customizer.php:422
+msgid "Pagination Choice"
+msgstr "Pagination Choice"
+
+#: ../ThemeFunctions/customizer.php:434
+msgid "Footer Style For Search And Tag Pages!"
+msgstr "Footer Style For Search And Tag Pages!"
+
+#: ../ThemeFunctions/customizer.php:441 ../ThemeFunctions/customizer.php:559
+msgid "Version 3"
+msgstr "Version 3"
+
+#: ../ThemeFunctions/customizer.php:442 ../ThemeFunctions/customizer.php:560
+msgid "Version 4"
+msgstr "Version 4"
+
+#: ../ThemeFunctions/customizer.php:443 ../ThemeFunctions/customizer.php:561
+msgid "Version 5"
+msgstr "Version 5"
+
+#: ../ThemeFunctions/customizer.php:444 ../ThemeFunctions/customizer.php:562
+msgid "Version 6"
+msgstr "Version 6"
+
+#: ../ThemeFunctions/customizer.php:445 ../ThemeFunctions/customizer.php:563
+msgid "Version 7"
+msgstr "Version 7"
+
+#: ../ThemeFunctions/customizer.php:446 ../ThemeFunctions/customizer.php:564
+msgid "Version 8"
+msgstr "Version 8"
+
+#: ../ThemeFunctions/customizer.php:453
+msgid "Portfolio Page Options"
+msgstr "Portfolio Page Options"
+
+#: ../ThemeFunctions/customizer.php:454
+msgid "Themes Portfolio Options"
+msgstr "Themes Portfolio Options"
+
+#: ../ThemeFunctions/customizer.php:501
+msgid "Show Lightbox Effect On Portfolio Main Pages?"
+msgstr "Show Lightbox Effect On Portfolio Main Pages?"
+
+#: ../ThemeFunctions/customizer.php:506 ../ThemeFunctions/customizer.php:519
+#: ../ThemeFunctions/customizer.php:547
+#: ../wpbakery/js_composer/config/map.php:22
+#: ../wpbakery/js_composer/config/map.php:1521
+#: ../wpbakery/js_composer/config/map.php:1529
+#: ../wpbakery/js_composer/config/map.php:1537
+msgid "No"
+msgstr "No"
+
+#: ../ThemeFunctions/customizer.php:507 ../ThemeFunctions/customizer.php:518
+#: ../ThemeFunctions/customizer.php:546
+#: ../wpbakery/js_composer/config/map.php:1521
+#: ../wpbakery/js_composer/config/map.php:1529
+#: ../wpbakery/js_composer/config/map.php:1537
+msgid "Yes"
+msgstr "Yes"
+
+#: ../ThemeFunctions/customizer.php:513
+msgid "Allow comments on portfolio detailed page?"
+msgstr "Allow comments on portfolio detailed page?"
+
+#: ../ThemeFunctions/customizer.php:524
+msgid "The Title On Every Portfolio Title Page"
+msgstr "The Title On Every Portfolio Title Page"
+
+#: ../ThemeFunctions/customizer.php:529
+msgid "The Title For The Related Posts Title"
+msgstr "The Title For The Related Posts Title"
+
+#: ../ThemeFunctions/customizer.php:534
+msgid "Small Description Of Related Posts"
+msgstr "Small Description Of Related Posts"
+
+#: ../ThemeFunctions/customizer.php:541
+msgid "Show Related Posts"
+msgstr "Show Related Posts"
+
+#: ../ThemeFunctions/customizer.php:552
+msgid "Footer Type"
+msgstr "Footer Type"
+
+#: ../ThemeFunctions/customizer.php:570
+msgid "Contact Page Settings"
+msgstr "Contact Page Settings"
+
+#: ../ThemeFunctions/customizer.php:571
+msgid "Settings for the contact page can be setup here!"
+msgstr "Settings for the contact page can be setup here!"
+
+#: ../ThemeFunctions/customizer.php:628 ../ThemeFunctions/customizer.php:690
+msgid "Show/Hide Google Map"
+msgstr "Show/Hide Google Map"
+
+#: ../ThemeFunctions/customizer.php:633 ../ThemeFunctions/customizer.php:677
+msgid "Show"
+msgstr "Show"
+
+#: ../ThemeFunctions/customizer.php:634 ../ThemeFunctions/customizer.php:678
+msgid "Hide"
+msgstr "Hide"
+
+#: ../ThemeFunctions/customizer.php:640
+msgid "Height of the google map, please leave blank to keep standard"
+msgstr "Height of the google map, please leave blank to keep standard"
+
+#: ../ThemeFunctions/customizer.php:646
+msgid "Choose a number between 3 and 20"
+msgstr "Choose a number between 3 and 20"
+
+#: ../ThemeFunctions/customizer.php:652
+msgid "Upload Your Own Marker, Leave Blank If You Want To Use Ours!"
+msgstr "Upload Your Own Marker, Leave Blank If You Want To Use Ours!"
+
+#: ../ThemeFunctions/customizer.php:659
+msgid "Set The Google Map By Typing Your Address!"
+msgstr "Set The Google Map By Typing Your Address!"
+
+#: ../ThemeFunctions/customizer.php:666
+msgid ""
+"Long &amp; Lat: http://itouchmap.com/latlong.html EXAMPLE USE: "
+"52.874098,-1.678967"
+msgstr ""
+"Long &amp; Lat: http://itouchmap.com/latlong.html EXAMPLE USE: "
+"52.874098,-1.678967"
+
+#: ../ThemeFunctions/customizer.php:672
+msgid "Show/Hide Contact Form"
+msgstr "Show/Hide Contact Form"
+
+#: ../ThemeFunctions/customizer.php:684
+msgid "Set Contact Email"
+msgstr "Set Contact Email"
+
+#: ../ThemeFunctions/customizer.php:695
+msgid "Left Column"
+msgstr "Left Column"
+
+#: ../ThemeFunctions/customizer.php:696
+msgid "Right Column"
+msgstr "Right Column"
+
+#: ../ThemeFunctions/customizer.php:697
+msgid "Full Width"
+msgstr "Full Width"
+
+#: ../ThemeFunctions/customizer.php:704
+msgid "Theme Footer Copyright"
+msgstr "Theme Footer Copyright"
+
+#: ../ThemeFunctions/customizer.php:705
+msgid "Change the copyright to what you want!"
+msgstr "Change the copyright to what you want!"
+
+#: ../ThemeFunctions/customizer.php:746
+msgid "Copyright Text"
+msgstr "Copyright Text"
+
+#: ../ThemeFunctions/customizer.php:752
+msgid "Footer Thank You text"
+msgstr "Footer Thank You text"
+
+#: ../ThemeFunctions/customizer.php:759
+msgid "Theme Footer Social Icons"
+msgstr "Theme Footer Social Icons"
+
+#: ../ThemeFunctions/customizer.php:760
+msgid "Show and hide the social links within the footer"
+msgstr "Show and hide the social links within the footer"
+
+#: ../ThemeFunctions/customizer.php:790
+msgid "Twitter url, Leave blank to not show"
+msgstr "Twitter url, Leave blank to not show"
+
+#: ../ThemeFunctions/customizer.php:795
+msgid "Facebook url, Leave blank to not show"
+msgstr "Facebook url, Leave blank to not show"
+
+#: ../ThemeFunctions/customizer.php:800
+msgid "Linked In url, Leave blank to not show"
+msgstr "Linked In url, Leave blank to not show"
+
+#: ../ThemeFunctions/customizer.php:805
+msgid "Vimeo url, Leave blank to not show"
+msgstr "Vimeo url, Leave blank to not show"
+
+#: ../ThemeFunctions/customizer.php:810
+msgid "Google+ url, Leave blank to not show"
+msgstr "Google+ url, Leave blank to not show"
+
+#: ../ThemeFunctions/customizer.php:817
+msgid "Footer Strip 1 Content"
+msgstr "Footer Strip 1 Content"
+
+#: ../ThemeFunctions/customizer.php:818
+msgid "Change the wording etc within strip 1"
+msgstr "Change the wording etc within strip 1"
+
+#: ../ThemeFunctions/customizer.php:847
+msgid "Strip 1 Title"
+msgstr "Strip 1 Title"
+
+#: ../ThemeFunctions/customizer.php:852
+msgid "Strip 1 Content"
+msgstr "Strip 1 Content"
+
+#: ../ThemeFunctions/customizer.php:858
+msgid "Buttons Name"
+msgstr "Buttons Name"
+
+#: ../ThemeFunctions/customizer.php:863
+msgid "Buttons Link"
+msgstr "Buttons Link"
+
+#: ../ThemeFunctions/customizer.php:869
+msgid "Footer Strip 2 Content"
+msgstr "Footer Strip 2 Content"
+
+#: ../ThemeFunctions/customizer.php:870
+msgid "Change the wording etc within strip 2"
+msgstr "Change the wording etc within strip 2"
+
+#: ../ThemeFunctions/customizer.php:887
+msgid "Strip 2 Title"
+msgstr "Strip 2 Title"
+
+#: ../ThemeFunctions/customizer.php:892
+msgid "Strip 2 Content"
+msgstr "Strip 2 Content"
+
+#: ../ThemeFunctions/InstallTheme.php:7
+msgid "Flati Help Documents"
+msgstr "Flati Help Documents"
+
+#: ../ThemeFunctions/InstallTheme.php:7
+msgid "Flati Support"
+msgstr "Flati Support"
+
+#: ../ThemeFunctions/InstallTheme.php:209
+msgid "Something went wrong with the plugin API."
+msgstr "Something went wrong with the plugin API."
+
+#: ../ThemeFunctions/InstallTheme.php:222
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "All plugins installed and activated successfully. %s"
+
+#: ../ThemeFunctions/navigation.php:4
+msgid "Primary Navigation"
+msgstr "Primary Navigation"
+
+#: ../ThemeFunctions/navigation.php:9
+msgid "Blog Sidebar"
+msgstr "Blog Sidebar"
+
+#: ../ThemeFunctions/navigation.php:13
+msgid "Blog Widget Area"
+msgstr "Blog Widget Area"
+
+#: ../ThemeFunctions/navigation.php:21
+msgid "Footer Sidebar"
+msgstr "Footer Sidebar"
+
+#: ../ThemeFunctions/navigation.php:25
+msgid "Footer Widget Area"
+msgstr "Footer Widget Area"
+
+#: ../ThemeFunctions/pagebuilder.php:28
+msgid "H1 Title"
+msgstr "H1 Title"
+
+#: ../ThemeFunctions/pagebuilder.php:32 ../ThemeFunctions/pagebuilder.php:59
+#: ../ThemeFunctions/pagebuilder.php:86 ../ThemeFunctions/pagebuilder.php:113
+#: ../ThemeFunctions/pagebuilder.php:140 ../ThemeFunctions/pagebuilder.php:167
+msgid "Titles"
+msgstr "Titles"
+
+#: ../ThemeFunctions/pagebuilder.php:38 ../ThemeFunctions/pagebuilder.php:65
+#: ../ThemeFunctions/pagebuilder.php:92 ../ThemeFunctions/pagebuilder.php:119
+#: ../ThemeFunctions/pagebuilder.php:146 ../ThemeFunctions/pagebuilder.php:173
+msgid "Class"
+msgstr "Class"
+
+#: ../ThemeFunctions/pagebuilder.php:41 ../ThemeFunctions/pagebuilder.php:68
+#: ../ThemeFunctions/pagebuilder.php:95 ../ThemeFunctions/pagebuilder.php:122
+#: ../ThemeFunctions/pagebuilder.php:149 ../ThemeFunctions/pagebuilder.php:176
+msgid "Enter Extra Class If Needed"
+msgstr "Enter Extra Class If Needed"
+
+#: ../ThemeFunctions/pagebuilder.php:47 ../ThemeFunctions/pagebuilder.php:74
+#: ../ThemeFunctions/pagebuilder.php:101 ../ThemeFunctions/pagebuilder.php:128
+#: ../ThemeFunctions/pagebuilder.php:155 ../ThemeFunctions/pagebuilder.php:182
+#: ../ThemeFunctions/pagebuilder.php:238 ../ThemeFunctions/pagebuilder.php:283
+#: ../ThemeFunctions/pagebuilder.php:373 ../ThemeFunctions/pagebuilder.php:566
+#: ../ThemeFunctions/pagebuilder.php:595 ../ThemeFunctions/pagebuilder.php:897
+#: ../ThemeFunctions/pagebuilder.php:1071
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:226
+#: ../wpbakery/js_composer/composer/lib/params/vc_link/vc_link.php:6
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_text_separator.php:4
+#: ../wpbakery/js_composer/config/map.php:123
+#: ../wpbakery/js_composer/config/map.php:126
+#: ../wpbakery/js_composer/config/map.php:549
+#: ../wpbakery/js_composer/config/map.php:608
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+msgid "Title"
+msgstr "Title"
+
+#: ../ThemeFunctions/pagebuilder.php:50 ../ThemeFunctions/pagebuilder.php:77
+#: ../ThemeFunctions/pagebuilder.php:104 ../ThemeFunctions/pagebuilder.php:131
+#: ../ThemeFunctions/pagebuilder.php:158 ../ThemeFunctions/pagebuilder.php:185
+msgid "Enter Your Title"
+msgstr "Enter Your Title"
+
+#: ../ThemeFunctions/pagebuilder.php:56
+msgid "H2 Title"
+msgstr "H2 Title"
+
+#: ../ThemeFunctions/pagebuilder.php:83
+msgid "H3 Title"
+msgstr "H3 Title"
+
+#: ../ThemeFunctions/pagebuilder.php:110
+msgid "H4 Title"
+msgstr "H4 Title"
+
+#: ../ThemeFunctions/pagebuilder.php:137
+msgid "H5 Title"
+msgstr "H5 Title"
+
+#: ../ThemeFunctions/pagebuilder.php:164
+msgid "H6 Title"
+msgstr "H6 Title"
+
+#: ../ThemeFunctions/pagebuilder.php:202
+msgid "Icon Block"
+msgstr "Icon Block"
+
+#: ../ThemeFunctions/pagebuilder.php:205 ../ThemeFunctions/pagebuilder.php:268
+#: ../ThemeFunctions/pagebuilder.php:313 ../ThemeFunctions/pagebuilder.php:340
+#: ../ThemeFunctions/pagebuilder.php:415 ../ThemeFunctions/pagebuilder.php:551
+#: ../ThemeFunctions/pagebuilder.php:589 ../ThemeFunctions/pagebuilder.php:645
+#: ../ThemeFunctions/pagebuilder.php:837 ../ThemeFunctions/pagebuilder.php:865
+#: ../ThemeFunctions/pagebuilder.php:935
+#: ../ThemeFunctions/pagebuilder.php:1027
+#: ../ThemeFunctions/pagebuilder.php:1087
+#: ../ThemeFunctions/pagebuilder.php:1143
+#: ../wpbakery/js_composer/config/map.php:32
+#: ../wpbakery/js_composer/config/map.php:83
+#: ../wpbakery/js_composer/config/map.php:109
+#: ../wpbakery/js_composer/config/map.php:119
+#: ../wpbakery/js_composer/config/map.php:153
+#: ../wpbakery/js_composer/config/map.php:271
+#: ../wpbakery/js_composer/config/map.php:314
+#: ../wpbakery/js_composer/config/map.php:372
+#: ../wpbakery/js_composer/config/map.php:449
+#: ../wpbakery/js_composer/config/map.php:503
+#: ../wpbakery/js_composer/config/map.php:570
+#: ../wpbakery/js_composer/config/map.php:622
+#: ../wpbakery/js_composer/config/map.php:652
+#: ../wpbakery/js_composer/config/map.php:753
+#: ../wpbakery/js_composer/config/map.php:931
+#: ../wpbakery/js_composer/config/map.php:992
+#: ../wpbakery/js_composer/config/map.php:1066
+#: ../wpbakery/js_composer/config/map.php:1096
+#: ../wpbakery/js_composer/config/map.php:1192
+#: ../wpbakery/js_composer/config/map.php:1244
+#: ../wpbakery/js_composer/config/map.php:1303
+#: ../wpbakery/js_composer/config/map.php:1377
+#: ../wpbakery/js_composer/config/map.php:1419
+#: ../wpbakery/js_composer/config/map.php:1507
+msgid "Content"
+msgstr "Content"
+
+#: ../ThemeFunctions/pagebuilder.php:211 ../ThemeFunctions/pagebuilder.php:274
+#: ../ThemeFunctions/pagebuilder.php:693 ../ThemeFunctions/pagebuilder.php:903
+msgid "Icon Code"
+msgstr "Icon Code"
+
+#: ../ThemeFunctions/pagebuilder.php:214 ../ThemeFunctions/pagebuilder.php:277
+#: ../ThemeFunctions/pagebuilder.php:696
+msgid ""
+"You can find all icon codes at <a href='http://fontawesome.io/3.2.1/icons/' "
+"target='_blank'>Fontawesome</a>"
+msgstr ""
+"You can find all icon codes at <a href='http://fontawesome.io/3.2.1/icons/' "
+"target='_blank'>Fontawesome</a>"
+
+#: ../ThemeFunctions/pagebuilder.php:220 ../ThemeFunctions/pagebuilder.php:355
+msgid "Link Url"
+msgstr "Link Url"
+
+#: ../ThemeFunctions/pagebuilder.php:223 ../ThemeFunctions/pagebuilder.php:358
+#: ../ThemeFunctions/pagebuilder.php:467 ../ThemeFunctions/pagebuilder.php:476
+#: ../ThemeFunctions/pagebuilder.php:485 ../ThemeFunctions/pagebuilder.php:494
+#: ../ThemeFunctions/pagebuilder.php:503 ../ThemeFunctions/pagebuilder.php:512
+#: ../ThemeFunctions/pagebuilder.php:521 ../ThemeFunctions/pagebuilder.php:530
+msgid "Must start with a http://"
+msgstr "Must start with a http://"
+
+#: ../ThemeFunctions/pagebuilder.php:229
+msgid "Singular Word"
+msgstr "Singular Word"
+
+#: ../ThemeFunctions/pagebuilder.php:232
+msgid "Pick a word that best describes the category, (EXAMPLE: design)"
+msgstr "Pick a word that best describes the category, (EXAMPLE: design)"
+
+#: ../ThemeFunctions/pagebuilder.php:241 ../ThemeFunctions/pagebuilder.php:286
+#: ../ThemeFunctions/pagebuilder.php:376
+msgid "A couple of word title!"
+msgstr "A couple of word title!"
+
+#: ../ThemeFunctions/pagebuilder.php:247 ../ThemeFunctions/pagebuilder.php:292
+#: ../ThemeFunctions/pagebuilder.php:382
+msgid "Icon Block Content"
+msgstr "Icon Block Content"
+
+#: ../ThemeFunctions/pagebuilder.php:250 ../ThemeFunctions/pagebuilder.php:295
+#: ../ThemeFunctions/pagebuilder.php:385
+msgid "Content for the icon block"
+msgstr "Content for the icon block"
+
+#: ../ThemeFunctions/pagebuilder.php:256 ../ThemeFunctions/pagebuilder.php:391
+msgid "Make this a popular block?"
+msgstr "Make this a popular block?"
+
+#: ../ThemeFunctions/pagebuilder.php:259 ../ThemeFunctions/pagebuilder.php:394
+msgid "Select yes to make this a popular block"
+msgstr "Select yes to make this a popular block"
+
+#: ../ThemeFunctions/pagebuilder.php:265
+msgid "Icon Block 2"
+msgstr "Icon Block 2"
+
+#: ../ThemeFunctions/pagebuilder.php:301
+msgid "Animation"
+msgstr "Animation"
+
+#: ../ThemeFunctions/pagebuilder.php:304
+msgid "Select which animation you want it to load in with!"
+msgstr "Select which animation you want it to load in with!"
+
+#: ../ThemeFunctions/pagebuilder.php:310
+msgid "Icon Block 3"
+msgstr "Icon Block 3"
+
+#: ../ThemeFunctions/pagebuilder.php:319
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:166
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_wp_categories.php:4
+#: ../wpbakery/js_composer/config/map.php:720
+#: ../wpbakery/js_composer/config/map.php:832
+#: ../wpbakery/js_composer/config/map.php:1874
+msgid "Categories"
+msgstr "Categories"
+
+#: ../ThemeFunctions/pagebuilder.php:322
+msgid "Seperate with a comma... EXAMPLE: cat 1,cat 2,cat 3,cat 4"
+msgstr "Seperate with a comma... EXAMPLE: cat 1,cat 2,cat 3,cat 4"
+
+#: ../ThemeFunctions/pagebuilder.php:328
+msgid "Attach Icon"
+msgstr "Attach Icon"
+
+#: ../ThemeFunctions/pagebuilder.php:331
+msgid "Use image title to add your Icon title"
+msgstr "Use image title to add your Icon title"
+
+#: ../ThemeFunctions/pagebuilder.php:337
+msgid "Icon Block 4"
+msgstr "Icon Block 4"
+
+#: ../ThemeFunctions/pagebuilder.php:346
+#: ../wpbakery/js_composer/config/map.php:324
+msgid "Image"
+msgstr "Image"
+
+#: ../ThemeFunctions/pagebuilder.php:349
+msgid "Upload your image icon"
+msgstr "Upload your image icon"
+
+#: ../ThemeFunctions/pagebuilder.php:364
+msgid "Button Text"
+msgstr "Button Text"
+
+#: ../ThemeFunctions/pagebuilder.php:367
+msgid "Text for the button"
+msgstr "Text for the button"
+
+#: ../ThemeFunctions/pagebuilder.php:412
+msgid "Team Member"
+msgstr "Team Member"
+
+#: ../ThemeFunctions/pagebuilder.php:421
+msgid "Slide Effect"
+msgstr "Slide Effect"
+
+#: ../ThemeFunctions/pagebuilder.php:424 ../ThemeFunctions/pagebuilder.php:663
+msgid "Choose which slide effect you would like to use"
+msgstr "Choose which slide effect you would like to use"
+
+#: ../ThemeFunctions/pagebuilder.php:430
+msgid "Attach Image"
+msgstr "Attach Image"
+
+#: ../ThemeFunctions/pagebuilder.php:433
+msgid "Choose your team members image"
+msgstr "Choose your team members image"
+
+#: ../ThemeFunctions/pagebuilder.php:439
+msgid "Team Members Name?"
+msgstr "Team Members Name?"
+
+#: ../ThemeFunctions/pagebuilder.php:447
+msgid "Team Members Posotion?"
+msgstr "Team Members Posotion?"
+
+#: ../ThemeFunctions/pagebuilder.php:455
+msgid "Member Description"
+msgstr "Member Description"
+
+#: ../ThemeFunctions/pagebuilder.php:458
+msgid "Small description for the team member goes here"
+msgstr "Small description for the team member goes here"
+
+#: ../ThemeFunctions/pagebuilder.php:464
+msgid "Twitter Url"
+msgstr "Twitter Url"
+
+#: ../ThemeFunctions/pagebuilder.php:473
+msgid "Facebook Url"
+msgstr "Facebook Url"
+
+#: ../ThemeFunctions/pagebuilder.php:482
+msgid "Dribbble Url"
+msgstr "Dribbble Url"
+
+#: ../ThemeFunctions/pagebuilder.php:491
+msgid "Forrst Url"
+msgstr "Forrst Url"
+
+#: ../ThemeFunctions/pagebuilder.php:500
+msgid "Vimeo Url"
+msgstr "Vimeo Url"
+
+#: ../ThemeFunctions/pagebuilder.php:509
+msgid "Google Plus Url"
+msgstr "Google Plus Url"
+
+#: ../ThemeFunctions/pagebuilder.php:518
+msgid "Linked In Url"
+msgstr "Linked In Url"
+
+#: ../ThemeFunctions/pagebuilder.php:527
+msgid "GitHub Url"
+msgstr "GitHub Url"
+
+#: ../ThemeFunctions/pagebuilder.php:548
+msgid "Progression Bars"
+msgstr "Progression Bars"
+
+#: ../ThemeFunctions/pagebuilder.php:557
+msgid "Percentage"
+msgstr "Percentage"
+
+#: ../ThemeFunctions/pagebuilder.php:560
+msgid "Give the bar percentage"
+msgstr "Give the bar percentage"
+
+#: ../ThemeFunctions/pagebuilder.php:586
+msgid "Client List"
+msgstr "Client List"
+
+#: ../ThemeFunctions/pagebuilder.php:598
+msgid "Client List Title"
+msgstr "Client List Title"
+
+#: ../ThemeFunctions/pagebuilder.php:604
+msgid "Client Description Title"
+msgstr "Client Description Title"
+
+#: ../ThemeFunctions/pagebuilder.php:612
+msgid "Attach Logo"
+msgstr "Attach Logo"
+
+#: ../ThemeFunctions/pagebuilder.php:615
+msgid "Upload your clients logo"
+msgstr "Upload your clients logo"
+
+#: ../ThemeFunctions/pagebuilder.php:621
+msgid "Client Link"
+msgstr "Client Link"
+
+#: ../ThemeFunctions/pagebuilder.php:624
+msgid "Use http://"
+msgstr "Use http://"
+
+#: ../ThemeFunctions/pagebuilder.php:642
+msgid "Testimonial Blocks"
+msgstr "Testimonial Blocks"
+
+#: ../ThemeFunctions/pagebuilder.php:651
+msgid "Testimonial Version"
+msgstr "Testimonial Version"
+
+#: ../ThemeFunctions/pagebuilder.php:654
+msgid "Choose which version of the testimonial block you would like?"
+msgstr "Choose which version of the testimonial block you would like?"
+
+#: ../ThemeFunctions/pagebuilder.php:660
+msgid "Fade In Effect"
+msgstr "Fade In Effect"
+
+#: ../ThemeFunctions/pagebuilder.php:669
+msgid "Persons Name"
+msgstr "Persons Name"
+
+#: ../ThemeFunctions/pagebuilder.php:677
+msgid "Persons Company"
+msgstr "Persons Company"
+
+#: ../ThemeFunctions/pagebuilder.php:685
+msgid "Testimonial"
+msgstr "Testimonial"
+
+#: ../ThemeFunctions/pagebuilder.php:702
+msgid "Authors Image"
+msgstr "Authors Image"
+
+#: ../ThemeFunctions/pagebuilder.php:705
+msgid "Upload your testimonial authors image"
+msgstr "Upload your testimonial authors image"
+
+#: ../ThemeFunctions/pagebuilder.php:726 ../ThemeFunctions/pagebuilder.php:762
+#: ../ThemeFunctions/pagebuilder.php:807
+#: ../ThemeFunctions/pagebuilder.php:1065
+#: ../ThemeFunctions/pagebuilder.php:1114
+#: ../wpbakery/js_composer/config/map.php:1466
+msgid "Sliders"
+msgstr "Sliders"
+
+#: ../ThemeFunctions/pagebuilder.php:732
+msgid "Show Captions"
+msgstr "Show Captions"
+
+#: ../ThemeFunctions/pagebuilder.php:735
+msgid "Choose if you want captions on your slider"
+msgstr "Choose if you want captions on your slider"
+
+#: ../ThemeFunctions/pagebuilder.php:741 ../ThemeFunctions/pagebuilder.php:768
+#: ../ThemeFunctions/pagebuilder.php:813
+msgid "Slide Images"
+msgstr "Slide Images"
+
+#: ../ThemeFunctions/pagebuilder.php:744 ../ThemeFunctions/pagebuilder.php:771
+#: ../ThemeFunctions/pagebuilder.php:816
+msgid "Upload your images here"
+msgstr "Upload your images here"
+
+#: ../ThemeFunctions/pagebuilder.php:750
+msgid "Slide Captions"
+msgstr "Slide Captions"
+
+#: ../ThemeFunctions/pagebuilder.php:753
+msgid "New caption for each slide on different line"
+msgstr "New caption for each slide on different line"
+
+#: ../ThemeFunctions/pagebuilder.php:777
+msgid "Image Height"
+msgstr "Image Height"
+
+#: ../ThemeFunctions/pagebuilder.php:780
+msgid "Setting the height of your images of the slider"
+msgstr "Setting the height of your images of the slider"
+
+#: ../ThemeFunctions/pagebuilder.php:786
+msgid "Image Width"
+msgstr "Image Width"
+
+#: ../ThemeFunctions/pagebuilder.php:789
+msgid "YSetting the width of your images of the slider"
+msgstr "YSetting the width of your images of the slider"
+
+#: ../ThemeFunctions/pagebuilder.php:795
+msgid "Slider Speed"
+msgstr "Slider Speed"
+
+#: ../ThemeFunctions/pagebuilder.php:798
+msgid "for every second is 1000, so if you want 5 seconds it will be 5000"
+msgstr "for every second is 1000, so if you want 5 seconds it will be 5000"
+
+#: ../ThemeFunctions/pagebuilder.php:804
+msgid "Small Slider"
+msgstr "Small Slider"
+
+#: ../ThemeFunctions/pagebuilder.php:834
+msgid "Horizontal Line"
+msgstr "Horizontal Line"
+
+#: ../ThemeFunctions/pagebuilder.php:860
+msgid "Timeline"
+msgstr "Timeline"
+
+#: ../ThemeFunctions/pagebuilder.php:869
+#: ../wpbakery/js_composer/config/map.php:318
+#: ../wpbakery/js_composer/config/map.php:376
+#: ../wpbakery/js_composer/config/map.php:453
+#: ../wpbakery/js_composer/config/map.php:508
+#: ../wpbakery/js_composer/config/map.php:574
+#: ../wpbakery/js_composer/config/map.php:626
+#: ../wpbakery/js_composer/config/map.php:757
+#: ../wpbakery/js_composer/config/map.php:870
+#: ../wpbakery/js_composer/config/map.php:1070
+#: ../wpbakery/js_composer/config/map.php:1100
+#: ../wpbakery/js_composer/config/map.php:1196
+#: ../wpbakery/js_composer/config/map.php:1248
+#: ../wpbakery/js_composer/config/map.php:1307
+#: ../wpbakery/js_composer/config/map.php:1423
+#: ../wpbakery/js_composer/config/map.php:1470
+#: ../wpbakery/js_composer/config/map.php:1563
+#: ../wpbakery/js_composer/config/map.php:1585
+#: ../wpbakery/js_composer/config/map.php:1607
+#: ../wpbakery/js_composer/config/map.php:1635
+#: ../wpbakery/js_composer/config/map.php:1657
+#: ../wpbakery/js_composer/config/map.php:1700
+#: ../wpbakery/js_composer/config/map.php:1736
+#: ../wpbakery/js_composer/config/map.php:1766
+#: ../wpbakery/js_composer/config/map.php:1800
+#: ../wpbakery/js_composer/config/map.php:1882
+#: ../wpbakery/js_composer/config/map.php:1911
+#: ../wpbakery/js_composer/config/map.php:1939
+msgid "Widget title"
+msgstr "Widget title"
+
+#: ../ThemeFunctions/pagebuilder.php:871
+#: ../wpbakery/js_composer/config/map.php:320
+#: ../wpbakery/js_composer/config/map.php:378
+#: ../wpbakery/js_composer/config/map.php:455
+#: ../wpbakery/js_composer/config/map.php:510
+#: ../wpbakery/js_composer/config/map.php:576
+#: ../wpbakery/js_composer/config/map.php:628
+#: ../wpbakery/js_composer/config/map.php:759
+#: ../wpbakery/js_composer/config/map.php:872
+#: ../wpbakery/js_composer/config/map.php:1072
+#: ../wpbakery/js_composer/config/map.php:1102
+#: ../wpbakery/js_composer/config/map.php:1198
+#: ../wpbakery/js_composer/config/map.php:1250
+#: ../wpbakery/js_composer/config/map.php:1309
+#: ../wpbakery/js_composer/config/map.php:1425
+#: ../wpbakery/js_composer/config/map.php:1472
+msgid "What text use as a widget title. Leave blank if no title is needed."
+msgstr "What text use as a widget title. Leave blank if no title is needed."
+
+#: ../ThemeFunctions/pagebuilder.php:879
+msgid "Add timeline section"
+msgstr "Add timeline section"
+
+#: ../ThemeFunctions/pagebuilder.php:883
+msgid "Timeline Title 1"
+msgstr "Timeline Title 1"
+
+#: ../ThemeFunctions/pagebuilder.php:884
+msgid "Timeline Title 2"
+msgstr "Timeline Title 2"
+
+#: ../ThemeFunctions/pagebuilder.php:889
+msgid "Timeline Section"
+msgstr "Timeline Section"
+
+#: ../ThemeFunctions/pagebuilder.php:899
+msgid "timeline section title."
+msgstr "timeline section title."
+
+#: ../ThemeFunctions/pagebuilder.php:906
+msgid "Choose which icon you would like to display "
+msgstr "Choose which icon you would like to display "
+
+#: ../ThemeFunctions/pagebuilder.php:910
+msgid "Pick Your Year"
+msgstr "Pick Your Year"
+
+#: ../ThemeFunctions/pagebuilder.php:913
+msgid "Date for your timeline item."
+msgstr "Date for your timeline item."
+
+#: ../ThemeFunctions/pagebuilder.php:932
+msgid "Pricing Table"
+msgstr "Pricing Table"
+
+#: ../ThemeFunctions/pagebuilder.php:941
+msgid "Make Featured"
+msgstr "Make Featured"
+
+#: ../ThemeFunctions/pagebuilder.php:944
+msgid "Choose To Make This Table Featured"
+msgstr "Choose To Make This Table Featured"
+
+#: ../ThemeFunctions/pagebuilder.php:950
+msgid "Table Title"
+msgstr "Table Title"
+
+#: ../ThemeFunctions/pagebuilder.php:953
+msgid "Name Your Table"
+msgstr "Name Your Table"
+
+#: ../ThemeFunctions/pagebuilder.php:959
+msgid "From Text"
+msgstr "From Text"
+
+#: ../ThemeFunctions/pagebuilder.php:962
+msgid "Your Language For The Text \"From\"!"
+msgstr "Your Language For The Text \"From\"!"
+
+#: ../ThemeFunctions/pagebuilder.php:968
+msgid "Table Price"
+msgstr "Table Price"
+
+#: ../ThemeFunctions/pagebuilder.php:971
+msgid "Please use the currency symbol within this!"
+msgstr "Please use the currency symbol within this!"
+
+#: ../ThemeFunctions/pagebuilder.php:977
+msgid "Monthly/Weekly Text"
+msgstr "Monthly/Weekly Text"
+
+#: ../ThemeFunctions/pagebuilder.php:985
+msgid "Table List"
+msgstr "Table List"
+
+#: ../ThemeFunctions/pagebuilder.php:988
+msgid "Each List On A New Line"
+msgstr "Each List On A New Line"
+
+#: ../ThemeFunctions/pagebuilder.php:994
+#: ../ThemeFunctions/pagebuilder.php:1095
+#: ../ThemeFunctions/pagebuilder.php:1200
+msgid "Button Name"
+msgstr "Button Name"
+
+#: ../ThemeFunctions/pagebuilder.php:997
+msgid "Text For The Button Of The Table"
+msgstr "Text For The Button Of The Table"
+
+#: ../ThemeFunctions/pagebuilder.php:1003
+#: ../ThemeFunctions/pagebuilder.php:1103
+msgid "Button Link"
+msgstr "Button Link"
+
+#: ../ThemeFunctions/pagebuilder.php:1006
+msgid "Link For The Button Of The Table"
+msgstr "Link For The Button Of The Table"
+
+#: ../ThemeFunctions/pagebuilder.php:1024
+msgid "Dribbble Feed"
+msgstr "Dribbble Feed"
+
+#: ../ThemeFunctions/pagebuilder.php:1033
+msgid "Dribble Username"
+msgstr "Dribble Username"
+
+#: ../ThemeFunctions/pagebuilder.php:1041
+msgid "How Many?"
+msgstr "How Many?"
+
+#: ../ThemeFunctions/pagebuilder.php:1044
+msgid "Put The Maximum Number You Want To Show On Your Page"
+msgstr "Put The Maximum Number You Want To Show On Your Page"
+
+#: ../ThemeFunctions/pagebuilder.php:1062
+msgid "Recent Portfolio Version 1"
+msgstr "Recent Portfolio Version 1"
+
+#: ../ThemeFunctions/pagebuilder.php:1079
+msgid "Intro"
+msgstr "Intro"
+
+#: ../ThemeFunctions/pagebuilder.php:1111
+msgid "Recent Portfolio Version 2"
+msgstr "Recent Portfolio Version 2"
+
+#: ../ThemeFunctions/pagebuilder.php:1120
+msgid "How Many"
+msgstr "How Many"
+
+#: ../ThemeFunctions/pagebuilder.php:1140
+msgid "Models"
+msgstr "Models"
+
+#: ../ThemeFunctions/pagebuilder.php:1149
+msgid "Button Colour"
+msgstr "Button Colour"
+
+#: ../ThemeFunctions/pagebuilder.php:1152
+#: ../wpbakery/js_composer/config/map.php:10
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Blue"
+msgstr "Blue"
+
+#: ../ThemeFunctions/pagebuilder.php:1153
+#: ../wpbakery/js_composer/config/map.php:10
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Black"
+msgstr "Black"
+
+#: ../ThemeFunctions/pagebuilder.php:1154
+#: ../wpbakery/js_composer/config/map.php:10
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Green"
+msgstr "Green"
+
+#: ../ThemeFunctions/pagebuilder.php:1155
+#: ../wpbakery/js_composer/config/map.php:10
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Orange"
+msgstr "Orange"
+
+#: ../ThemeFunctions/pagebuilder.php:1156
+#: ../wpbakery/js_composer/config/map.php:10
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Red"
+msgstr "Red"
+
+#: ../ThemeFunctions/pagebuilder.php:1162
+msgid "Button Size"
+msgstr "Button Size"
+
+#: ../ThemeFunctions/pagebuilder.php:1165
+#: ../wpbakery/js_composer/config/map.php:13
+msgid "Mini"
+msgstr "Mini"
+
+#: ../ThemeFunctions/pagebuilder.php:1166
+#: ../wpbakery/js_composer/config/map.php:13
+#: ../wpbakery/js_composer/config/map.php:232
+msgid "Small"
+msgstr "Small"
+
+#: ../ThemeFunctions/pagebuilder.php:1167
+msgid "Normal"
+msgstr "Normal"
+
+#: ../ThemeFunctions/pagebuilder.php:1168
+#: ../wpbakery/js_composer/config/map.php:13
+msgid "Large"
+msgstr "Large"
+
+#: ../ThemeFunctions/pagebuilder.php:1174
+msgid "Rounded Or Square"
+msgstr "Rounded Or Square"
+
+#: ../ThemeFunctions/pagebuilder.php:1177
+msgid "Rounded"
+msgstr "Rounded"
+
+#: ../ThemeFunctions/pagebuilder.php:1178
+msgid "Square"
+msgstr "Square"
+
+#: ../ThemeFunctions/pagebuilder.php:1184
+msgid "Model Title"
+msgstr "Model Title"
+
+#: ../ThemeFunctions/pagebuilder.php:1192
+msgid "Model Content"
+msgstr "Model Content"
+
+#: ../ThemeFunctions/pagebuilder.php:1208
+msgid "Close Button Name"
+msgstr "Close Button Name"
+
+#: ../ThemeFunctions/pagination.php:22
+msgid "First"
+msgstr "First"
+
+#: ../ThemeFunctions/pagination.php:32
+msgid "Last"
+msgstr "Last"
+
+#: ../wpbakery/js_composer/tabs.php:4
+#: ../wpbakery/js_composer/composer/build.php:329
+#: ../wpbakery/js_composer/composer/lib/shortcodes/tabs.php:4
+#: ../wpbakery/js_composer/config/map.php:541
+msgid "Tab"
+msgstr "Tab"
+
+#: ../wpbakery/js_composer/tabs.php:23
+#: ../wpbakery/js_composer/composer/lib/shortcodes/tabs.php:23
+#, php-format
+msgid "Append to this %s"
+msgstr "Append to this %s"
+
+#: ../wpbakery/js_composer/tabs.php:24
+#: ../wpbakery/js_composer/composer/lib/shortcodes/tabs.php:24
+#, php-format
+msgid "Prepend to this %s"
+msgstr "Prepend to this %s"
+
+#: ../wpbakery/js_composer/tabs.php:27
+#: ../wpbakery/js_composer/composer/lib/shortcodes/tabs.php:27
+#, php-format
+msgid "Edit this %s"
+msgstr "Edit this %s"
+
+#: ../wpbakery/js_composer/tabs.php:28
+#: ../wpbakery/js_composer/composer/lib/shortcodes/tabs.php:28
+#, php-format
+msgid "Clone this %s"
+msgstr "Clone this %s"
+
+#: ../wpbakery/js_composer/tabs.php:30
+#: ../wpbakery/js_composer/composer/lib/shortcodes/tabs.php:30
+#, php-format
+msgid "Delete this %s"
+msgstr "Delete this %s"
+
+#: ../wpbakery/js_composer/composer/build.php:48
+msgid "Dowload new version"
+msgstr "Dowload new version"
+
+#: ../wpbakery/js_composer/composer/build.php:51
+msgid "update now"
+msgstr "update now"
+
+#: ../wpbakery/js_composer/composer/build.php:156
+#, php-format
+msgid ""
+"There is a new version of Visual Composer available. <a href=\"http://bit.ly/"
+"vcomposer\" target=\"_blank\">Download version <b>%s</b></a>."
+msgstr ""
+"There is a new version of Visual Composer available. <a href=\"http://bit.ly/"
+"vcomposer\" target=\"_blank\">Download version <b>%s</b></a>."
+
+#: ../wpbakery/js_composer/composer/build.php:317
+msgid "Add/remove picture"
+msgstr "Add/remove picture"
+
+#: ../wpbakery/js_composer/composer/build.php:318
+msgid "Finish Adding Images"
+msgstr "Finish Adding Images"
+
+#: ../wpbakery/js_composer/composer/build.php:319
+msgid "Add Image"
+msgstr "Add Image"
+
+#: ../wpbakery/js_composer/composer/build.php:320
+msgid "Add Images"
+msgstr "Add Images"
+
+#: ../wpbakery/js_composer/composer/build.php:321
+#: ../wpbakery/js_composer/composer/build.php:372
+#: ../wpbakery/js_composer/composer/settings/settings.php:72
+msgid "Visual Composer"
+msgstr "Visual Composer"
+
+#: ../wpbakery/js_composer/composer/build.php:322
+msgid "Classic editor"
+msgstr "Classic editor"
+
+#: ../wpbakery/js_composer/composer/build.php:323
+msgid "Please enter templates name"
+msgstr "Please enter templates name"
+
+#: ../wpbakery/js_composer/composer/build.php:324
+msgid ""
+"Confirm deleting \"{template_name}\" template, press Cancel to leave. This "
+"action cannot be undone."
+msgstr ""
+"Confirm deleting \"{template_name}\" template, press Cancel to leave. This "
+"action cannot be undone."
+
+#: ../wpbakery/js_composer/composer/build.php:325
+msgid "Press OK to delete section, Cancel to leave"
+msgstr "Press OK to delete section, Cancel to leave"
+
+#: ../wpbakery/js_composer/composer/build.php:326
+msgid "Drag and drop me in the column"
+msgstr "Drag and drop me in the column"
+
+#: ../wpbakery/js_composer/composer/build.php:327
+msgid "Press OK to delete \"{tab_name}\" tab, Cancel to leave"
+msgstr "Press OK to delete \"{tab_name}\" tab, Cancel to leave"
+
+#: ../wpbakery/js_composer/composer/build.php:328
+#: ../wpbakery/js_composer/composer/lib/shortcodes/tour.php:4
+msgid "Slide"
+msgstr "Slide"
+
+#: ../wpbakery/js_composer/composer/build.php:330
+#: ../wpbakery/js_composer/composer/build.php:333
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_accordion_tab.php:5
+msgid "Section"
+msgstr "Section"
+
+#: ../wpbakery/js_composer/composer/build.php:331
+msgid "Please enter new tab title"
+msgstr "Please enter new tab title"
+
+#: ../wpbakery/js_composer/composer/build.php:332
+msgid "Press OK to delete \"{tab_name}\" section, Cancel to leave"
+msgstr "Press OK to delete \"{tab_name}\" section, Cancel to leave"
+
+#: ../wpbakery/js_composer/composer/build.php:334
+msgid "Please enter new section title"
+msgstr "Please enter new section title"
+
+#: ../wpbakery/js_composer/composer/build.php:335
+msgid "Error. Please try again."
+msgstr "Error. Please try again."
+
+#: ../wpbakery/js_composer/composer/build.php:336
+msgid ""
+"If you close this window all shortcode settings will be lost. Close this "
+"window?"
+msgstr ""
+"If you close this window all shortcode settings will be lost. Close this "
+"window?"
+
+#: ../wpbakery/js_composer/composer/build.php:337
+msgid "Select element type"
+msgstr "Select element type"
+
+#: ../wpbakery/js_composer/composer/build.php:338
+msgid "Media gallery"
+msgstr "Media gallery"
+
+#: ../wpbakery/js_composer/composer/build.php:339
+msgid "Element settings"
+msgstr "Element settings"
+
+#: ../wpbakery/js_composer/composer/build.php:340
+msgid "Add tab"
+msgstr "Add tab"
+
+#: ../wpbakery/js_composer/composer/build.php:341
+msgid "Are you sure you want to convert to new version?"
+msgstr "Are you sure you want to convert to new version?"
+
+#: ../wpbakery/js_composer/composer/build.php:342
+#: ../wpbakery/js_composer/composer/lib/layouts.php:221
+msgid "Loading..."
+msgstr "Loading..."
+
+#: ../wpbakery/js_composer/composer/build.php:344
+msgid "Set Image"
+msgstr "Set Image"
+
+#: ../wpbakery/js_composer/composer/build.php:345
+msgid "Are you sure taht you want to remove all your data?"
+msgstr "Are you sure taht you want to remove all your data?"
+
+#: ../wpbakery/js_composer/composer/build.php:346
+msgid "Loop settings"
+msgstr "Loop settings"
+
+#: ../wpbakery/js_composer/composer/build.php:347
+msgid "Enter custom layout for your row:"
+msgstr "Enter custom layout for your row:"
+
+#: ../wpbakery/js_composer/composer/build.php:348
+msgid "Wrong row layout format! Example: 1/2 + 1/2 or span6 + span6."
+msgstr "Wrong row layout format! Example: 1/2 + 1/2 or span6 + span6."
+
+#: ../wpbakery/js_composer/composer/lib/helpers.php:240
+msgid "Added"
+msgstr "Added"
+
+#: ../wpbakery/js_composer/composer/lib/helpers_api.php:4
+msgid "Wrong wpb_map object. Base attribute is required"
+msgstr "Wrong wpb_map object. Base attribute is required"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:14
+msgid "Wrong layout params"
+msgstr "Wrong layout params"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:95
+msgid "Save current page as a Template"
+msgstr "Save current page as a Template"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:97
+msgid "Load Template"
+msgstr "Load Template"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:110
+msgid "No custom templates yet."
+msgstr "No custom templates yet."
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:166
+msgid "Show all"
+msgstr "Show all"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:181
+msgid "Other"
+msgstr "Other"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:193
+msgid "Select Content Element"
+msgstr "Select Content Element"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:194
+msgid "Search by element name"
+msgstr "Search by element name"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:209
+msgid "Close"
+msgstr "Close"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:225
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:447
+msgid "Save"
+msgstr "Save"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:226
+msgid "Cancel"
+msgstr "Cancel"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:270
+msgid "Visual Composer for WordPress"
+msgstr "Visual Composer for WordPress"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:275
+msgid "Update"
+msgstr "Update"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:289
+msgid "Add element"
+msgstr "Add element"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:297
+msgid "Add row"
+msgstr "Add row"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:305
+msgid "Templates"
+msgstr "Templates"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:347
+msgid ""
+"Your page layout was created with previous Visual Composer version. Before "
+"converting your layout to the new version, make sure to <a target=\"_blank\" "
+"href=\"http://kb.wpbakery.com/index.php?"
+"title=Update_Visual_Composer_from_3.4_to_3.5\">read this page</a>."
+msgstr ""
+"Your page layout was created with previous Visual Composer version. Before "
+"converting your layout to the new version, make sure to <a target=\"_blank\" "
+"href=\"http://kb.wpbakery.com/index.php?"
+"title=Update_Visual_Composer_from_3.4_to_3.5\">read this page</a>."
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:349
+msgid "Convert to new version"
+msgstr "Convert to new version"
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:355
+#: ../wpbakery/js_composer/composer/lib/layouts.php:392
+msgid "Loading, please wait..."
+msgstr "Loading, please wait..."
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:360
+msgid "No content yet! You should add some..."
+msgstr "No content yet! You should add some..."
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:364
+msgid ""
+"This is a visual preview of your page. Currently, you don't have any content "
+"elements. Click or drag the button <a href='#' class='add-element-to-"
+"layout'><i class='icon'></i> Add element</a> on the top to add content "
+"elements on your page. Alternatively add <a href='#' class='add-text-block-"
+"to-content' parent-container='#visual_composer_content'><i class='icon'></i> "
+"Text block</a> with single click."
+msgstr ""
+"This is a visual preview of your page. Currently, you don't have any content "
+"elements. Click or drag the button <a href='#' class='add-element-to-"
+"layout'><i class='icon'></i> Add element</a> on the top to add content "
+"elements on your page. Alternatively add <a href='#' class='add-text-block-"
+"to-content' parent-container='#visual_composer_content'><i class='icon'></i> "
+"Text block</a> with single click."
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:369
+msgid ""
+"Click the pencil icon on the content elements to change their properties."
+msgstr ""
+"Click the pencil icon on the content elements to change their properties."
+
+#: ../wpbakery/js_composer/composer/lib/layouts.php:393
+msgid "Crunching..."
+msgstr "Crunching..."
+
+#: ../wpbakery/js_composer/composer/lib/mapper.php:55
+#: ../wpbakery/js_composer/composer/lib/mapper.php:158
+#: ../wpbakery/js_composer/composer/lib/mapper.php:170
+#: ../wpbakery/js_composer/composer/lib/mapper.php:194
+#: ../wpbakery/js_composer/composer/lib/mapper.php:234
+#, php-format
+msgid "Wrong name for shortcode:%s. Name required"
+msgstr "Wrong name for shortcode:%s. Name required"
+
+#: ../wpbakery/js_composer/composer/lib/mapper.php:57
+#, php-format
+msgid "Wrong base for shortcode:%s. Base required"
+msgstr "Wrong base for shortcode:%s. Base required"
+
+#: ../wpbakery/js_composer/composer/lib/mapper.php:172
+#: ../wpbakery/js_composer/composer/lib/mapper.php:196
+#, php-format
+msgid "Wrong attribute for '%s' shortcode. Attribute 'param_name' required"
+msgstr "Wrong attribute for '%s' shortcode. Attribute 'param_name' required"
+
+#: ../wpbakery/js_composer/composer/lib/mapper.php:236
+#, php-format
+msgid "Wrong setting_name for shortcode:%s. Base can't be modified."
+msgstr "Wrong setting_name for shortcode:%s. Base can't be modified."
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:124
+#, php-format
+msgid ""
+"Wrong template for `%s` shortcode in class `%s`. Please check your mapping "
+"settings for this code. Error"
+msgstr ""
+"Wrong template for `%s` shortcode in class `%s`. Please check your mapping "
+"settings for this code. Error"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:320
+#, php-format
+msgid "Edit %s"
+msgstr "Edit %s"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:321
+#, php-format
+msgid "Clone %s"
+msgstr "Clone %s"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:321
+#, php-format
+msgid "Delete %s"
+msgstr "Delete %s"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:433
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:653
+msgid "Edit"
+msgstr "Edit"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:499
+msgid ""
+"Field type is changed from `textarea_html` to `textarea`, because it is "
+"already used by `"
+msgstr ""
+"Field type is changed from `textarea_html` to `textarea`, because it is "
+"already used by `"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:571
+#: ../wpbakery/js_composer/composer/lib/shortcodes/image_gallery.php:27
+msgid "Add images"
+msgstr "Add images"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes.php:586
+#: ../wpbakery/js_composer/composer/lib/shortcodes/single_image.php:22
+msgid "Add image"
+msgstr "Add image"
+
+#: ../wpbakery/js_composer/composer/lib/wpb_automatic_updater.php:16
+msgid "Error! Can't connect to filesystem"
+msgstr "Error! Can't connect to filesystem"
+
+#: ../wpbakery/js_composer/composer/lib/wpb_automatic_updater.php:22
+msgid ""
+"Error! Envato username, api key and your purchase code are required for "
+"downloading updates from Envato marketplace for the Visual Composer. Visit "
+"<a href=\""
+msgstr ""
+"Error! Envato username, api key and your purchase code are required for "
+"downloading updates from Envato marketplace for the Visual Composer. Visit "
+"<a href=\""
+
+#: ../wpbakery/js_composer/composer/lib/wpb_automatic_updater.php:27
+msgid "Error! Envato API error"
+msgstr "Error! Envato API error"
+
+#: ../wpbakery/js_composer/composer/lib/wpb_automatic_updater.php:42
+msgid "Error on unzipping package"
+msgstr "Error on unzipping package"
+
+#: ../wpbakery/js_composer/composer/lib/wpb_automatic_updater.php:55
+msgid "Downloading package from envato market&#8230;"
+msgstr "Downloading package from envato market&#8230;"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:14
+msgid "Build query"
+msgstr "Build query"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:15
+msgid "Saved data"
+msgstr "Saved data"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:161
+msgid "Post Count"
+msgstr "Post Count"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:162
+msgid "Order By"
+msgstr "Order By"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:163
+msgid "Order"
+msgstr "Order"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:164
+#: ../wpbakery/js_composer/config/map.php:640
+#: ../wpbakery/js_composer/config/map.php:784
+msgid "Post types"
+msgstr "Post types"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:165
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:225
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+msgid "Author"
+msgstr "Author"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:167
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_wp_tagcloud.php:4
+msgid "Tags"
+msgstr "Tags"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:168
+#: ../wpbakery/js_composer/config/map.php:695
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:169
+msgid "Individual Posts/Pages"
+msgstr "Individual Posts/Pages"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:223
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+msgid "Date"
+msgstr "Date"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:228
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+msgid "Modified"
+msgstr "Modified"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:230
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+#: ../wpbakery/js_composer/config/map.php:1225
+#: ../wpbakery/js_composer/config/map.php:1851
+msgid "Random"
+msgstr "Random"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:231
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+msgid "Comment count"
+msgstr "Comment count"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:232
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+msgid "Menu order"
+msgstr "Menu order"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:240
+#: ../wpbakery/js_composer/config/map.php:735
+#: ../wpbakery/js_composer/config/map.php:847
+msgid "Ascending"
+msgstr "Ascending"
+
+#: ../wpbakery/js_composer/composer/lib/params/loop/loop.php:241
+#: ../wpbakery/js_composer/config/map.php:735
+#: ../wpbakery/js_composer/config/map.php:847
+msgid "Descending"
+msgstr "Descending"
+
+#: ../wpbakery/js_composer/composer/lib/params/options/options.php:5
+msgid "Manage options"
+msgstr "Manage options"
+
+#: ../wpbakery/js_composer/composer/lib/params/teaser_template/teaser_template.php:24
+#: ../wpbakery/js_composer/config/map.php:661
+msgid "Title + Thumbnail + Text"
+msgstr "Title + Thumbnail + Text"
+
+#: ../wpbakery/js_composer/composer/lib/params/teaser_template/teaser_template.php:25
+#: ../wpbakery/js_composer/config/map.php:661
+msgid "Thumbnail + Title + Text"
+msgstr "Thumbnail + Title + Text"
+
+#: ../wpbakery/js_composer/composer/lib/params/teaser_template/teaser_template.php:26
+#: ../wpbakery/js_composer/config/map.php:661
+msgid "Thumbnail + Text"
+msgstr "Thumbnail + Text"
+
+#: ../wpbakery/js_composer/composer/lib/params/teaser_template/teaser_template.php:27
+#: ../wpbakery/js_composer/config/map.php:661
+msgid "Thumbnail + Title"
+msgstr "Thumbnail + Title"
+
+#: ../wpbakery/js_composer/composer/lib/params/teaser_template/teaser_template.php:28
+#: ../wpbakery/js_composer/config/map.php:661
+msgid "Thumbnail only"
+msgstr "Thumbnail only"
+
+#: ../wpbakery/js_composer/composer/lib/params/teaser_template/teaser_template.php:29
+#: ../wpbakery/js_composer/config/map.php:661
+msgid "Title + Text"
+msgstr "Title + Text"
+
+#: ../wpbakery/js_composer/composer/lib/params/vc_link/vc_link.php:6
+msgid "Select URL"
+msgstr "Select URL"
+
+#: ../wpbakery/js_composer/composer/lib/params/vc_link/vc_link.php:6
+msgid "URL"
+msgstr "URL"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/column.php:19
+msgid "Append to this column"
+msgstr "Append to this column"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/column.php:20
+msgid "Prepend to this column"
+msgstr "Prepend to this column"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/column.php:23
+msgid "Edit this column"
+msgstr "Edit this column"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/column.php:144
+#: ../wpbakery/js_composer/config/map.php:61
+msgid "Column"
+msgstr "Column"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/column.php:156
+#: ../wpbakery/js_composer/config/map.php:36
+#: ../wpbakery/js_composer/config/map.php:53
+#: ../wpbakery/js_composer/config/map.php:68
+#: ../wpbakery/js_composer/config/map.php:95
+#: ../wpbakery/js_composer/config/map.php:138
+#: ../wpbakery/js_composer/config/map.php:173
+#: ../wpbakery/js_composer/config/map.php:301
+#: ../wpbakery/js_composer/config/map.php:359
+#: ../wpbakery/js_composer/config/map.php:432
+#: ../wpbakery/js_composer/config/map.php:473
+#: ../wpbakery/js_composer/config/map.php:521
+#: ../wpbakery/js_composer/config/map.php:580
+#: ../wpbakery/js_composer/config/map.php:740
+#: ../wpbakery/js_composer/config/map.php:852
+#: ../wpbakery/js_composer/config/map.php:882
+#: ../wpbakery/js_composer/config/map.php:978
+#: ../wpbakery/js_composer/config/map.php:1052
+#: ../wpbakery/js_composer/config/map.php:1083
+#: ../wpbakery/js_composer/config/map.php:1139
+#: ../wpbakery/js_composer/config/map.php:1230
+#: ../wpbakery/js_composer/config/map.php:1288
+#: ../wpbakery/js_composer/config/map.php:1343
+#: ../wpbakery/js_composer/config/map.php:1437
+#: ../wpbakery/js_composer/config/map.php:1484
+#: ../wpbakery/js_composer/config/map.php:1569
+#: ../wpbakery/js_composer/config/map.php:1591
+#: ../wpbakery/js_composer/config/map.php:1619
+#: ../wpbakery/js_composer/config/map.php:1641
+#: ../wpbakery/js_composer/config/map.php:1677
+#: ../wpbakery/js_composer/config/map.php:1713
+#: ../wpbakery/js_composer/config/map.php:1750
+#: ../wpbakery/js_composer/config/map.php:1783
+#: ../wpbakery/js_composer/config/map.php:1818
+#: ../wpbakery/js_composer/config/map.php:1866
+#: ../wpbakery/js_composer/config/map.php:1894
+#: ../wpbakery/js_composer/config/map.php:1923
+#: ../wpbakery/js_composer/config/map.php:1966
+msgid "Extra class name"
+msgstr "Extra class name"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/column.php:159
+#: ../wpbakery/js_composer/config/map.php:38
+#: ../wpbakery/js_composer/config/map.php:55
+#: ../wpbakery/js_composer/config/map.php:70
+#: ../wpbakery/js_composer/config/map.php:97
+#: ../wpbakery/js_composer/config/map.php:140
+#: ../wpbakery/js_composer/config/map.php:175
+#: ../wpbakery/js_composer/config/map.php:303
+#: ../wpbakery/js_composer/config/map.php:361
+#: ../wpbakery/js_composer/config/map.php:434
+#: ../wpbakery/js_composer/config/map.php:475
+#: ../wpbakery/js_composer/config/map.php:523
+#: ../wpbakery/js_composer/config/map.php:582
+#: ../wpbakery/js_composer/config/map.php:742
+#: ../wpbakery/js_composer/config/map.php:854
+#: ../wpbakery/js_composer/config/map.php:884
+#: ../wpbakery/js_composer/config/map.php:980
+#: ../wpbakery/js_composer/config/map.php:1054
+#: ../wpbakery/js_composer/config/map.php:1085
+#: ../wpbakery/js_composer/config/map.php:1141
+#: ../wpbakery/js_composer/config/map.php:1232
+#: ../wpbakery/js_composer/config/map.php:1290
+#: ../wpbakery/js_composer/config/map.php:1345
+#: ../wpbakery/js_composer/config/map.php:1439
+#: ../wpbakery/js_composer/config/map.php:1486
+#: ../wpbakery/js_composer/config/map.php:1571
+#: ../wpbakery/js_composer/config/map.php:1593
+#: ../wpbakery/js_composer/config/map.php:1621
+#: ../wpbakery/js_composer/config/map.php:1643
+#: ../wpbakery/js_composer/config/map.php:1679
+#: ../wpbakery/js_composer/config/map.php:1715
+#: ../wpbakery/js_composer/config/map.php:1752
+#: ../wpbakery/js_composer/config/map.php:1785
+#: ../wpbakery/js_composer/config/map.php:1820
+#: ../wpbakery/js_composer/config/map.php:1868
+#: ../wpbakery/js_composer/config/map.php:1896
+#: ../wpbakery/js_composer/config/map.php:1925
+#: ../wpbakery/js_composer/config/map.php:1968
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:94
+msgid "Hello World"
+msgstr "Hello World"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:102
+msgid "Foo attribute"
+msgstr "Foo attribute"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:104
+msgid "I'm foo attribute"
+msgstr "I'm foo attribute"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:105
+msgid "Enter foo value."
+msgstr "Enter foo value."
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:111
+#: ../wpbakery/js_composer/config/map.php:88
+#: ../wpbakery/js_composer/config/map.php:997
+#: ../wpbakery/js_composer/config/map.php:1758
+#: ../wpbakery/js_composer/config/map.php:1772
+msgid "Text"
+msgstr "Text"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:113
+msgid "I'm hello world"
+msgstr "I'm hello world"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:114
+#: ../wpbakery/js_composer/config/map.php:1000
+msgid "Enter your content."
+msgstr "Enter your content."
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:118
+msgid "Drop down example"
+msgstr "Drop down example"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/example.php:121
+msgid "One, two or three?"
+msgstr "One, two or three?"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/row.php:32
+msgid "Custom layout"
+msgstr "Custom layout"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/row.php:33
+msgid "Drag row to reorder"
+msgstr "Drag row to reorder"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/row.php:34
+msgid "Delete this row"
+msgstr "Delete this row"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/row.php:35
+msgid "Edit this row"
+msgstr "Edit this row"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/row.php:36
+msgid "Clone this row"
+msgstr "Clone this row"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/teaser_grid.php:14
+#, php-format
+msgid "View all posts filed under %s"
+msgstr "View all posts filed under %s"
+
+#: ../wpbakery/js_composer/composer/lib/shortcodes/teaser_grid.php:31
+#, php-format
+msgid "Feed for all posts filed under %s"
+msgstr "Feed for all posts filed under %s"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:21
+msgid "General Settings"
+msgstr "General Settings"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:24
+msgid "Design Options"
+msgstr "Design Options"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:25
+msgid "Element Class Names"
+msgstr "Element Class Names"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:26
+msgid "Custom CSS"
+msgstr "Custom CSS"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:27
+msgid "Updater"
+msgstr "Updater"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:41
+msgid "Main accent color"
+msgstr "Main accent color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:42
+msgid "Hover color"
+msgstr "Hover color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:43
+msgid "Call to action background color"
+msgstr "Call to action background color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:45
+msgid "Google maps background color"
+msgstr "Google maps background color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:46
+msgid "Post slider caption background color"
+msgstr "Post slider caption background color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:47
+msgid "Progress bar background color"
+msgstr "Progress bar background color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:48
+msgid "Separator border color"
+msgstr "Separator border color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:49
+msgid "Tabs navigation background color"
+msgstr "Tabs navigation background color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:50
+msgid "Active tab background color"
+msgstr "Active tab background color"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:71
+msgid "Visual Composer Settings"
+msgstr "Visual Composer Settings"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:95
+#: ../wpbakery/js_composer/composer/settings/settings.php:97
+msgid "Content types"
+msgstr "Content types"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:99
+msgid "User groups access rules"
+msgstr "User groups access rules"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:100
+msgid "Disable responsive content elements"
+msgstr "Disable responsive content elements"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:107
+msgid "Use custom design options"
+msgstr "Use custom design options"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:120
+msgid "Elements bottom margin"
+msgstr "Elements bottom margin"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:124
+msgid "Grid gutter width"
+msgstr "Grid gutter width"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:128
+msgid "Mobile screen width"
+msgstr "Mobile screen width"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:156
+msgid "Paste your CSS code"
+msgstr "Paste your CSS code"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:162
+msgid "Envato Username"
+msgstr "Envato Username"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:163
+msgid "Secret API Key"
+msgstr "Secret API Key"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:164
+msgid "Item Purchase code"
+msgstr "Item Purchase code"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:243
+#: ../wpbakery/js_composer/composer/settings/settings.php:244
+msgid "Are you sure you want to reset to defaults?"
+msgstr "Are you sure you want to reset to defaults?"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:257
+msgid "Show Visual Composer & default editor"
+msgstr "Show Visual Composer & default editor"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:258
+msgid "Show only Visual Composer"
+msgstr "Show only Visual Composer"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:259
+msgid "Don't allow to use Visual Composer"
+msgstr "Don't allow to use Visual Composer"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:278
+msgid "Visual Composer access"
+msgstr "Visual Composer access"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:286
+msgid "Enabled shortcodes"
+msgstr "Enabled shortcodes"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:300
+msgid "Select All"
+msgstr "Select All"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:300
+msgid "Select none"
+msgstr "Select none"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:328
+#: ../wpbakery/js_composer/composer/settings/settings.php:349
+msgid ""
+"Select for which content types Visual Composer should be available during "
+"post creation/editing."
+msgstr ""
+"Select for which content types Visual Composer should be available during "
+"post creation/editing."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:355
+msgid ""
+"If you want to add some custom CSS code to the plugin and don't want to "
+"modify any files, then it's a good place to enter your code at this field."
+msgstr ""
+"If you want to add some custom CSS code to the plugin and don't want to "
+"modify any files, then it's a good place to enter your code at this field."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:365
+#: ../wpbakery/js_composer/config/map.php:391
+#: ../wpbakery/js_composer/config/map.php:461
+#: ../wpbakery/js_composer/config/map.php:516
+#: ../wpbakery/js_composer/config/map.php:779
+msgid "Disable"
+msgstr "Disable"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:367
+msgid ""
+"Check this checkbox to prevent content elements from \"stacking\" one on top "
+"other (on small media screens, eg. mobile)."
+msgstr ""
+"Check this checkbox to prevent content elements from \"stacking\" one on top "
+"other (on small media screens, eg. mobile)."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:376
+msgid ""
+"To change class name for the row element, enter it here. By default vc_row "
+"is used."
+msgstr ""
+"To change class name for the row element, enter it here. By default vc_row "
+"is used."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:393
+msgid ""
+"To change class names for the columns elements, enter them here. By default "
+"vc_spanX are used, where X number from 1 to 12."
+msgstr ""
+"To change class names for the columns elements, enter them here. By default "
+"vc_spanX are used, where X number from 1 to 12."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:404
+msgid "Enable"
+msgstr "Enable"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:406
+msgid ""
+"Enable the use of custom design options for your site. When checked, custom "
+"css file will be used."
+msgstr ""
+"Enable the use of custom design options for your site. When checked, custom "
+"css file will be used."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:418
+msgid ""
+"To change default vertical spacing between content elements, enter new value "
+"here. Example: 20px"
+msgstr ""
+"To change default vertical spacing between content elements, enter new value "
+"here. Example: 20px"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:423
+msgid ""
+"To change default horizontal spacing between columns, enter new value in "
+"percents here."
+msgstr ""
+"To change default horizontal spacing between columns, enter new value in "
+"percents here."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:429
+msgid ""
+"By default content elements \"stack\" one on top other when screen size is "
+"smaller then 480px. Here you can change that value if needed."
+msgstr ""
+"By default content elements \"stack\" one on top other when screen size is "
+"smaller then 480px. Here you can change that value if needed."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:435
+msgid "Your Envato username."
+msgstr "Your Envato username."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:441
+msgid ""
+"Your Item Purchase Code contained within the License Certificate which is "
+"accessible in your Envato account. o view your License Certificate: Login to "
+"your Envato account and visit Downloads section, then click \"Download\" "
+"button to reveal \"License Certificate\" link."
+msgstr ""
+"Your Item Purchase Code contained within the License Certificate which is "
+"accessible in your Envato account. o view your License Certificate: Login to "
+"your Envato account and visit Downloads section, then click \"Download\" "
+"button to reveal \"License Certificate\" link."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:447
+msgid ""
+"You can find API key by visiting your Envato Account page, then clicking the "
+"My Settings tab. At the bottom of the page you'll find your account's API "
+"key."
+msgstr ""
+"You can find API key by visiting your Envato Account page, then clicking the "
+"My Settings tab. At the bottom of the page you'll find your account's API "
+"key."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:461
+msgid ""
+"Here you can tweak default Visual Composer content elements visual "
+"appearance. By default Visual Composer is using neutral light-grey theme. "
+"Changing \"Main accent color\" will affect all content elements if no "
+"specific \"content block\" related color is set."
+msgstr ""
+"Here you can tweak default Visual Composer content elements visual "
+"appearance. By default Visual Composer is using neutral light-grey theme. "
+"Changing \"Main accent color\" will affect all content elements if no "
+"specific \"content block\" related color is set."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:467
+msgid ""
+"Add your Envato credentials, to enable auto updater. With correct login "
+"credentials Visual Composer will be updated automatically (same as other "
+"plugins do)."
+msgstr ""
+"Add your Envato credentials, to enable auto updater. With correct login "
+"credentials Visual Composer will be updated automatically (same as other "
+"plugins do)."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:550
+msgid "Invalid Margin value."
+msgstr "Invalid Margin value."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:555
+msgid "Invalid Gutter value."
+msgstr "Invalid Gutter value."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:561
+msgid "Invalid \"Responsive max\" value."
+msgstr "Invalid \"Responsive max\" value."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:601
+#, php-format
+msgid ""
+"Visual Composer: Your css class names settings are deprecated. <a href=\"%s"
+"\">Click here to resolve</a>."
+msgstr ""
+"Visual Composer: Your css class names settings are deprecated. <a href=\"%s"
+"\">Click here to resolve</a>."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:637
+msgid "WPBakery Visual Composer Settings"
+msgstr "WPBakery Visual Composer Settings"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:651
+msgid ""
+"<strong>Deprecated:</strong> To override class names that are applied to "
+"Visual Composer content elements you should use WordPress "
+"add_filter('vc_shortcodes_css_class') function. <a "
+"class='vc_show_example'>See Example</a>."
+msgstr ""
+"<strong>Deprecated:</strong> To override class names that are applied to "
+"Visual Composer content elements you should use WordPress "
+"add_filter('vc_shortcodes_css_class') function. <a "
+"class='vc_show_example'>See Example</a>."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:659
+msgid ""
+"You have used element class names settings to replace row and column css "
+"classes."
+msgstr ""
+"You have used element class names settings to replace row and column css "
+"classes."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:660
+msgid ""
+"Below is code snippet which you should add to your functions.php file in "
+"your theme, to replace row and column classes with custom classes saved by "
+"you earlier."
+msgstr ""
+"Below is code snippet which you should add to your functions.php file in "
+"your theme, to replace row and column classes with custom classes saved by "
+"you earlier."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:734
+#: ../wpbakery/js_composer/composer/settings/settings.php:743
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:734
+msgid "Remove all"
+msgstr "Remove all"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:746
+msgid "Restore to defaults"
+msgstr "Restore to defaults"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:862
+msgid ""
+"Something went wrong: js_composer_front_custom.css could not be created."
+msgstr ""
+"Something went wrong: js_composer_front_custom.css could not be created."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:864
+msgid "js_composer_front_custom.css could not be created. Connection error."
+msgstr "js_composer_front_custom.css could not be created. Connection error."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:866
+#, php-format
+msgid ""
+"js_composer_front_custom.css could not be created. Cannot write custom css "
+"to \"%s\"."
+msgstr ""
+"js_composer_front_custom.css could not be created. Cannot write custom css "
+"to \"%s\"."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:868
+msgid "js_composer_front_custom.css could not be created. Problem with access."
+msgstr ""
+"js_composer_front_custom.css could not be created. Problem with access."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:898
+msgid "Something went wrong: custom.css could not be created."
+msgstr "Something went wrong: custom.css could not be created."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:900
+msgid "custom.css could not be created. Connection error."
+msgstr "custom.css could not be created. Connection error."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:902
+msgid "custom.css could not be created. Cannot write custom css to \""
+msgstr "custom.css could not be created. Cannot write custom css to \""
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:904
+msgid "custom.css could not be created. Problem with access."
+msgstr "custom.css could not be created. Problem with access."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:935
+msgid "You do not have sufficient permissions to update plugins for this site."
+msgstr ""
+"You do not have sufficient permissions to update plugins for this site."
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:936
+msgid "Update Visual Composer Plugin"
+msgstr "Update Visual Composer Plugin"
+
+#: ../wpbakery/js_composer/composer/settings/settings.php:949
+#: ../wpbakery/js_composer/composer/settings/settings.php:955
+msgid "This is required to enable file writing for js_composer"
+msgstr "This is required to enable file writing for js_composer"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_accordion_tab.php:12
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_tab.php:9
+msgid "Empty section. Edit page to add content here."
+msgstr "Empty section. Edit page to add content here."
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_button.php:10
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_cta_button.php:9
+#: ../wpbakery/js_composer/config/map.php:935
+#: ../wpbakery/js_composer/config/map.php:939
+#: ../wpbakery/js_composer/config/map.php:1004
+#: ../wpbakery/js_composer/config/map.php:1006
+msgid "Text on the button"
+msgstr "Text on the button"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_flickr.php:19
+msgid "View stream on flickr"
+msgstr "View stream on flickr"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_posts_grid.php:101
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_posts_slider.php:191
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_teaser_grid.php:334
+msgid "Nothing found."
+msgstr "Nothing found."
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_single_image.php:18
+msgid "This is image placeholder, edit your page to replace it."
+msgstr "This is image placeholder, edit your page to replace it."
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_tabs.php:53
+msgid "Previous slide"
+msgstr "Previous slide"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_tabs.php:53
+msgid "Next slide"
+msgstr "Next slide"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_teaser_grid.php:183
+msgid "Read more"
+msgstr "Read more"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_toggle.php:4
+msgid "Click to toggle"
+msgstr "Click to toggle"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_tweetmeme.php:9
+msgid "Tweet"
+msgstr "Tweet"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_twitter.php:19
+msgid "Follow us on twitter"
+msgstr "Follow us on twitter"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_wp_archives.php:4
+#: ../wpbakery/js_composer/config/map.php:1903
+msgid "Archives"
+msgstr "Archives"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_wp_meta.php:4
+#: ../wpbakery/js_composer/config/map.php:1577
+msgid "Meta"
+msgstr "Meta"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_wp_pages.php:4
+#: ../wpbakery/js_composer/config/map.php:1649
+msgid "Pages"
+msgstr "Pages"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_wp_posts.php:4
+#: ../wpbakery/js_composer/config/map.php:1792
+msgid "Recent Posts"
+msgstr "Recent Posts"
+
+#: ../wpbakery/js_composer/composer/shortcodes_templates/vc_wp_recentcomments.php:4
+#: ../wpbakery/js_composer/config/map.php:1599
+msgid "Recent Comments"
+msgstr "Recent Comments"
+
+#: ../wpbakery/js_composer/config/map.php:10
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Grey"
+msgstr "Grey"
+
+#: ../wpbakery/js_composer/config/map.php:10
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Turquoise"
+msgstr "Turquoise"
+
+#: ../wpbakery/js_composer/config/map.php:13
+msgid "Regular size"
+msgstr "Regular size"
+
+#: ../wpbakery/js_composer/config/map.php:15
+msgid "Same window"
+msgstr "Same window"
+
+#: ../wpbakery/js_composer/config/map.php:15
+msgid "New window"
+msgstr "New window"
+
+#: ../wpbakery/js_composer/config/map.php:19
+msgid "CSS Animation"
+msgstr "CSS Animation"
+
+#: ../wpbakery/js_composer/config/map.php:22
+msgid "Top to bottom"
+msgstr "Top to bottom"
+
+#: ../wpbakery/js_composer/config/map.php:22
+msgid "Bottom to top"
+msgstr "Bottom to top"
+
+#: ../wpbakery/js_composer/config/map.php:22
+msgid "Left to right"
+msgstr "Left to right"
+
+#: ../wpbakery/js_composer/config/map.php:22
+msgid "Right to left"
+msgstr "Right to left"
+
+#: ../wpbakery/js_composer/config/map.php:22
+msgid "Appear from center"
+msgstr "Appear from center"
+
+#: ../wpbakery/js_composer/config/map.php:23
+msgid ""
+"Select animation type if you want this element to be animated when it enters "
+"into the browsers viewport. Note: Works only in modern browsers."
+msgstr ""
+"Select animation type if you want this element to be animated when it enters "
+"into the browsers viewport. Note: Works only in modern browsers."
+
+#: ../wpbakery/js_composer/config/map.php:27
+#: ../wpbakery/js_composer/config/map.php:44
+msgid "Row"
+msgstr "Row"
+
+#: ../wpbakery/js_composer/config/map.php:79
+msgid "Text Block"
+msgstr "Text Block"
+
+#: ../wpbakery/js_composer/config/map.php:90
+msgid "<p>I am text block. Click edit button to change this text.</p>"
+msgstr "<p>I am text block. Click edit button to change this text.</p>"
+
+#: ../wpbakery/js_composer/config/map.php:105
+msgid "Separator"
+msgstr "Separator"
+
+#: ../wpbakery/js_composer/config/map.php:116
+msgid "Separator with Text"
+msgstr "Separator with Text"
+
+#: ../wpbakery/js_composer/config/map.php:127
+msgid "Separator title."
+msgstr "Separator title."
+
+#: ../wpbakery/js_composer/config/map.php:131
+msgid "Title position"
+msgstr "Title position"
+
+#: ../wpbakery/js_composer/config/map.php:133
+msgid "Align center"
+msgstr "Align center"
+
+#: ../wpbakery/js_composer/config/map.php:133
+#: ../wpbakery/js_composer/config/map.php:1047
+msgid "Align left"
+msgstr "Align left"
+
+#: ../wpbakery/js_composer/config/map.php:133
+#: ../wpbakery/js_composer/config/map.php:1047
+msgid "Align right"
+msgstr "Align right"
+
+#: ../wpbakery/js_composer/config/map.php:134
+msgid "Select title location."
+msgstr "Select title location."
+
+#: ../wpbakery/js_composer/config/map.php:149
+msgid "Message Box"
+msgstr "Message Box"
+
+#: ../wpbakery/js_composer/config/map.php:157
+msgid "Message box type"
+msgstr "Message box type"
+
+#: ../wpbakery/js_composer/config/map.php:159
+msgid "Informational"
+msgstr "Informational"
+
+#: ../wpbakery/js_composer/config/map.php:159
+msgid "Warning"
+msgstr "Warning"
+
+#: ../wpbakery/js_composer/config/map.php:159
+msgid "Success"
+msgstr "Success"
+
+#: ../wpbakery/js_composer/config/map.php:159
+msgid "Error"
+msgstr "Error"
+
+#: ../wpbakery/js_composer/config/map.php:160
+msgid "Select message type."
+msgstr "Select message type."
+
+#: ../wpbakery/js_composer/config/map.php:166
+msgid "Message text"
+msgstr "Message text"
+
+#: ../wpbakery/js_composer/config/map.php:168
+msgid "<p>I am message box. Click edit button to change this text.</p>"
+msgstr "<p>I am message box. Click edit button to change this text.</p>"
+
+#: ../wpbakery/js_composer/config/map.php:184
+msgid "Facebook Like"
+msgstr "Facebook Like"
+
+#: ../wpbakery/js_composer/config/map.php:187
+#: ../wpbakery/js_composer/config/map.php:206
+#: ../wpbakery/js_composer/config/map.php:225
+#: ../wpbakery/js_composer/config/map.php:252
+msgid "Social"
+msgstr "Social"
+
+#: ../wpbakery/js_composer/config/map.php:191
+#: ../wpbakery/js_composer/config/map.php:210
+msgid "Button type"
+msgstr "Button type"
+
+#: ../wpbakery/js_composer/config/map.php:194
+#: ../wpbakery/js_composer/config/map.php:232
+msgid "Standard"
+msgstr "Standard"
+
+#: ../wpbakery/js_composer/config/map.php:194
+msgid "Button count"
+msgstr "Button count"
+
+#: ../wpbakery/js_composer/config/map.php:194
+msgid "Box count"
+msgstr "Box count"
+
+#: ../wpbakery/js_composer/config/map.php:195
+#: ../wpbakery/js_composer/config/map.php:214
+msgid "Select button type."
+msgstr "Select button type."
+
+#: ../wpbakery/js_composer/config/map.php:203
+msgid "Tweetmeme Button"
+msgstr "Tweetmeme Button"
+
+#: ../wpbakery/js_composer/config/map.php:213
+#: ../wpbakery/js_composer/config/map.php:259
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: ../wpbakery/js_composer/config/map.php:213
+#: ../wpbakery/js_composer/config/map.php:259
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../wpbakery/js_composer/config/map.php:213
+#: ../wpbakery/js_composer/config/map.php:240
+#: ../wpbakery/js_composer/config/map.php:892
+msgid "None"
+msgstr "None"
+
+#: ../wpbakery/js_composer/config/map.php:222
+msgid "Google+ Button"
+msgstr "Google+ Button"
+
+#: ../wpbakery/js_composer/config/map.php:229
+msgid "Button size"
+msgstr "Button size"
+
+#: ../wpbakery/js_composer/config/map.php:232
+msgid "Medium"
+msgstr "Medium"
+
+#: ../wpbakery/js_composer/config/map.php:232
+msgid "Tall"
+msgstr "Tall"
+
+#: ../wpbakery/js_composer/config/map.php:233
+msgid "Select button size."
+msgstr "Select button size."
+
+#: ../wpbakery/js_composer/config/map.php:237
+msgid "Annotation"
+msgstr "Annotation"
+
+#: ../wpbakery/js_composer/config/map.php:240
+msgid "Inline"
+msgstr "Inline"
+
+#: ../wpbakery/js_composer/config/map.php:240
+msgid "Bubble"
+msgstr "Bubble"
+
+#: ../wpbakery/js_composer/config/map.php:241
+msgid "Select annotation type."
+msgstr "Select annotation type."
+
+#: ../wpbakery/js_composer/config/map.php:249
+msgid "Pinterest Button"
+msgstr "Pinterest Button"
+
+#: ../wpbakery/js_composer/config/map.php:256
+msgid "Button layout"
+msgstr "Button layout"
+
+#: ../wpbakery/js_composer/config/map.php:259
+msgid "No count"
+msgstr "No count"
+
+#: ../wpbakery/js_composer/config/map.php:260
+msgid "Select button layout."
+msgstr "Select button layout."
+
+#: ../wpbakery/js_composer/config/map.php:268
+msgid "FAQ"
+msgstr "FAQ"
+
+#: ../wpbakery/js_composer/config/map.php:277
+#: ../wpbakery/js_composer/config/map.php:279
+msgid "Toggle title"
+msgstr "Toggle title"
+
+#: ../wpbakery/js_composer/config/map.php:280
+msgid "Toggle block title."
+msgstr "Toggle block title."
+
+#: ../wpbakery/js_composer/config/map.php:286
+msgid "Toggle content"
+msgstr "Toggle content"
+
+#: ../wpbakery/js_composer/config/map.php:288
+msgid "<p>Toggle content goes here, click edit button to change this text.</p>"
+msgstr ""
+"<p>Toggle content goes here, click edit button to change this text.</p>"
+
+#: ../wpbakery/js_composer/config/map.php:289
+msgid "Toggle block content."
+msgstr "Toggle block content."
+
+#: ../wpbakery/js_composer/config/map.php:293
+msgid "Default state"
+msgstr "Default state"
+
+#: ../wpbakery/js_composer/config/map.php:295
+msgid "Closed"
+msgstr "Closed"
+
+#: ../wpbakery/js_composer/config/map.php:295
+msgid "Open"
+msgstr "Open"
+
+#: ../wpbakery/js_composer/config/map.php:296
+msgid "Select \"Open\" if you want toggle to be open by default."
+msgstr "Select \"Open\" if you want toggle to be open by default."
+
+#: ../wpbakery/js_composer/config/map.php:311
+msgid "Single Image"
+msgstr "Single Image"
+
+#: ../wpbakery/js_composer/config/map.php:327
+msgid "Select image from media library."
+msgstr "Select image from media library."
+
+#: ../wpbakery/js_composer/config/map.php:332
+#: ../wpbakery/js_composer/config/map.php:404
+msgid "Image size"
+msgstr "Image size"
+
+#: ../wpbakery/js_composer/config/map.php:334
+#: ../wpbakery/js_composer/config/map.php:406
+msgid ""
+"Enter image size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height). Leave empty to use 'thumbnail' size."
+msgstr ""
+"Enter image size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height). Leave empty to use 'thumbnail' size."
+
+#: ../wpbakery/js_composer/config/map.php:338
+msgid "Link to large image?"
+msgstr "Link to large image?"
+
+#: ../wpbakery/js_composer/config/map.php:340
+msgid "If selected, image will be linked to the bigger image."
+msgstr "If selected, image will be linked to the bigger image."
+
+#: ../wpbakery/js_composer/config/map.php:341
+#: ../wpbakery/js_composer/config/map.php:801
+#: ../wpbakery/js_composer/config/map.php:1135
+msgid "Yes, please"
+msgstr "Yes, please"
+
+#: ../wpbakery/js_composer/config/map.php:345
+msgid "Image link"
+msgstr "Image link"
+
+#: ../wpbakery/js_composer/config/map.php:347
+msgid "Enter url if you want this image to have link."
+msgstr "Enter url if you want this image to have link."
+
+#: ../wpbakery/js_composer/config/map.php:352
+msgid "Link Target"
+msgstr "Link Target"
+
+#: ../wpbakery/js_composer/config/map.php:369
+msgid "Image Gallery"
+msgstr "Image Gallery"
+
+#: ../wpbakery/js_composer/config/map.php:382
+msgid "Gallery type"
+msgstr "Gallery type"
+
+#: ../wpbakery/js_composer/config/map.php:384
+#: ../wpbakery/js_composer/config/map.php:766
+msgid "Flex slider fade"
+msgstr "Flex slider fade"
+
+#: ../wpbakery/js_composer/config/map.php:384
+#: ../wpbakery/js_composer/config/map.php:766
+msgid "Flex slider slide"
+msgstr "Flex slider slide"
+
+#: ../wpbakery/js_composer/config/map.php:384
+#: ../wpbakery/js_composer/config/map.php:766
+msgid "Nivo slider"
+msgstr "Nivo slider"
+
+#: ../wpbakery/js_composer/config/map.php:384
+msgid "Image grid"
+msgstr "Image grid"
+
+#: ../wpbakery/js_composer/config/map.php:385
+msgid "Select gallery type."
+msgstr "Select gallery type."
+
+#: ../wpbakery/js_composer/config/map.php:389
+#: ../wpbakery/js_composer/config/map.php:514
+#: ../wpbakery/js_composer/config/map.php:777
+msgid "Auto rotate slides"
+msgstr "Auto rotate slides"
+
+#: ../wpbakery/js_composer/config/map.php:392
+#: ../wpbakery/js_composer/config/map.php:517
+#: ../wpbakery/js_composer/config/map.php:780
+msgid "Auto rotate slides each X seconds."
+msgstr "Auto rotate slides each X seconds."
+
+#: ../wpbakery/js_composer/config/map.php:397
+msgid "Images"
+msgstr "Images"
+
+#: ../wpbakery/js_composer/config/map.php:400
+msgid "Select images from media library."
+msgstr "Select images from media library."
+
+#: ../wpbakery/js_composer/config/map.php:410
+msgid "On click"
+msgstr "On click"
+
+#: ../wpbakery/js_composer/config/map.php:412
+msgid "Open prettyPhoto"
+msgstr "Open prettyPhoto"
+
+#: ../wpbakery/js_composer/config/map.php:412
+msgid "Do nothing"
+msgstr "Do nothing"
+
+#: ../wpbakery/js_composer/config/map.php:412
+#: ../wpbakery/js_composer/config/map.php:808
+msgid "Open custom link"
+msgstr "Open custom link"
+
+#: ../wpbakery/js_composer/config/map.php:413
+msgid "What to do when slide is clicked?"
+msgstr "What to do when slide is clicked?"
+
+#: ../wpbakery/js_composer/config/map.php:417
+#: ../wpbakery/js_composer/config/map.php:813
+msgid "Custom links"
+msgstr "Custom links"
+
+#: ../wpbakery/js_composer/config/map.php:419
+#: ../wpbakery/js_composer/config/map.php:816
+msgid "Enter links for each slide here. Divide links with linebreaks (Enter)."
+msgstr "Enter links for each slide here. Divide links with linebreaks (Enter)."
+
+#: ../wpbakery/js_composer/config/map.php:424
+msgid "Custom link target"
+msgstr "Custom link target"
+
+#: ../wpbakery/js_composer/config/map.php:426
+msgid "Select where to open  custom links."
+msgstr "Select where to open  custom links."
+
+#: ../wpbakery/js_composer/config/map.php:444
+msgid "Tabs"
+msgstr "Tabs"
+
+#: ../wpbakery/js_composer/config/map.php:459
+msgid "Auto rotate tabs"
+msgstr "Auto rotate tabs"
+
+#: ../wpbakery/js_composer/config/map.php:462
+msgid "Auto rotate tabs each X seconds."
+msgstr "Auto rotate tabs each X seconds."
+
+#: ../wpbakery/js_composer/config/map.php:466
+msgid "Tabs Type"
+msgstr "Tabs Type"
+
+#: ../wpbakery/js_composer/config/map.php:468
+msgid "side tabs"
+msgstr "side tabs"
+
+#: ../wpbakery/js_composer/config/map.php:468
+msgid "normal"
+msgstr "normal"
+
+#: ../wpbakery/js_composer/config/map.php:469
+msgid "Choose From Normal Or Side Tabs"
+msgstr "Choose From Normal Or Side Tabs"
+
+#: ../wpbakery/js_composer/config/map.php:486
+msgid "Tab 1"
+msgstr "Tab 1"
+
+#: ../wpbakery/js_composer/config/map.php:487
+msgid "Tab 2"
+msgstr "Tab 2"
+
+#: ../wpbakery/js_composer/config/map.php:497
+msgid "Tour Section"
+msgstr "Tour Section"
+
+#: ../wpbakery/js_composer/config/map.php:534
+msgid "Slide 1"
+msgstr "Slide 1"
+
+#: ../wpbakery/js_composer/config/map.php:535
+msgid "Slide 2"
+msgstr "Slide 2"
+
+#: ../wpbakery/js_composer/config/map.php:551
+msgid "Tab title."
+msgstr "Tab title."
+
+#: ../wpbakery/js_composer/config/map.php:555
+msgid "Tab ID"
+msgstr "Tab ID"
+
+#: ../wpbakery/js_composer/config/map.php:565
+msgid "Accordion"
+msgstr "Accordion"
+
+#: ../wpbakery/js_composer/config/map.php:590
+msgid "Add accordion section"
+msgstr "Add accordion section"
+
+#: ../wpbakery/js_composer/config/map.php:594
+msgid "Section 1"
+msgstr "Section 1"
+
+#: ../wpbakery/js_composer/config/map.php:595
+msgid "Section 2"
+msgstr "Section 2"
+
+#: ../wpbakery/js_composer/config/map.php:600
+msgid "Accordion Section"
+msgstr "Accordion Section"
+
+#: ../wpbakery/js_composer/config/map.php:610
+msgid "Accordion section title."
+msgstr "Accordion section title."
+
+#: ../wpbakery/js_composer/config/map.php:619
+msgid "Teaser (posts) Grid"
+msgstr "Teaser (posts) Grid"
+
+#: ../wpbakery/js_composer/config/map.php:632
+msgid "Columns count"
+msgstr "Columns count"
+
+#: ../wpbakery/js_composer/config/map.php:636
+msgid "Select columns count."
+msgstr "Select columns count."
+
+#: ../wpbakery/js_composer/config/map.php:642
+#: ../wpbakery/js_composer/config/map.php:786
+msgid "Select post types to populate posts from."
+msgstr "Select post types to populate posts from."
+
+#: ../wpbakery/js_composer/config/map.php:646
+msgid "Teasers count"
+msgstr "Teasers count"
+
+#: ../wpbakery/js_composer/config/map.php:648
+msgid "How many teasers to show? Enter number or word \"All\"."
+msgstr "How many teasers to show? Enter number or word \"All\"."
+
+#: ../wpbakery/js_composer/config/map.php:654
+#: ../wpbakery/js_composer/config/map.php:792
+msgid "Teaser (Excerpt)"
+msgstr "Teaser (Excerpt)"
+
+#: ../wpbakery/js_composer/config/map.php:654
+msgid "Full Content"
+msgstr "Full Content"
+
+#: ../wpbakery/js_composer/config/map.php:655
+#: ../wpbakery/js_composer/config/map.php:683
+#: ../wpbakery/js_composer/config/map.php:691
+msgid "Teaser layout template."
+msgstr "Teaser layout template."
+
+#: ../wpbakery/js_composer/config/map.php:659
+msgid "Layout"
+msgstr "Layout"
+
+#: ../wpbakery/js_composer/config/map.php:662
+msgid "Teaser layout."
+msgstr "Teaser layout."
+
+#: ../wpbakery/js_composer/config/map.php:666
+#: ../wpbakery/js_composer/config/map.php:806
+msgid "Link"
+msgstr "Link"
+
+#: ../wpbakery/js_composer/config/map.php:668
+#: ../wpbakery/js_composer/config/map.php:808
+msgid "Link to post"
+msgstr "Link to post"
+
+#: ../wpbakery/js_composer/config/map.php:668
+#: ../wpbakery/js_composer/config/map.php:808
+msgid "Link to bigger image"
+msgstr "Link to bigger image"
+
+#: ../wpbakery/js_composer/config/map.php:668
+msgid "Thumbnail to bigger image, title to post"
+msgstr "Thumbnail to bigger image, title to post"
+
+#: ../wpbakery/js_composer/config/map.php:668
+#: ../wpbakery/js_composer/config/map.php:808
+msgid "No link"
+msgstr "No link"
+
+#: ../wpbakery/js_composer/config/map.php:669
+#: ../wpbakery/js_composer/config/map.php:809
+msgid "Link type."
+msgstr "Link type."
+
+#: ../wpbakery/js_composer/config/map.php:673
+msgid "Link target"
+msgstr "Link target"
+
+#: ../wpbakery/js_composer/config/map.php:680
+msgid "Teaser grid layout"
+msgstr "Teaser grid layout"
+
+#: ../wpbakery/js_composer/config/map.php:682
+msgid "Grid"
+msgstr "Grid"
+
+#: ../wpbakery/js_composer/config/map.php:682
+msgid "Grid with filter"
+msgstr "Grid with filter"
+
+#: ../wpbakery/js_composer/config/map.php:682
+msgid "Carousel"
+msgstr "Carousel"
+
+#: ../wpbakery/js_composer/config/map.php:687
+msgid "Layout mode"
+msgstr "Layout mode"
+
+#: ../wpbakery/js_composer/config/map.php:689
+msgid "Fit rows"
+msgstr "Fit rows"
+
+#: ../wpbakery/js_composer/config/map.php:689
+msgid "Masonry"
+msgstr "Masonry"
+
+#: ../wpbakery/js_composer/config/map.php:698
+msgid "Select taxonomies from."
+msgstr "Select taxonomies from."
+
+#: ../wpbakery/js_composer/config/map.php:702
+#: ../wpbakery/js_composer/config/map.php:820
+msgid "Thumbnail size"
+msgstr "Thumbnail size"
+
+#: ../wpbakery/js_composer/config/map.php:704
+#: ../wpbakery/js_composer/config/map.php:822
+msgid ""
+"Enter thumbnail size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height)."
+msgstr ""
+"Enter thumbnail size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height)."
+
+#: ../wpbakery/js_composer/config/map.php:708
+#: ../wpbakery/js_composer/config/map.php:826
+msgid "Post/Page IDs"
+msgstr "Post/Page IDs"
+
+#: ../wpbakery/js_composer/config/map.php:710
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to retrieve only "
+"them. Use this in conjunction with \"Post types\" field."
+msgstr ""
+"Fill this field with page/posts IDs separated by commas (,) to retrieve only "
+"them. Use this in conjunction with \"Post types\" field."
+
+#: ../wpbakery/js_composer/config/map.php:714
+msgid "Exclude Post/Page IDs"
+msgstr "Exclude Post/Page IDs"
+
+#: ../wpbakery/js_composer/config/map.php:716
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to exclude them "
+"from query."
+msgstr ""
+"Fill this field with page/posts IDs separated by commas (,) to exclude them "
+"from query."
+
+#: ../wpbakery/js_composer/config/map.php:722
+#: ../wpbakery/js_composer/config/map.php:834
+msgid ""
+"If you want to narrow output, enter category names here. Note: Only listed "
+"categories will be included. Divide categories with linebreaks (Enter)."
+msgstr ""
+"If you want to narrow output, enter category names here. Note: Only listed "
+"categories will be included. Divide categories with linebreaks (Enter)."
+
+#: ../wpbakery/js_composer/config/map.php:726
+#: ../wpbakery/js_composer/config/map.php:838
+#: ../wpbakery/js_composer/config/map.php:845
+msgid "Order by"
+msgstr "Order by"
+
+#: ../wpbakery/js_composer/config/map.php:728
+#: ../wpbakery/js_composer/config/map.php:840
+msgid "ID"
+msgstr "ID"
+
+#: ../wpbakery/js_composer/config/map.php:729
+#: ../wpbakery/js_composer/config/map.php:841
+#, php-format
+msgid "Select how to sort retrieved posts. More at %s."
+msgstr "Select how to sort retrieved posts. More at %s."
+
+#: ../wpbakery/js_composer/config/map.php:733
+msgid "Order way"
+msgstr "Order way"
+
+#: ../wpbakery/js_composer/config/map.php:736
+#: ../wpbakery/js_composer/config/map.php:848
+#, php-format
+msgid "Designates the ascending or descending order. More at %s."
+msgstr "Designates the ascending or descending order. More at %s."
+
+#: ../wpbakery/js_composer/config/map.php:750
+msgid "Posts Slider"
+msgstr "Posts Slider"
+
+#: ../wpbakery/js_composer/config/map.php:763
+msgid "Slider type"
+msgstr "Slider type"
+
+#: ../wpbakery/js_composer/config/map.php:767
+msgid "Select slider type."
+msgstr "Select slider type."
+
+#: ../wpbakery/js_composer/config/map.php:771
+msgid "Slides count"
+msgstr "Slides count"
+
+#: ../wpbakery/js_composer/config/map.php:773
+msgid "How many slides to show? Enter number or word \"All\"."
+msgstr "How many slides to show? Enter number or word \"All\"."
+
+#: ../wpbakery/js_composer/config/map.php:790
+msgid "Description"
+msgstr "Description"
+
+#: ../wpbakery/js_composer/config/map.php:792
+msgid "No description"
+msgstr "No description"
+
+#: ../wpbakery/js_composer/config/map.php:793
+msgid "Some sliders support description text, what content use for it?"
+msgstr "Some sliders support description text, what content use for it?"
+
+#: ../wpbakery/js_composer/config/map.php:798
+msgid "Output post title?"
+msgstr "Output post title?"
+
+#: ../wpbakery/js_composer/config/map.php:800
+msgid "If selected, title will be printed before the teaser text."
+msgstr "If selected, title will be printed before the teaser text."
+
+#: ../wpbakery/js_composer/config/map.php:828
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,), to retrieve "
+"only them. Use this in conjunction with \"Post types\" field."
+msgstr ""
+"Fill this field with page/posts IDs separated by commas (,), to retrieve "
+"only them. Use this in conjunction with \"Post types\" field."
+
+#: ../wpbakery/js_composer/config/map.php:862
+msgid "Widgetised Sidebar"
+msgstr "Widgetised Sidebar"
+
+#: ../wpbakery/js_composer/config/map.php:866
+#: ../wpbakery/js_composer/config/map.php:1152
+#: ../wpbakery/js_composer/config/map.php:1172
+msgid "Structure"
+msgstr "Structure"
+
+#: ../wpbakery/js_composer/config/map.php:876
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: ../wpbakery/js_composer/config/map.php:878
+msgid "Select which widget area output."
+msgstr "Select which widget area output."
+
+#: ../wpbakery/js_composer/config/map.php:893
+msgid "Address book icon"
+msgstr "Address book icon"
+
+#: ../wpbakery/js_composer/config/map.php:894
+msgid "Alarm clock icon"
+msgstr "Alarm clock icon"
+
+#: ../wpbakery/js_composer/config/map.php:895
+msgid "Anchor icon"
+msgstr "Anchor icon"
+
+#: ../wpbakery/js_composer/config/map.php:896
+msgid "Application Image icon"
+msgstr "Application Image icon"
+
+#: ../wpbakery/js_composer/config/map.php:897
+msgid "Arrow icon"
+msgstr "Arrow icon"
+
+#: ../wpbakery/js_composer/config/map.php:898
+msgid "Asterisk icon"
+msgstr "Asterisk icon"
+
+#: ../wpbakery/js_composer/config/map.php:899
+msgid "Hammer icon"
+msgstr "Hammer icon"
+
+#: ../wpbakery/js_composer/config/map.php:900
+msgid "Balloon icon"
+msgstr "Balloon icon"
+
+#: ../wpbakery/js_composer/config/map.php:901
+msgid "Balloon Buzz icon"
+msgstr "Balloon Buzz icon"
+
+#: ../wpbakery/js_composer/config/map.php:902
+msgid "Balloon Facebook icon"
+msgstr "Balloon Facebook icon"
+
+#: ../wpbakery/js_composer/config/map.php:903
+msgid "Balloon Twitter icon"
+msgstr "Balloon Twitter icon"
+
+#: ../wpbakery/js_composer/config/map.php:904
+msgid "Battery icon"
+msgstr "Battery icon"
+
+#: ../wpbakery/js_composer/config/map.php:905
+msgid "Binocular icon"
+msgstr "Binocular icon"
+
+#: ../wpbakery/js_composer/config/map.php:906
+msgid "Document Excel icon"
+msgstr "Document Excel icon"
+
+#: ../wpbakery/js_composer/config/map.php:907
+msgid "Document Image icon"
+msgstr "Document Image icon"
+
+#: ../wpbakery/js_composer/config/map.php:908
+msgid "Document Music icon"
+msgstr "Document Music icon"
+
+#: ../wpbakery/js_composer/config/map.php:909
+msgid "Document Office icon"
+msgstr "Document Office icon"
+
+#: ../wpbakery/js_composer/config/map.php:910
+msgid "Document PDF icon"
+msgstr "Document PDF icon"
+
+#: ../wpbakery/js_composer/config/map.php:911
+msgid "Document Powerpoint icon"
+msgstr "Document Powerpoint icon"
+
+#: ../wpbakery/js_composer/config/map.php:912
+msgid "Document Word icon"
+msgstr "Document Word icon"
+
+#: ../wpbakery/js_composer/config/map.php:913
+msgid "Bookmark icon"
+msgstr "Bookmark icon"
+
+#: ../wpbakery/js_composer/config/map.php:914
+msgid "Camcorder icon"
+msgstr "Camcorder icon"
+
+#: ../wpbakery/js_composer/config/map.php:915
+msgid "Camera icon"
+msgstr "Camera icon"
+
+#: ../wpbakery/js_composer/config/map.php:916
+msgid "Chart icon"
+msgstr "Chart icon"
+
+#: ../wpbakery/js_composer/config/map.php:917
+msgid "Chart pie icon"
+msgstr "Chart pie icon"
+
+#: ../wpbakery/js_composer/config/map.php:918
+msgid "Clock icon"
+msgstr "Clock icon"
+
+#: ../wpbakery/js_composer/config/map.php:919
+msgid "Fire icon"
+msgstr "Fire icon"
+
+#: ../wpbakery/js_composer/config/map.php:920
+msgid "Heart icon"
+msgstr "Heart icon"
+
+#: ../wpbakery/js_composer/config/map.php:921
+msgid "Mail icon"
+msgstr "Mail icon"
+
+#: ../wpbakery/js_composer/config/map.php:922
+msgid "Play icon"
+msgstr "Play icon"
+
+#: ../wpbakery/js_composer/config/map.php:923
+msgid "Shield icon"
+msgstr "Shield icon"
+
+#: ../wpbakery/js_composer/config/map.php:924
+msgid "Video icon"
+msgstr "Video icon"
+
+#: ../wpbakery/js_composer/config/map.php:928
+msgid "Button"
+msgstr "Button"
+
+#: ../wpbakery/js_composer/config/map.php:940
+#: ../wpbakery/js_composer/config/map.php:1007
+msgid "Text on the button."
+msgstr "Text on the button."
+
+#: ../wpbakery/js_composer/config/map.php:944
+#: ../wpbakery/js_composer/config/map.php:1011
+msgid "URL (Link)"
+msgstr "URL (Link)"
+
+#: ../wpbakery/js_composer/config/map.php:946
+#: ../wpbakery/js_composer/config/map.php:1013
+msgid "Button link."
+msgstr "Button link."
+
+#: ../wpbakery/js_composer/config/map.php:950
+#: ../wpbakery/js_composer/config/map.php:1017
+msgid "Target"
+msgstr "Target"
+
+#: ../wpbakery/js_composer/config/map.php:957
+#: ../wpbakery/js_composer/config/map.php:1024
+msgid "Color"
+msgstr "Color"
+
+#: ../wpbakery/js_composer/config/map.php:960
+#: ../wpbakery/js_composer/config/map.php:1027
+msgid "Button color."
+msgstr "Button color."
+
+#: ../wpbakery/js_composer/config/map.php:964
+#: ../wpbakery/js_composer/config/map.php:1031
+msgid "Icon"
+msgstr "Icon"
+
+#: ../wpbakery/js_composer/config/map.php:967
+#: ../wpbakery/js_composer/config/map.php:1034
+msgid "Button icon."
+msgstr "Button icon."
+
+#: ../wpbakery/js_composer/config/map.php:971
+#: ../wpbakery/js_composer/config/map.php:1038
+msgid "Size"
+msgstr "Size"
+
+#: ../wpbakery/js_composer/config/map.php:974
+#: ../wpbakery/js_composer/config/map.php:1041
+msgid "Button size."
+msgstr "Button size."
+
+#: ../wpbakery/js_composer/config/map.php:989
+msgid "Call to Action Button"
+msgstr "Call to Action Button"
+
+#: ../wpbakery/js_composer/config/map.php:999
+msgid "Click edit button to change this text."
+msgstr "Click edit button to change this text."
+
+#: ../wpbakery/js_composer/config/map.php:1045
+msgid "Button position"
+msgstr "Button position"
+
+#: ../wpbakery/js_composer/config/map.php:1047
+msgid "Align bottom"
+msgstr "Align bottom"
+
+#: ../wpbakery/js_composer/config/map.php:1048
+msgid "Select button alignment."
+msgstr "Select button alignment."
+
+#: ../wpbakery/js_composer/config/map.php:1063
+msgid "Video Player"
+msgstr "Video Player"
+
+#: ../wpbakery/js_composer/config/map.php:1076
+msgid "Video link"
+msgstr "Video link"
+
+#: ../wpbakery/js_composer/config/map.php:1079
+#, php-format
+msgid "Link to the video. More about supported formats at %s."
+msgstr "Link to the video. More about supported formats at %s."
+
+#: ../wpbakery/js_composer/config/map.php:1093
+msgid "Google Maps"
+msgstr "Google Maps"
+
+#: ../wpbakery/js_composer/config/map.php:1106
+msgid "Google map link"
+msgstr "Google map link"
+
+#: ../wpbakery/js_composer/config/map.php:1109
+#, php-format
+msgid ""
+"Link to your map. Visit %s find your address and then click \"Link\" button "
+"to obtain your map link."
+msgstr ""
+"Link to your map. Visit %s find your address and then click \"Link\" button "
+"to obtain your map link."
+
+#: ../wpbakery/js_composer/config/map.php:1113
+msgid "Map height"
+msgstr "Map height"
+
+#: ../wpbakery/js_composer/config/map.php:1115
+msgid "Enter map height in pixels. Example: 200."
+msgstr "Enter map height in pixels. Example: 200."
+
+#: ../wpbakery/js_composer/config/map.php:1119
+msgid "Map type"
+msgstr "Map type"
+
+#: ../wpbakery/js_composer/config/map.php:1121
+msgid "Map"
+msgstr "Map"
+
+#: ../wpbakery/js_composer/config/map.php:1121
+msgid "Satellite"
+msgstr "Satellite"
+
+#: ../wpbakery/js_composer/config/map.php:1121
+msgid "Map + Terrain"
+msgstr "Map + Terrain"
+
+#: ../wpbakery/js_composer/config/map.php:1122
+msgid "Select map type."
+msgstr "Select map type."
+
+#: ../wpbakery/js_composer/config/map.php:1126
+msgid "Map Zoom"
+msgstr "Map Zoom"
+
+#: ../wpbakery/js_composer/config/map.php:1128
+msgid "14 - Default"
+msgstr "14 - Default"
+
+#: ../wpbakery/js_composer/config/map.php:1132
+msgid "Remove info bubble"
+msgstr "Remove info bubble"
+
+#: ../wpbakery/js_composer/config/map.php:1134
+msgid "If selected, information bubble will be hidden."
+msgstr "If selected, information bubble will be hidden."
+
+#: ../wpbakery/js_composer/config/map.php:1149
+#: ../wpbakery/js_composer/config/map.php:1158
+msgid "Raw HTML"
+msgstr "Raw HTML"
+
+#: ../wpbakery/js_composer/config/map.php:1161
+msgid "Enter your HTML content."
+msgstr "Enter your HTML content."
+
+#: ../wpbakery/js_composer/config/map.php:1169
+msgid "Raw JS"
+msgstr "Raw JS"
+
+#: ../wpbakery/js_composer/config/map.php:1178
+msgid "Raw js"
+msgstr "Raw js"
+
+#: ../wpbakery/js_composer/config/map.php:1181
+msgid "Enter your JS code."
+msgstr "Enter your JS code."
+
+#: ../wpbakery/js_composer/config/map.php:1190
+msgid "Flickr Widget"
+msgstr "Flickr Widget"
+
+#: ../wpbakery/js_composer/config/map.php:1202
+msgid "Flickr ID"
+msgstr "Flickr ID"
+
+#: ../wpbakery/js_composer/config/map.php:1205
+#, php-format
+msgid "To find your flickID visit %s."
+msgstr "To find your flickID visit %s."
+
+#: ../wpbakery/js_composer/config/map.php:1209
+msgid "Number of photos"
+msgstr "Number of photos"
+
+#: ../wpbakery/js_composer/config/map.php:1212
+msgid "Number of photos."
+msgstr "Number of photos."
+
+#: ../wpbakery/js_composer/config/map.php:1218
+msgid "User"
+msgstr "User"
+
+#: ../wpbakery/js_composer/config/map.php:1218
+msgid "Group"
+msgstr "Group"
+
+#: ../wpbakery/js_composer/config/map.php:1219
+msgid "Photo stream type."
+msgstr "Photo stream type."
+
+#: ../wpbakery/js_composer/config/map.php:1223
+msgid "Display"
+msgstr "Display"
+
+#: ../wpbakery/js_composer/config/map.php:1225
+msgid "Latest"
+msgstr "Latest"
+
+#: ../wpbakery/js_composer/config/map.php:1226
+msgid "Photo order."
+msgstr "Photo order."
+
+#: ../wpbakery/js_composer/config/map.php:1241
+msgid "Progress Bar"
+msgstr "Progress Bar"
+
+#: ../wpbakery/js_composer/config/map.php:1254
+msgid "Graphic values"
+msgstr "Graphic values"
+
+#: ../wpbakery/js_composer/config/map.php:1256
+msgid ""
+"Input graph values here. Divide values with linebreaks (Enter). Example: 90|"
+"Development"
+msgstr ""
+"Input graph values here. Divide values with line breaks (Enter). Example: 90|"
+"Development"
+
+#: ../wpbakery/js_composer/config/map.php:1261
+#: ../wpbakery/js_composer/config/map.php:1329
+msgid "Units"
+msgstr "Units"
+
+#: ../wpbakery/js_composer/config/map.php:1263
+#: ../wpbakery/js_composer/config/map.php:1331
+msgid ""
+"Enter measurement units (if needed) Eg. %, px, points, etc. Graph value and "
+"unit will be appended to the graph title."
+msgstr ""
+"Enter measurement units (if needed) Eg. %, px, points, etc. Graph value and "
+"unit will be appended to the graph title."
+
+#: ../wpbakery/js_composer/config/map.php:1267
+#: ../wpbakery/js_composer/config/map.php:1335
+msgid "Bar color"
+msgstr "Bar color"
+
+#: ../wpbakery/js_composer/config/map.php:1269
+msgid "Custom Color"
+msgstr "Custom Color"
+
+#: ../wpbakery/js_composer/config/map.php:1270
+msgid "Select bar background color."
+msgstr "Select bar background color."
+
+#: ../wpbakery/js_composer/config/map.php:1275
+msgid "Bar custom color"
+msgstr "Bar custom color"
+
+#: ../wpbakery/js_composer/config/map.php:1277
+msgid "Select custom background color for bars."
+msgstr "Select custom background color for bars."
+
+#: ../wpbakery/js_composer/config/map.php:1282
+#: ../wpbakery/js_composer/config/map.php:1855
+#: ../wpbakery/js_composer/config/map.php:1888
+#: ../wpbakery/js_composer/config/map.php:1917
+#: ../wpbakery/js_composer/config/map.php:1960
+msgid "Options"
+msgstr "Options"
+
+#: ../wpbakery/js_composer/config/map.php:1284
+msgid "Add Stripes?"
+msgstr "Add Stripes?"
+
+#: ../wpbakery/js_composer/config/map.php:1284
+msgid "Add animation? Will be visible with striped bars."
+msgstr "Add animation? Will be visible with striped bars."
+
+#: ../wpbakery/js_composer/config/map.php:1299
+msgid "Pie chart"
+msgstr "Pie chart"
+
+#: ../wpbakery/js_composer/config/map.php:1314
+msgid "Pie value"
+msgstr "Pie value"
+
+#: ../wpbakery/js_composer/config/map.php:1316
+msgid "Input graph value here. Witihn a range 0-100."
+msgstr "Input graph value here. Witihn a range 0-100."
+
+#: ../wpbakery/js_composer/config/map.php:1322
+msgid "Pie label value"
+msgstr "Pie label value"
+
+#: ../wpbakery/js_composer/config/map.php:1324
+msgid "Input integer value for label. If empty \"Pie value\" will be used."
+msgstr "Input integer value for label. If empty \"Pie value\" will be used."
+
+#: ../wpbakery/js_composer/config/map.php:1338
+msgid "Select pie chart color."
+msgstr "Select pie chart colour."
+
+#: ../wpbakery/js_composer/config/map.php:1375
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#: ../wpbakery/js_composer/config/map.php:1381
+msgid "Form title"
+msgstr "Form title"
+
+#: ../wpbakery/js_composer/config/map.php:1384
+msgid "What text use as form title. Leave blank if no title is needed."
+msgstr "What text use as form title. Leave blank if no title is needed."
+
+#: ../wpbakery/js_composer/config/map.php:1388
+msgid "Select contact form"
+msgstr "Select contact form"
+
+#: ../wpbakery/js_composer/config/map.php:1391
+msgid "Choose previously created contact form from the drop down list."
+msgstr "Choose previously created contact form from the drop down list."
+
+#: ../wpbakery/js_composer/config/map.php:1417
+msgid "Layer Slider"
+msgstr "Layer Slider"
+
+#: ../wpbakery/js_composer/config/map.php:1429
+msgid "LayerSlider ID"
+msgstr "LayerSlider ID"
+
+#: ../wpbakery/js_composer/config/map.php:1433
+msgid "Select your LayerSlider."
+msgstr "Select your LayerSlider."
+
+#: ../wpbakery/js_composer/config/map.php:1480
+msgid "Select your Revolution Slider."
+msgstr "Select your Revolution Slider."
+
+#: ../wpbakery/js_composer/config/map.php:1493
+msgid "No Gravity forms found."
+msgstr "No Gravity forms found."
+
+#: ../wpbakery/js_composer/config/map.php:1497
+msgid "Select a form to display."
+msgstr "Select a form to display."
+
+#: ../wpbakery/js_composer/config/map.php:1504
+msgid "Gravity Form"
+msgstr "Gravity Form"
+
+#: ../wpbakery/js_composer/config/map.php:1511
+msgid "Form"
+msgstr "Form"
+
+#: ../wpbakery/js_composer/config/map.php:1514
+msgid "Select a form to add it to your post or page."
+msgstr "Select a form to add it to your post or page."
+
+#: ../wpbakery/js_composer/config/map.php:1519
+msgid "Display Form Title"
+msgstr "Display Form Title"
+
+#: ../wpbakery/js_composer/config/map.php:1522
+msgid "Would you like to display the forms title?"
+msgstr "Would you like to display the forms title?"
+
+#: ../wpbakery/js_composer/config/map.php:1527
+msgid "Display Form Description"
+msgstr "Display Form Description"
+
+#: ../wpbakery/js_composer/config/map.php:1530
+msgid "Would you like to display the forms description?"
+msgstr "Would you like to display the forms description?"
+
+#: ../wpbakery/js_composer/config/map.php:1535
+msgid "Enable AJAX?"
+msgstr "Enable AJAX?"
+
+#: ../wpbakery/js_composer/config/map.php:1538
+msgid "Enable AJAX submission?"
+msgstr "Enable AJAX submission?"
+
+#: ../wpbakery/js_composer/config/map.php:1543
+msgid "Tab Index"
+msgstr "Tab Index"
+
+#: ../wpbakery/js_composer/config/map.php:1545
+msgid ""
+"(Optional) Specify the starting tab index for the fields of this form. Leave "
+"blank if you're not sure what this is."
+msgstr ""
+"(Optional) Specify the starting tab index for the fields of this form. Leave "
+"blank if you're not sure what this is."
+
+#: ../wpbakery/js_composer/config/map.php:1555
+msgid "Search"
+msgstr "Search"
+
+#: ../wpbakery/js_composer/config/map.php:1558
+#: ../wpbakery/js_composer/config/map.php:1580
+#: ../wpbakery/js_composer/config/map.php:1602
+#: ../wpbakery/js_composer/config/map.php:1630
+#: ../wpbakery/js_composer/config/map.php:1652
+#: ../wpbakery/js_composer/config/map.php:1695
+#: ../wpbakery/js_composer/config/map.php:1731
+#: ../wpbakery/js_composer/config/map.php:1761
+#: ../wpbakery/js_composer/config/map.php:1795
+#: ../wpbakery/js_composer/config/map.php:1837
+#: ../wpbakery/js_composer/config/map.php:1877
+#: ../wpbakery/js_composer/config/map.php:1906
+#: ../wpbakery/js_composer/config/map.php:1934
+msgid "WordPress Widgets"
+msgstr "WordPress Widgets"
+
+#: ../wpbakery/js_composer/config/map.php:1565
+#: ../wpbakery/js_composer/config/map.php:1587
+#: ../wpbakery/js_composer/config/map.php:1609
+#: ../wpbakery/js_composer/config/map.php:1637
+#: ../wpbakery/js_composer/config/map.php:1659
+#: ../wpbakery/js_composer/config/map.php:1702
+#: ../wpbakery/js_composer/config/map.php:1738
+#: ../wpbakery/js_composer/config/map.php:1768
+#: ../wpbakery/js_composer/config/map.php:1802
+#: ../wpbakery/js_composer/config/map.php:1884
+#: ../wpbakery/js_composer/config/map.php:1913
+#: ../wpbakery/js_composer/config/map.php:1941
+msgid ""
+"What text use as a widget title. Leave blank to use default widget title."
+msgstr ""
+"What text use as a widget title. Leave blank to use default widget title."
+
+#: ../wpbakery/js_composer/config/map.php:1613
+msgid "Number of comments to show"
+msgstr "Number of comments to show"
+
+#: ../wpbakery/js_composer/config/map.php:1627
+msgid "Calendar"
+msgstr "Calendar"
+
+#: ../wpbakery/js_composer/config/map.php:1663
+#: ../wpbakery/js_composer/config/map.php:1849
+msgid "Sort by"
+msgstr "Sort by"
+
+#: ../wpbakery/js_composer/config/map.php:1665
+msgid "Page title"
+msgstr "Page title"
+
+#: ../wpbakery/js_composer/config/map.php:1665
+msgid "Page order"
+msgstr "Page order"
+
+#: ../wpbakery/js_composer/config/map.php:1665
+msgid "Page ID"
+msgstr "Page ID"
+
+#: ../wpbakery/js_composer/config/map.php:1670
+msgid "Exclude"
+msgstr "Exclude"
+
+#: ../wpbakery/js_composer/config/map.php:1672
+msgid "Page IDs, separated by commas."
+msgstr "Page IDs, separated by commas."
+
+#: ../wpbakery/js_composer/config/map.php:1692
+msgid "Tag Cloud"
+msgstr "Tag Cloud"
+
+#: ../wpbakery/js_composer/config/map.php:1706
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#: ../wpbakery/js_composer/config/map.php:1728
+msgid "Custom Menu"
+msgstr "Custom Menu"
+
+#: ../wpbakery/js_composer/config/map.php:1742
+msgid "Menu"
+msgstr "Menu"
+
+#: ../wpbakery/js_composer/config/map.php:1745
+msgid ""
+"Custom menus not found. Please visit <b>Appearance > Menus</b> page to "
+"create new menu."
+msgstr ""
+"Custom menus not found. Please visit <b>Appearance > Menus</b> page to "
+"create new menu."
+
+#: ../wpbakery/js_composer/config/map.php:1806
+msgid "Number of posts to show"
+msgstr "Number of posts to show"
+
+#: ../wpbakery/js_composer/config/map.php:1812
+#: ../wpbakery/js_composer/config/map.php:1814
+msgid "Display post date?"
+msgstr "Display post date?"
+
+#: ../wpbakery/js_composer/config/map.php:1826
+msgid "All Links"
+msgstr "All Links"
+
+#: ../wpbakery/js_composer/config/map.php:1834
+msgid "Links"
+msgstr "Links"
+
+#: ../wpbakery/js_composer/config/map.php:1842
+msgid "Link Category"
+msgstr "Link Category"
+
+#: ../wpbakery/js_composer/config/map.php:1851
+msgid "Link title"
+msgstr "Link title"
+
+#: ../wpbakery/js_composer/config/map.php:1851
+msgid "Link rating"
+msgstr "Link rating"
+
+#: ../wpbakery/js_composer/config/map.php:1851
+msgid "Link ID"
+msgstr "Link ID"
+
+#: ../wpbakery/js_composer/config/map.php:1857
+msgid "Show Link Image"
+msgstr "Show Link Image"
+
+#: ../wpbakery/js_composer/config/map.php:1857
+msgid "Show Link Name"
+msgstr "Show Link Name"
+
+#: ../wpbakery/js_composer/config/map.php:1857
+msgid "Show Link Description"
+msgstr "Show Link Description"
+
+#: ../wpbakery/js_composer/config/map.php:1857
+msgid "Show Link Rating"
+msgstr "Show Link Rating"
+
+#: ../wpbakery/js_composer/config/map.php:1861
+msgid "Number of links to show"
+msgstr "Number of links to show"
+
+#: ../wpbakery/js_composer/config/map.php:1890
+#: ../wpbakery/js_composer/config/map.php:1919
+msgid "Display as dropdown"
+msgstr "Display as dropdown"
+
+#: ../wpbakery/js_composer/config/map.php:1890
+#: ../wpbakery/js_composer/config/map.php:1919
+msgid "Show post counts"
+msgstr "Show post counts"
+
+#: ../wpbakery/js_composer/config/map.php:1890
+msgid "Show hierarchy"
+msgstr "Show hierarchy"
+
+#: ../wpbakery/js_composer/config/map.php:1931
+msgid "RSS"
+msgstr "RSS"
+
+#: ../wpbakery/js_composer/config/map.php:1945
+msgid "RSS feed URL"
+msgstr "RSS feed URL"
+
+#: ../wpbakery/js_composer/config/map.php:1947
+msgid "Enter the RSS feed URL."
+msgstr "Enter the RSS feed URL."
+
+#: ../wpbakery/js_composer/config/map.php:1952
+msgid "Items"
+msgstr "Items"
+
+#: ../wpbakery/js_composer/config/map.php:1954
+msgid "10 - Default"
+msgstr "10 - Default"
+
+#: ../wpbakery/js_composer/config/map.php:1955
+msgid "How many items would you like to display?"
+msgstr "How many items would you like to display?"
+
+#: ../wpbakery/js_composer/config/map.php:1962
+msgid "Display item content?"
+msgstr "Display item content?"
+
+#: ../wpbakery/js_composer/config/map.php:1962
+msgid "Display item author if available?"
+msgstr "Display item author if available?"
+
+#: ../wpbakery/js_composer/config/map.php:1962
+msgid "Display item date?"
+msgstr "Display item date?"
+
+#~ msgid "Turn on Sticky Header"
+#~ msgstr "Turn on Sticky Header"
+
+#~ msgid "Header Option"
+#~ msgstr "Header Option"
+
+#~ msgid "Return to the dashboard"
+#~ msgstr "Return to the dashboard"
