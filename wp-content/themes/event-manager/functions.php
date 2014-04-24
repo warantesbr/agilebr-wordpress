@@ -224,10 +224,7 @@ function cs_event_description() {
 	<span class="subtitle">' . genesis_get_option( 'event_location_subtitle', 'social-coup' ) . '</span>
 	</div></div>';
 	
-	$register = '<div class="one-third"><a class="register" href="' . pll__('Register URL') . '">
-	<span class="subtitle">' . pll__('Register Subtitle') . ' <strong>' . pll__('Register Price') . '</strong></span>
-	<span class="title">' . pll__('Register Title') . '</span>
-	</a></div><div class="clearfix"></div>';
+	$register = '<div class="one-third"></div><div class="clearfix"></div>';
 	
 
 	$output = sprintf( '<div id="event-information">%2$s%1$s%3$s</div>', $date . $location . $register, genesis_structural_wrap( 'event-information', 'open', 0 ), genesis_structural_wrap( 'event-information', 'close', 0 ) );
