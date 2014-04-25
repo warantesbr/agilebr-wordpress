@@ -906,10 +906,10 @@ add_action( 'genesis_site_title', 'genesis_seo_site_title' );
 function genesis_seo_site_title() {
 
 	//* Set what goes inside the wrapping tags
-	$inside = sprintf( '<a href="%s" title="%s">%s</a>', trailingslashit( home_url() ), esc_attr( get_bloginfo( 'name' ) ), get_bloginfo( 'name' ) );
+    $inside = sprintf('<img id="title" src="%s" />', get_header_image());
 
 	//* Determine which wrapping tags to use
-	$wrap = is_home() && 'title' === genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : 'p';
+	$wrap = is_home() && 'title' === genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : 'a';
 
 	//* A little fallback, in case an SEO plugin is active
 	$wrap = is_home() && ! genesis_get_seo_option( 'home_h1_on' ) ? 'h1' : $wrap;
@@ -918,7 +918,7 @@ function genesis_seo_site_title() {
 	$wrap = genesis_html5() && genesis_get_seo_option( 'semantic_headings' ) ? 'h1' : $wrap;
 
 	//* Build the title
-	$title  = genesis_html5() ? sprintf( "<{$wrap} %s>", genesis_attr( 'site-title' ) ) : sprintf( '<%s id="title">%s</%s>', $wrap, $inside, $wrap );
+	$title  = genesis_html5() ? sprintf( "<{$wrap} %s>", genesis_attr( 'site-title' ) ) : sprintf( '<%s id="title" href="%s">%s</%s>', $wrap, home_url(), $inside, $wrap );
 	$title .= genesis_html5() ? "{$inside}</{$wrap}>" : '';
 
 	//* Echo (filtered)
