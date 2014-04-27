@@ -25,7 +25,7 @@ wp_head(); //* we need this for plugins
 	
 		<div class="agile inner">
 
-			<a href="/"><img src="/wp-content/uploads/2014/02/logo_@2x.png" alt="logo_@2x" width="160" height="116" id="logo" /></a>
+			<a href="/"><img src="/wp-content/uploads/2014/04/agilealliance-brazil_inverted_box.png" alt="Agile Alliance Brazil" width="130" height="130" id="logo" /></a>
 
 			<ul class="agile nav">
 				<li><a href="http://www.agilealliance.org" target="agile">Agile Alliance Home</a></li>
