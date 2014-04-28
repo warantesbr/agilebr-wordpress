@@ -21,23 +21,11 @@ wp_head(); //* we need this for plugins
 
 <div id="aga_banner">
 
-	<div class="agile outer">
-	
-		<div class="agile inner">
+    <div class="agile inner">
 
-			<a href="/"><img src="/wp-content/uploads/2014/04/agilealliance-brazil_inverted_box.png" alt="Agile Alliance Brazil" width="130" height="130" id="logo" /></a>
+        <a href="/"><img src="/wp-content/uploads/2014/04/agilealliance-brazil_inverted_box.png" alt="Agile Alliance Brazil" width="130" height="130" id="logo" /></a>
 
-			<ul class="agile nav">
-				<li><a href="http://www.agilealliance.org" target="agile">Agile Alliance Home</a></li>
-				<li><a href="http://www.agilealliance.org/the-alliance/" target="agile">The Alliance</a></li>
-				<li><a href="http://www.agilealliance.org/events/" target="agile">Events</a></li>
-				<li><a href="http://www.agilealliance.org/resources/" target="agile">Resources</a></li>
-				<li><a href="http://www.agilealliance.org/membership/" target="agile">Membership</a></li>
-			</ul>
-
-		</div>
-
-	</div>
+    </div>
 
 </div>
 
