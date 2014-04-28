@@ -207,6 +207,8 @@ function sc_custom_header_style() {
  */
 function cs_event_description() {
 
+	if( !is_front_page() ) return;
+
 	$date = '<div class="one-third first"><div class="date">
 	<span class="icon">' . genesis_get_option( 'event_date_icon', 'social-coup' ) . '</span>
 	<a href="http://dev.agilebrazil2014.com/programa">
