@@ -208,13 +208,13 @@ function sc_custom_header_style() {
 function cs_event_description() {
 
 	$date = '<div class="one-third first"><div class="date">
-	<a href="programa">
 	<span class="icon">' . genesis_get_option( 'event_date_icon', 'social-coup' ) . '</span>
+	<a href="http://dev.agilebrazil2014.com/programa">
 	<span class="title">' . pll__('Date Title') . '</span>
-	<span class="subtitle">' . pll__('Date Subtitle') . '</span>
 	</a>
+	<span class="subtitle">' . pll__('Date Subtitle') . '</span>
 	</div></div>';
-	
+
 	$location = '<div class="one-third"><div class="location">
 	<span class="icon"></span>';
 	$location_url = esc_url( genesis_get_option( 'event_location_url', 'social-coup' ) );
