@@ -211,7 +211,7 @@ function cs_event_description() {
 
 	$date = '<div class="one-third first"><div class="date">
 	<span class="icon">' . genesis_get_option( 'event_date_icon', 'social-coup' ) . '</span>
-	<a href="http://dev.agilebrazil2014.com/programa">
+	<a href="http://2014.staging.agilebrazil.com/programa">
 	<span class="title">' . pll__('Date Title') . '</span>
 	</a>
 	<span class="subtitle">' . pll__('Date Subtitle') . '</span>
