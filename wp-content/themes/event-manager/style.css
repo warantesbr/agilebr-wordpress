@@ -3,7 +3,7 @@
 	Description: Child theme of Genesis, by <a href="http://www.billerickson.net/get-genesis">StudioPress</a>.
 	Author: Social Coup
 	Author URI: http://www.socialcoup.com
-	
+
 	Template: genesis
 */
 
@@ -81,7 +81,7 @@ ol li {
 ------------------------------------------------------------ */
 
 a {
-	color: #f5960f;
+	color: #45a8de;
 	text-decoration: none;
 }
 
@@ -409,7 +409,7 @@ li li a .sf-sub-indicator {
 }
 
 #event-information .title {
-	color: #21655b;
+	color: #318d49;
 	display: block;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 20px;
@@ -732,7 +732,7 @@ h4 {
 }
 
 .widget-area h4 {
-	color: #4bb0af;
+	color: #318d49;
 	font-size: 20px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -916,7 +916,7 @@ h6 {
 	overflow: hidden;
 }
 
-.sessions .session .left { 
+.sessions .session .left {
 	width: 31%;
 	float: left;
 }
@@ -1613,8 +1613,8 @@ div.gform_wrapper textarea {
 	padding: 4px 5px !important;
 }
 
-.gform_wrapper .top_label input.large, 
-.gform_wrapper .top_label select.large, 
+.gform_wrapper .top_label input.large,
+.gform_wrapper .top_label select.large,
 .gform_wrapper .top_label textarea.textarea {
 	width: 98% !important;
 }
@@ -1656,15 +1656,15 @@ div.gform_wrapper .gform_footer {
 	line-height: 0;
 	height: 0;
 }
- 
+
 .clearfix {
 	display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
 	display: block;
 }
- 
+
 * html .clearfix {
 	height: 1%;
 }
@@ -1699,7 +1699,7 @@ html[xmlns] .clearfix {
 		width: 95%;
 		overflow: hidden;
 	}
-	
+
 	/* Add Padding around elements */
 	#nav,
 	#header {
@@ -1707,32 +1707,32 @@ html[xmlns] .clearfix {
 		margin: 0;
 		width: 96%;
 	}
-		
+
 	/* Event Information */
-	
+
 	.home #inner {
 		padding-top: 0;
 	}
-	
+
 	#event-information {
 		padding: 13px 0;
 	}
-	
+
 	#event-information .wrap {
 		margin: 0 2%;
 		padding: 15px 20px;
 		border-width: 1px;
 	}
-	
+
 	#event-information .register .subtitle {
 		margin: 0;
 	}
-	
+
 	/* Sidebar */
 	#sidebar {
 		display: block;
 	}
-	
+
 	/* Footer */
 	#footer .gototop,
 	#footer .creds {
@@ -1741,16 +1741,16 @@ html[xmlns] .clearfix {
 		overflow: hidden;
 		text-align: center;
 	}
-	
+
 	#footer .twitter-wrapper {
 		float: none;
 	}
-	
+
 	/* Schedule */
 	.sessions.by-grouping {
 		background: transparent;
 	}
-	
+
 	.sessions.by-grouping .group-info {
 		background: url(images/session-grouping-circle.png) no-repeat;
 		height: 109px;
@@ -1760,7 +1760,7 @@ html[xmlns] .clearfix {
 		position: relative;
 		margin: 20px auto;
 	}
-	
+
 	.sessions .session {
 		padding-left: 0;
 		width: 95%;
@@ -1849,7 +1849,7 @@ html[xmlns] .clearfix {
 		float: none;
 		width: 100%;
 	}
-	
+
 	#nav li a {
 		padding: 10px 0 10px 14px;
 	}
@@ -1863,19 +1863,19 @@ html[xmlns] .clearfix {
 		border-left: 4px solid #f4422e;
 		padding: 10px 0 10px 10px;
 	}
-	
+
 	#nav li.right {
 		float: none;
 		display: block;
 		width: 100%;
 		overflow: hidden;
 	}
-	
+
 	#nav .searchform {
 		float: left;
 		margin: 10px 0 0;
 	}
-	
+
 	/* Resize Site Title */
 	#header #title {
 		font-size: 48px;
