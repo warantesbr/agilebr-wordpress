@@ -38,9 +38,9 @@
 <div id="sponsors">
     <div class="container">
         <?php
-        $post = get_post(79);
-        $content = apply_filters('the_content', $post->post_content);
-        echo substr($content,strpos($content,'<style>'));
+            $post = get_post(79);
+            $content = apply_filters('the_content', $post->post_content);
+            echo $content;
         ?>
-    </div>
+     </div>
 </div>
