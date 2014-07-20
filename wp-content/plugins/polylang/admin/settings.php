@@ -7,19 +7,21 @@
  */
 class PLL_Settings {
 	public $links_model, $model, $options;
-	protected $strings = array(); // strings to translate
+	protected $active_tab, $strings = array(); // strings to translate
 
 	/*
 	 * constructor
 	 *
 	 * @since 1.2
 	 *
-	 * @param object $model instance of PLL_Model
+	 * @param object $polylang
 	 */
-	public function __construct(&$links_model) {
-		$this->links_model = &$links_model;
-		$this->model = &$links_model->model;
-		$this->options = &$this->model->options;
+	public function __construct(&$polylang) {
+		$this->links_model = &$polylang->links_model;
+		$this->model = &$polylang->model;
+		$this->options = &$polylang->options;
+
+		$this->active_tab = !empty($_GET['tab']) ? $_GET['tab'] : 'lang';
 
 		// adds screen options and the about box in the languages admin panel
 		add_action('load-settings_page_mlang',  array(&$this, 'load_page'));
@@ -34,31 +36,36 @@ class PLL_Settings {
 	 * @since 0.9.5
 	 */
 	public function load_page() {
-		// test of $_GET['tab'] avoids displaying the automatically generated screen options on other tabs
-		if ((!defined('PLL_DISPLAY_ABOUT') || PLL_DISPLAY_ABOUT) && (!isset($_GET['tab']) || $_GET['tab'] == 'lang')) {
-			add_meta_box(
-				'pll_about_box',
-				__('About Polylang', 'polylang'),
-				create_function('', "include(PLL_ADMIN_INC.'/view-about.php');"),
-				'settings_page_mlang',
-				'normal'
-			);
-		}
+		// test of $this->active_tab avoids displaying the automatically generated screen options on other tabs
+		switch ($this->active_tab) {
+			case 'lang':
+				if (!defined('PLL_DISPLAY_ABOUT') || PLL_DISPLAY_ABOUT) {
+					add_meta_box(
+						'pll_about_box',
+						__('About Polylang', 'polylang'),
+						create_function('', "include(PLL_ADMIN_INC.'/view-about.php');"),
+						'settings_page_mlang',
+						'normal'
+					);
+				}
 
-		if (!isset($_GET['tab']) || $_GET['tab'] == 'lang') {
-			add_screen_option('per_page', array(
-				'label'   => __('Languages', 'polylang'),
-				'default' => 10,
-				'option'  => 'pll_lang_per_page'
-			));
-		}
+				add_screen_option('per_page', array(
+					'label'   => __('Languages', 'polylang'),
+					'default' => 10,
+					'option'  => 'pll_lang_per_page'
+				));
+				break;
 
-		if (isset($_GET['tab']) && $_GET['tab'] == 'strings') {
-			add_screen_option('per_page', array(
-				'label'   => __('Strings translations', 'polylang'),
-				'default' => 10,
-				'option'  => 'pll_strings_per_page'
-			));
+			case 'strings':
+				add_screen_option('per_page', array(
+					'label'   => __('Strings translations', 'polylang'),
+					'default' => 10,
+					'option'  => 'pll_strings_per_page'
+				));
+				break;
+
+			default:
+				break;
 		}
 	}
 
@@ -78,20 +85,13 @@ class PLL_Settings {
 			$tabs['settings'] = __('Settings', 'polylang');
 		}
 
-		$active_tab = !empty($_GET['tab']) ? $_GET['tab'] : 'lang';
+		$tabs = apply_filters('pll_settings_tabs', $tabs);
 
-		switch($active_tab) {
+		switch($this->active_tab) {
 			case 'lang':
 				// prepare the list table of languages
 				$list_table = new PLL_Table_Languages();
 				$list_table->prepare_items($listlanguages);
-
-				// error messages for data validation
-				$errors[1] = __('Enter a valid WordPress locale', 'polylang');
-				$errors[2] = __('The language code contains invalid characters', 'polylang');
-				$errors[3] = __('The language code must be unique', 'polylang');
-				$errors[4] = __('The language must have a name', 'polylang');
-				$errors[5] = __('The language was created, but the WordPress language file was not downloaded. Please install it manually.', 'polylang');
 				break;
 
 			case 'strings':
@@ -149,13 +149,10 @@ class PLL_Settings {
 			case 'add':
 				check_admin_referer( 'add-lang', '_wpnonce_add-lang' );
 
-				$error = $this->model->add_language($_POST);
+				if ($this->model->add_language($_POST))
+					PLL_Admin::download_mo($_POST['locale']);
 
-				if (0 == $error && !PLL_Admin::download_mo($_POST['locale']))
-					$error = 5;
-
-				wp_redirect('admin.php?page=mlang'. ($error ? '&error=' . $error : '') ); // to refresh the page (possible thanks to the $_GET['noheader']=true)
-				exit;
+				$this->redirect(); // to refresh the page (possible thanks to the $_GET['noheader']=true)
 				break;
 
 			case 'delete':
@@ -164,14 +161,12 @@ class PLL_Settings {
 				if (!empty($_GET['lang']))
 					$this->model->delete_language((int) $_GET['lang']);
 
-				wp_redirect('admin.php?page=mlang'); // to refresh the page (possible thanks to the $_GET['noheader']=true)
-				exit;
+				$this->redirect(); // to refresh the page (possible thanks to the $_GET['noheader']=true)
 				break;
 
 			case 'edit':
 				if (!empty($_GET['lang']))
 					$edit_lang = $this->model->get_language((int) $_GET['lang']);
-
 				break;
 
 			case 'update':
@@ -179,8 +174,7 @@ class PLL_Settings {
 
 				$error = $this->model->update_language($_POST);
 
-				wp_redirect('admin.php?page=mlang'. ($error ? '&error=' . $error : '') ); // to refresh the page (possible thanks to the $_GET['noheader']=true)
-				exit;
+				$this->redirect(); // to refresh the page (possible thanks to the $_GET['noheader']=true)
 				break;
 
 			case 'string-translation':
@@ -208,6 +202,7 @@ class PLL_Settings {
 
 						isset($new_mo) ? $new_mo->export_to_db($language) : $mo->export_to_db($language);
 					}
+					add_settings_error('general', 'pll_strings_translations_updated', __('Translations updated.', 'polylang'), 'updated');
 				}
 
 				do_action('pll_save_strings_translations');
@@ -222,11 +217,7 @@ class PLL_Settings {
 				}
 
 				// to refresh the page (possible thanks to the $_GET['noheader']=true)
-				$url = 'admin.php?page=mlang&tab=strings';
-				foreach(array('s', 'paged', 'group') as $qv)
-					$url = empty($_REQUEST[$qv]) ? $url : $url . '&' . $qv . '=' . $_REQUEST[$qv];
-				wp_redirect($url);
-				exit;
+				$this->redirect(array_intersect_key($_REQUEST, array_flip(array('s', 'paged', 'group'))));
 				break;
 
 			case 'options':
@@ -238,10 +229,11 @@ class PLL_Settings {
 					$this->options[$key] = isset($_POST[$key]) ? (int) $_POST[$key] : 0;
 
 				// FIXME : TODO error message if not a valid url
-				if (isset($_POST['domains']) && is_array($_POST['domains'])) {
+				if (3 == $this->options['force_lang'] && isset($_POST['domains']) && is_array($_POST['domains'])) {
 					foreach ($_POST['domains'] as $key => $domain) {
 						$this->options['domains'][$key] = esc_url_raw(trim($domain));
 					}
+					$this->options['domains'][$this->options['default_lang']] = get_option('home');
 				}
 
 				foreach (array('browser', 'hide_default', 'redirect_lang', 'media_support') as $key)
@@ -270,8 +262,8 @@ class PLL_Settings {
 						$this->model->set_language_in_mass('term', $nolang['terms'], $this->options['default_lang']);
 				}
 
-				wp_redirect('admin.php?page=mlang&tab=settings&updated=true'); // updated=true interpreted by WP
-				exit;
+				add_settings_error('general', 'settings_updated', __('Settings saved.'), 'updated');
+				$this->redirect();
 				break;
 
 			default:
@@ -334,7 +326,7 @@ class PLL_Settings {
 				$widget_settings = $wp_registered_widgets[$widget]['callback'][0]->get_settings();
 				$number = $wp_registered_widgets[$widget]['params'][0]['number'];
 				// don't enable widget title translation if the widget is visible in only one language or if there is no title
-				if (empty($this->options['widgets'][$widget]) && isset($widget_settings[$number]['title']) && $title = $widget_settings[$number]['title'])
+				if (empty($widget_settings[$number]['pll_lang']) && isset($widget_settings[$number]['title']) && $title = $widget_settings[$number]['title'])
 					$this->register_string(__('Widget title', 'polylang'), $title, 'Widget');
 			}
 		}
@@ -365,5 +357,22 @@ class PLL_Settings {
 			'menu_order'        => __('Page order', 'polylang'),
 			'_thumbnail_id'     => __('Featured image', 'polylang'),
 		);
+	}
+
+	/*
+	 * redirects to language page (current active tab)
+	 * saves error messages in a transient for reuse in redirected page
+	 *
+	 * @since 1.5
+	 *
+	 * @param array $args query arguments to add to the url
+	 */
+	protected function redirect($args = array()) {
+		if ($errors = get_settings_errors()) {
+			set_transient('settings_errors', $errors, 30);
+			$args['settings-updated'] = 1;
+		}
+		wp_redirect(add_query_arg($args,  wp_get_referer() ));
+		exit;
 	}
 }

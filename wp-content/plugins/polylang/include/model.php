@@ -7,7 +7,8 @@
  */
 class PLL_Model {
 	public $options;
-	private $languages; // used to cache the list of languages
+	public $languages; // used to cache the list of languages
+	public $blog_id; // used to get one cache array per site
 
 	/*
 	 * constructor: registers custom taxonomies and setups filters and actions
@@ -18,16 +19,16 @@ class PLL_Model {
 	 */
 	public function __construct(&$options) {
 		$this->options = &$options;
+		$this->blog_id = get_current_blog_id();
 
 		// register our taxonomies as soon as possible
 		// this is early registration, not ready for rewrite rules as wp_rewrite will be setup later
-		// FIXME should I supply an 'update_count_callback' for taxonomies other than 'language' (currently not needed by PLL)?
-		foreach (array('language', 'term_language', 'post_translations', 'term_translations') as $tax) {
-			register_taxonomy($tax,
-				false !== strpos($tax, 'term_') ? 'term' : null ,
-				array('label' => false, 'public' => false, 'query_var' => false, 'rewrite' => false, '_pll' => true)
-			);
-		}
+		$args = array('label' => false, 'public' => false, 'query_var' => false, 'rewrite' => false, '_pll' => true);
+		register_taxonomy('language', null, $args);
+		register_taxonomy('term_language', 'term', $args);
+		register_taxonomy('term_translations', 'term', $args);
+		$args['update_count_callback'] = '_update_generic_term_count'; // count *all* posts to avoid deleting in clean_translations_terms
+		register_taxonomy('post_translations', null, $args);
 
 		add_filter('get_terms', array(&$this, '_prime_terms_cache'), 10, 2);
 		add_filter('wp_get_object_terms', array(&$this, 'wp_get_object_terms'), 10, 3);
@@ -46,9 +47,6 @@ class PLL_Model {
 
 		// just in case someone would like to display the language description ;-)
 		add_filter('language_description', create_function('$v', "return '';"));
-
-		// adds cache domain when querying terms
-		add_filter('get_terms_args', array(&$this, 'get_terms_args'));
 	}
 
 	/*
@@ -100,7 +98,7 @@ class PLL_Model {
 	 * @param string $taxonomy Polylang taxonomy depending if we are looking for a post (or term) language (or translation)
 	 * @return bool|object the term associated to the object in the requested taxonomy if exists, false otherwise
 	 */
-	protected function get_object_term($object_id, $taxonomy) {
+	public function get_object_term($object_id, $taxonomy) {
 		$term = get_object_term_cache($object_id, $taxonomy);
 
 		if ( false === $term ) {
@@ -124,7 +122,7 @@ class PLL_Model {
 
 	/*
 	 * returns the list of available languages
-	 * caches the list in a db transient (except flags)
+	 * caches the list in a db transient (except flags), unless PLL_CACHE_LANGUAGES is set to false
 	 * caches the list (with flags) in the private property $languages
 	 *
 	 * list of parameters accepted in $args:
@@ -138,8 +136,8 @@ class PLL_Model {
 	 * @return array|string|int list of PLL_Language objects or PLL_Language object properties
 	 */
 	public function get_languages_list($args = array()) {
-		if (empty($this->languages)) {
-			if (false === ($languages = get_transient('pll_languages_list'))) {
+		if (empty($this->languages[$this->blog_id])) {
+			if ((defined('PLL_CACHE_LANGUAGES') && !PLL_CACHE_LANGUAGES) || false === ($languages = get_transient('pll_languages_list'))) {
 				$languages = get_terms('language', array('hide_empty' => false, 'orderby'=> 'term_group'));
 				$languages = empty($languages) || is_wp_error($languages) ? array() : $languages;
 
@@ -148,45 +146,50 @@ class PLL_Model {
 					array() : array_combine(wp_list_pluck($term_languages, 'name'), $term_languages);
 
 				if (!empty($languages) && !empty($term_languages)) {
-					array_walk($languages, create_function('&$v, $k, $term_languages', '$v = new PLL_Language($v, $term_languages[$v->name]);'), $term_languages);
+					// don't use array_map + create_function to instantiate an autoloaded class as it breaks badly in old versions of PHP
+					foreach ($languages as $k => $v) {
+						$languages[$k] = new PLL_Language($v, $term_languages[$v->name]);
+					}
 				}
 				else {
 					$languages = array(); // in case something went wrong
 				}
 			}
 
-			$this->languages = $languages;
+			$this->languages[$this->blog_id] = $languages;
 
 			// need to wait for $wp_rewrite availibility to set homepage urls
 			did_action('setup_theme') ? $this->_languages_list() : add_action('setup_theme', array(&$this, '_languages_list'));
 		}
 
 		$args = wp_parse_args($args, array('hide_empty' => false));
-		extract($args);
 
 		// remove empty languages if requested
-		$languages = array_filter($this->languages, create_function('$v', sprintf('return $v->count || !%d;', $hide_empty)));
+		$languages = array_filter($this->languages[$this->blog_id], create_function('$v', sprintf('return $v->count || !%d;', $args['hide_empty'])));
 
-		return empty($fields) ? $languages : wp_list_pluck($languages, $fields);
+		return empty($args['fields']) ? $languages : wp_list_pluck($languages, $args['fields']);
 	}
 
 	/*
 	 * fills home urls and flags in language list and set transient in db
 	 * delayed to be sure we have access to $wp_rewrite for home urls
+	 * languages objects are not cached in db if PLL_CACHE_LANGUAGES is set to false
 	 * home urls are not cached in db if PLL_CACHE_HOME_URL is set to false
 	 *
 	 * @since 1.4
 	 */
 	public function _languages_list() {
-		if (false === get_transient('pll_languages_list')) {
+		if ((defined('PLL_CACHE_LANGUAGES') && !PLL_CACHE_LANGUAGES) || false === get_transient('pll_languages_list')) {
 			if (!defined('PLL_CACHE_HOME_URL') || PLL_CACHE_HOME_URL) {
-				foreach ($this->languages as $language)
+				foreach ($this->languages[$this->blog_id] as $language)
 					$language->set_home_url();
 			}
-			set_transient('pll_languages_list', $this->languages);
+
+			if (!defined('PLL_CACHE_LANGUAGES') || PLL_CACHE_LANGUAGES)
+				set_transient('pll_languages_list', $this->languages[$this->blog_id]);
 		}
 
-		foreach ($this->languages as $language) {
+		foreach ($this->languages[$this->blog_id] as $language) {
 			if (defined('PLL_CACHE_HOME_URL') && !PLL_CACHE_HOME_URL)
 				$language->set_home_url();
 
@@ -208,7 +211,7 @@ class PLL_Model {
 	public function clean_languages_cache($term = 0, $taxonomy = null) {
 		if (empty($taxonomy->name) || 'language' == $taxonomy->name) {
 			delete_transient('pll_languages_list');
-			$this->languages = array();
+			$this->languages[$this->blog_id] = array();
 		}
 	}
 
@@ -226,46 +229,78 @@ class PLL_Model {
 		if (is_object($value))
 			return $this->get_language($value->term_id); // will force cast to PLL_Language
 
-		if (empty($language[$value])) {
+		if (empty($language[$this->blog_id][$value])) {
 			foreach ($this->get_languages_list() as $lang)
-				$language[$lang->term_id] = $language[$lang->tl_term_id] = $language[$lang->slug] = $language[$lang->locale] = $lang;
+				$language[$this->blog_id][$lang->term_id]
+					= $language[$this->blog_id][$lang->tl_term_id]
+					= $language[$this->blog_id][$lang->slug]
+					= $language[$this->blog_id][$lang->locale] = $lang;
 		}
 
-		return empty($language[$value]) ? false : $language[$value];
+		return empty($language[$this->blog_id][$value]) ? false : $language[$this->blog_id][$value];
+	}
+
+	/*
+	 * removes unused translations terms in database
+	 *
+	 * @since 1.5
+	 *
+	 * @param string $type either 'post' or 'term'
+	 */
+	protected function clean_translations_terms($type) {
+		// FIXME does nothing since 1.5.2 as count seems not to be reliable enough
+		/*
+		global $wpdb;
+		$ids = $wpdb->get_col("SELECT term_id FROM $wpdb->term_taxonomy WHERE taxonomy IN ('{$type}_translations') AND count = 0");
+		foreach ($ids as $id)
+			wp_delete_term((int) $id, $type . '_translations');
+		*/
 	}
 
 	/*
 	 * saves translations for posts or terms
 	 *
 	 * @since 0.5
-
+	 *
 	 * @param string $type either 'post' or 'term'
 	 * @param int $id post id or term id
 	 * @param array $translations: an associative array of translations with language code as key and translation id as value
 	 */
 	public function save_translations($type, $id, $translations) {
 		if (($lang = call_user_func(array(&$this, 'get_'.$type.'_language'), $id)) && isset($translations) && is_array($translations)) {
-			// first unlink this object
-			foreach ($this->get_translations($type, $id) as $object_id)
-				$this->delete_translation($type, $object_id);
 
-			$translations = array_merge(array($lang->slug => $id), $translations); // make sure this object is in tranlations
+			$translations = array_merge(array($lang->slug => $id), $translations); // make sure this object is in translations
 			$translations = array_diff($translations, array(0)); // don't keep non translated languages
+
+			// unlink removed translations
+			$old_translations = $this->get_translations($type, $id);
+			foreach (array_diff_assoc($old_translations, $translations) as $object_id)
+				$this->delete_translation($type, $object_id);
 
 			// don't create a translation group for untranslated posts as it is useless
 			// but we need one for terms to allow relationships remap when importing from a WXR file
 			if ('term' == $type || count($translations) > 1) {
 				$terms = wp_get_object_terms($translations, $type . '_translations');
-				$term = array_pop($terms);
+				$term = reset($terms);
 
 				// create a new term if necessary
-				empty($term) ?
-					wp_insert_term($group = uniqid('pll_'), $type . '_translations', array('description' => serialize($translations))) :
-					wp_update_term($group = (int) $term->term_id, $type . '_translations', array('description' => serialize($translations)));
+				if (empty($term)) {
+					wp_insert_term($group = uniqid('pll_'), $type . '_translations', array('description' => serialize($translations)));
+				}
+				else {
+					// take care not to overwrite extra data stored in description field, if any
+					$d = unserialize($term->description);
+					$d = is_array($d) ? array_diff_key($d, $old_translations) : array(); // remove old translations
+					$d = array_merge($d, $translations); // add new one
+					wp_update_term($group = (int) $term->term_id, $type . '_translations', array('description' => serialize($d)));
+				}
 
 				// link all translations to the new term
 				foreach($translations as $p)
 					wp_set_object_terms($p, $group, $type . '_translations');
+
+				// clean unused terms to avoid orphans in db
+				$this->clean_translations_terms($type);
 			}
 		}
 	}
@@ -282,18 +317,23 @@ class PLL_Model {
 		$term = $this->get_object_term($id, $type . '_translations');
 
 		if (!empty($term)) {
-			$translations = unserialize($term->description);
+			$d = unserialize($term->description);
+			$slug = array_search($id, $this->get_translations($type, $id)); // in case some plugin stores the same value with different key
+			unset($d[$slug]);
 
-			if (is_array($translations)) {
-				$slug = array_search($id, $translations);
-				unset($translations[$slug]);
+			wp_update_term((int) $term->term_id, $type . '_translations', array('description' => serialize($d)));
 
-				empty($translations) || 1 == count($translations) ?
-					wp_delete_term((int) $term->term_id, $type . '_translations') :
-					wp_update_term((int) $term->term_id, $type . '_translations', array('description' => serialize($translations)));
-
+			if ('post' == $type)
 				wp_set_object_terms($id, null, $type . '_translations');
+			else {
+				// always keep a group for terms to allow relationships remap when importing from a WXR file
+				$translations[$slug] = $id;
+				wp_insert_term($group = uniqid('pll_'), $type . '_translations', array('description' => serialize($translations)));
+				wp_set_object_terms($id, $group, $type . '_translations');
 			}
+
+			// clean unused terms to avoid orphans in db
+			$this->clean_translations_terms($type);
 		}
 	}
 
@@ -327,7 +367,10 @@ class PLL_Model {
 	 */
 	public function get_translations($type, $id) {
 		$type = ($type == 'post' || $this->is_translated_post_type($type)) ? 'post' : (($type == 'term' || $this->is_translated_taxonomy($type)) ? 'term' : false);
-		return $type && ($term = $this->get_object_term($id, $type . '_translations')) && !empty($term) ? unserialize($term->description) : array();
+		$translations = $type && ($term = $this->get_object_term($id, $type . '_translations')) && !empty($term) ? unserialize($term->description) : array();
+
+		// make sure we return only translations (thus we allow plugins to store other informations in the array)
+		return array_intersect_key($translations, array_flip($this->get_languages_list(array('fields' => 'slug'))));
 	}
 
 	/*
@@ -636,13 +679,17 @@ class PLL_Model {
 	 * @since 1.2
 	 *
 	 * @param object lang
-	 * @param array $args WP_Query arguments (accepted: post_type, m, year, monthnum, day, author, author_name)
+	 * @param array $q WP_Query arguments (accepted: post_type, m, year, monthnum, day, author, author_name, post_format)
 	 * @return int
 	 */
-	public function count_posts($lang, $args = array()) {
+	public function count_posts($lang, $q = array()) {
 		global $wpdb;
 
-		$q = wp_parse_args($args, array('post_type' => 'post'));
+		if (empty($q['post_type']))
+			$q['post_type'] = array('post'); // we *need* a post type
+
+		if (!is_array($q['post_type']))
+			$q['post_type'] = array($q['post_type']);
 
 		$cache_key = md5(serialize($q));
 		$counts = wp_cache_get($cache_key, 'pll_count_posts');
@@ -651,7 +698,7 @@ class PLL_Model {
 			$select = "SELECT pll_tr.term_taxonomy_id, COUNT(*) AS num_posts FROM {$wpdb->posts} AS p";
 			$join = $this->join_clause('post');
 			$where = " WHERE post_status = 'publish'";
-			$where .= $wpdb->prepare(" AND p.post_type = %s", $q['post_type']);
+			$where .= " AND p.post_type IN ('" . join("', '", $q['post_type'] ) . "')";
 			$where .= $this->where_clause($this->get_languages_list(), 'post');
 			$groupby = " GROUP BY pll_tr.term_taxonomy_id";
 
@@ -700,21 +747,6 @@ class PLL_Model {
 	}
 
 	/*
-	 * adds language dependent cache domain when explicitely querying terms per language
-	 * useful as the 'lang' parameter is not included in cache key by WordPress
-	 *
-	 * @since 1.3
-	 */
-	public function get_terms_args($args) {
-		if (isset($args['lang'])) {
-			$key = '_' . (is_array($args['lang']) ? implode(',', $args['lang']) : $args['lang']);
-			$args['cache_domain'] = empty($args['cache_domain']) ? 'pll' . $key : $args['cache_domain'] . $key;
-		}
-
-		return $args;
-	}
-
-	/*
 	 * returns ids of objects in a language similarly to get_objects_in_term for a taxonomy
 	 * faster than get_objects_in_term as it avoids a JOIN
 	 *
@@ -730,5 +762,18 @@ class PLL_Model {
 			SELECT object_id FROM $wpdb->term_relationships WHERE term_taxonomy_id = %d",
 			'term' == $type ? $lang->tl_term_taxonomy_id : $lang->term_taxonomy_id
 		));
+	}
+
+	/*
+	 * setup the links model based on options
+	 *
+	 * @since 1.2
+	 *
+	 * @return object implementing "links_model interface"
+	 */
+	public function get_links_model() {
+		$c = array('Directory', 'Directory', 'Subdomain', 'Domain');
+		$class = get_option('permalink_structure') ? 'PLL_Links_' .$c[$this->options['force_lang']] : 'PLL_Links_Default';
+		return new $class($this);
 	}
 }

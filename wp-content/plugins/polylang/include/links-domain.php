@@ -7,23 +7,7 @@
  *
  * @since 1.2
  */
-class PLL_Links_Domain {
-	public $model, $options;
-	protected $home;
-
-	/*
-	 * constructor
-	 *
-	 * @since 1.2
-	 *
-	 * @param object $model PLL_Model instance
-	 */
-	public function __construct($model) {
-		$this->model = &$model;
-		$this->options = &$model->options;
-
-		$this->home = get_option('home');
-	}
+class PLL_Links_Domain extends PLL_Links_Model {
 
 	/*
 	 * adds the language code in url
@@ -36,8 +20,8 @@ class PLL_Links_Domain {
 	 * @return string modified url
 	 */
 	public function add_language_to_link($url, $lang) {
-		if (!empty($lang))
-			$url = $this->options['default_lang'] == $lang->slug ? $url : str_replace($this->home, $this->options['domains'][$lang->slug], $url);
+		if (!empty($lang) && !empty($this->options['domains'][$lang->slug]))
+			$url = str_replace($this->home, $this->options['domains'][$lang->slug], $url);
 		return $url;
 	}
 
@@ -57,19 +41,6 @@ class PLL_Links_Domain {
 	}
 
 	/*
-	 * returns the link to the first page
-	 * links_model interface
-	 *
-	 * @since 1.2
-	 *
-	 * @param string $url url to modify
-	 * @return string modified url
-	 */
-	public function remove_paged_from_link($url) {
-		return preg_replace('#\/page\/[0-9]+\/#', '/', $url);
-	}
-
-	/*
 	 * returns the language based on language code in url
 	 * links_model interface
 	 *
@@ -78,9 +49,7 @@ class PLL_Links_Domain {
 	 * @return string language slug
 	 */
 	public function get_language_from_url() {
-		foreach ($this->options['domains'] as $key => $domain)
-			if ($domain == (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'])
-				return $key;
+		return ($lang = array_search( (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . parse_url($this->home, PHP_URL_PATH), $this->options['domains'] ) ) ? $lang : $this->options['default_lang'];
 	}
 
 	/*
@@ -93,11 +62,17 @@ class PLL_Links_Domain {
 	 * @return string
 	 */
 	function home_url($lang) {
-		if ($lang->slug == $this->options['default_lang'])
-			return $this->home;
+		return empty($this->options['domains'][$lang->slug]) ? $this->home : $this->options['domains'][$lang->slug];
+	}
 
-		if (!empty($this->options['domains'][$lang->slug]))
-			return $this->options['domains'][$lang->slug];
-
+	/*
+	 * get hosts managed on the website
+	 *
+	 * @since 1.5
+	 *
+	 * @return array list of hosts
+	 */
+	public function get_hosts() {
+		return array_map(create_function('$v', 'return parse_url($v, PHP_URL_HOST);'), $this->options['domains']);
 	}
 }

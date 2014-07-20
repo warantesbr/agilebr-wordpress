@@ -23,7 +23,7 @@ wp_head(); //* we need this for plugins
 
     <div class="agile inner">
 
-        <a href="/"><img src="/wp-content/uploads/2014/04/agilealliance-brazil_inverted_box.png" alt="Agile Alliance Brazil" width="130" height="102" id="logo" /></a>
+        <a href="/"><img src="<?php echo esc_url( content_url() ); ?>/uploads/2014/04/agilealliance-brazil_inverted_box.png" alt="Agile Alliance Brazil" width="130" height="102" id="logo" /></a>
 
     </div>
 

@@ -88,7 +88,7 @@ class PLL_Upgrade {
 	 * @since 1.2
 	 */
 	public function _upgrade() {
-		foreach (array('0.9', '1.0', '1.1', '1.2', '1.2.1', '1.2.3', '1.3', '1.4', '1.4.1') as $version)
+		foreach (array('0.9', '1.0', '1.1', '1.2', '1.2.1', '1.2.3', '1.3', '1.4', '1.4.1', '1.4.4', '1.5') as $version)
 			if (version_compare($this->options['version'], $version, '<'))
 				call_user_func(array(&$this, 'upgrade_' . str_replace('.', '_', $version)));
 
@@ -376,18 +376,6 @@ class PLL_Upgrade {
 	}
 
 	/*
-	 * upgrades if the previous version is < 1.4.1
-	 * disables the browser detection when using multiple domains
-	 *
-	 * @since 1.4.1
-	 */
-	protected function upgrade_1_4_1() {
-		if (3 == $this->options['force_lang'])
-			$this->options['browser'] = $this->options['hide_default'] = 0;
-	}
-
-
-	/*
 	 * old data were not deleted in 1.2, just in case...
 	 * delete them at first upgrade at least 60 days after upgrade to 1.4
 	 *
@@ -417,4 +405,46 @@ class PLL_Upgrade {
 
 		delete_transient('pll_upgrade_1_4');
 	}
+
+	/*
+	 * upgrades if the previous version is < 1.4.1
+	 * disables the browser detection when using multiple domains
+	 *
+	 * @since 1.4.1
+	 */
+	protected function upgrade_1_4_1() {
+		if (3 == $this->options['force_lang'])
+			$this->options['browser'] = $this->options['hide_default'] = 0;
+	}
+
+	/*
+	 * upgrades if the previous version is < 1.4.4
+	 * uprades widgets options for language filter
+	 *
+	 * @since 1.4.4
+	 */
+	protected function upgrade_1_4_4() {
+		foreach ($GLOBALS['wp_registered_widgets'] as $widget) {
+			if (!empty($this->options['widgets'][$widget['id']]) && !empty($widget['callback'][0]) && !empty($widget['params'][0]['number'])) {
+				$obj = $widget['callback'][0];
+				if (is_object($obj) && method_exists($obj, 'get_settings') && method_exists($obj, 'save_settings')) {
+					$settings = $obj->get_settings();
+					$settings[$widget['params'][0]['number']]['pll_lang'] = $this->options['widgets'][$widget['id']];
+					$obj->save_settings($settings);
+				}
+			}
+		}
+		unset($this->options['widgets']);
+	}
+
+	/*
+	 * upgrades if the previous version is < 1.5
+	 * deletes language cache (due to host property added and bug on search url)
+	 *
+	 * @since 1.5
+	 */
+	protected function upgrade_1_5() {
+		delete_transient('pll_languages_list');
+	}
+
 }

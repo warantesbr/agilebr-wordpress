@@ -12,7 +12,7 @@
 /**
  * Theme Setup
  *
- * This setup function attaches all of the site-wide functions 
+ * This setup function attaches all of the site-wide functions
  * to the correct hooks and filters. All the functions themselves
  * are defined below this setup function.
  *
@@ -20,15 +20,15 @@
 
 add_action('genesis_setup','child_theme_setup', 15);
 function child_theme_setup() {
-	
-	// ** Backend **	
-	
+
+	// ** Backend **
+
 	// Translations
-	load_child_theme_textdomain( 'social-coup', get_stylesheet_directory() . '/lib/languages');  
-	
+	load_child_theme_textdomain( 'social-coup', get_stylesheet_directory() . '/lib/languages');
+
 	// Image Sizes
 	add_image_size ('sc_thumbnail', 269, 200, true );
-	
+
 	// Sidebars
 	unregister_sidebar( 'sidebar-alt' );
 	unregister_sidebar( 'header-right' );
@@ -41,48 +41,48 @@ function child_theme_setup() {
 	genesis_unregister_layout( 'content-sidebar-sidebar' );
 	genesis_unregister_layout( 'sidebar-sidebar-content' );
 	genesis_unregister_layout( 'sidebar-content-sidebar' );
-		
+
 	// Setup Theme Settings
 	include_once( CHILD_DIR . '/lib/admin/child-theme-settings.php');
-	
+
 	// Editor Stylesheet
 	add_editor_style( 'editor-style.css' );
-	
+
 	// Hide Editor on Specific Template Pages
 	add_action( 'admin_init', 'sc_hide_editor' );
-	
+
 	// Activate Required Plugins
 	require_once( CHILD_DIR . '/lib/classes/class-tgm-plugin-activation.php' );
 	add_action( 'tgmpa_register', 'cs_register_required_plugins' );
-	
-	// Add support for custom header 
-	add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 100, 'textcolor' => '333', 'admin_header_callback' => 'sc_admin_style', 'header_callback' => 'sc_custom_header_style' ) );	
+
+	// Add support for custom header
+	add_theme_support( 'genesis-custom-header', array( 'width' => 960, 'height' => 100, 'textcolor' => '333', 'admin_header_callback' => 'sc_admin_style', 'header_callback' => 'sc_custom_header_style' ) );
 
 	// ** Frontend **
-	
+
 	// Remove Edit Link
 	add_filter( 'edit_post_link', '__return_false' );
-	
+
 	// Viewport Meta Tag for Mobile Browsers
 	add_action( 'genesis_meta', 'cs_viewport_meta_tag' );
-	
+
 	// Structural Wraps
 	add_theme_support( 'genesis-structural-wraps', array( 'header', 'nav', 'subnav', 'event-information', 'footer-widgets', 'footer' ) );
-	
+
 	// Remove text from search
 	add_filter( 'genesis_search_text', '__return_false' );
 	add_filter( 'genesis_search_button_text', '__return_false' );
-	
+
 	// Move navigation above header
 	remove_action( 'genesis_after_header', 'genesis_do_nav' );
 	add_action( 'genesis_before_header', 'genesis_do_nav' );
-	
+
 	// Remove site tagline from header
 	add_filter( 'genesis_seo_description', '__return_false' );
-	
+
 	// Event Information
 	add_action( 'genesis_after_header', 'cs_event_description' );
-	
+
 	// Footer Text
 	add_filter( 'genesis_footer_backtotop_text', 'cs_footer_left' );
 	add_filter( 'genesis_footer_creds_text', 'cs_footer_right' );
@@ -102,7 +102,7 @@ function sc_hide_editor() {
 
 	// Get the Page Template
 	$template_file = get_post_meta($post_id, '_wp_page_template', TRUE);
-    
+
     if( 'template-schedule.php' == $template_file || 'template-speakers.php' == $template_file )
     	echo '<style>#postdivrich{display: none;}</style>';
 }
@@ -136,7 +136,7 @@ function cs_register_required_plugins() {
 	$theme_text_domain = 'social-coup';
 
 	/**
-	 * Array of configuration settings. 
+	 * Array of configuration settings.
 	 */
 	$config = array(
 		'domain'       => $theme_text_domain,         // Text domain - likely want to be the same as your theme. */
@@ -227,17 +227,20 @@ function cs_event_description() {
 	$location .= '
 	<span class="subtitle">' . genesis_get_option( 'event_location_subtitle', 'social-coup' ) . '</span>
 	</div></div>';
-	
-	$register = '<div class="one-third"></div><div class="clearfix"></div>';
-	
+
+	$register = '<div class="one-third">';
+	//$register .= '<a href="' . genesis_get_option('event_register_link', 'social-coup') . '">' . genesis_get_option('event_register_title	', 'social-coup') . '</a>';
+	$register .= '</div><div class="clearfix"></div>';
+
+
 
 	$output = sprintf( '<div id="event-information">%2$s%1$s%3$s</div>', $date . $location . $register, genesis_structural_wrap( 'event-information', 'open', 0 ), genesis_structural_wrap( 'event-information', 'close', 0 ) );
-	
+
 	echo $output;
 
 }
 
-/* 
+/*
  * Viewport Meta Tag
  *
  */
@@ -265,7 +268,7 @@ add_action('admin_head', 'fix_admin_datepicker');
 
 function fix_admin_datepicker(){
 	global $post_type;
-	
+
 	if($post_type == 'sc-sessions')
 		echo '<style type="text/css">#ui-datepicker-div {height:auto; clip:auto; width: 200px;}</style>';
 }

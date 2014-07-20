@@ -75,7 +75,7 @@ function genesis_do_nav() {
 		);
 
 		$nav = wp_nav_menu( $args );
-        $nav = str_replace('</ul>', pll_the_languages(array('show_flags'=>1,'show_names'=>0, 'hide_current' => 1, 'echo' => 0)).'</ul>', $nav);
+        $nav = str_replace('</ul>', pll_the_languages(array('show_flags'=>1,'show_names'=>0, 'hide_current' => 1, 'fallback_cb' => false, 'echo' => 0)).'</ul>', $nav);
 
 		//* Do nothing if there is nothing to show
 		if ( ! $nav )

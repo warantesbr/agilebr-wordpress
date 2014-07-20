@@ -11,11 +11,10 @@ class PLL_Frontend_Filters extends PLL_Filters{
 	 *
 	 * @since 1.2
 	 *
-	 * @param object $links_model
-	 * @param object $curlang
+	 * @param object $polylang
 	 */
-	public function __construct(&$links_model, &$curlang) {
-		parent::__construct($links_model, $curlang);
+	public function __construct(&$polylang) {
+		parent::__construct($polylang);
 
 		// filters the WordPress locale
 		add_filter('locale', array(&$this, 'get_locale'));
@@ -46,7 +45,7 @@ class PLL_Frontend_Filters extends PLL_Filters{
 		add_filter('get_user_metadata', array(&$this,'get_user_metadata'), 10, 3);
 
 		// set posts and terms language when created from frontend (ex with P2 theme)
-		add_action('save_post', array(&$this, 'save_post'), 200, 2);
+		add_action('save_post', array(&$this, 'save_post'), 200, 3);
 		add_action('create_term', array(&$this, 'save_term'), 10, 3);
 		add_action('edit_term', array(&$this, 'save_term'), 10, 3);
 
@@ -85,7 +84,7 @@ class PLL_Frontend_Filters extends PLL_Filters{
 		static $posts = array(); // the fonction may be often called so let's store the result
 
 		// returns the current page if there is no translation to avoid ugly notices
-		return isset($this->curlang) && $v && (isset($posts[$v]) || $posts[$v] = $this->model->get_post($v, $this->curlang)) ? $posts[$v] : $v;
+		return isset($this->curlang) && $v && (isset($posts[$this->model->blog_id][$v]) || $posts[$this->model->blog_id][$v] = $this->model->get_post($v, $this->curlang)) ? $posts[$this->model->blog_id][$v] : $v;
 	}
 
 	/*
@@ -163,7 +162,7 @@ class PLL_Frontend_Filters extends PLL_Filters{
 	 * @return bool|array false if we hide the widget, unmodified $instance otherwise
 	 */
 	public function widget_display_callback($instance, $widget) {
-		return !empty($this->options['widgets'][$widget->id]) && $this->options['widgets'][$widget->id] != $this->curlang->slug ? false : $instance;
+		return !empty($instance['pll_lang']) && $instance['pll_lang'] != $this->curlang->slug ? false : $instance;
 	}
 
 	/*
@@ -183,31 +182,37 @@ class PLL_Frontend_Filters extends PLL_Filters{
 	/*
 	 * called when a post (or page) is saved, published or updated
 	 * does nothing except on post types which are filterable
+	 * sets the language but does not allow to modify it
 	 *
 	 * @since 1.1
 	 *
 	 * @param int $post_id
 	 * @param object $post
+	 * @param bool $update whether it is an update or not
 	 */
-	public function save_post($post_id, $post) {
+	public function save_post($post_id, $post, $update) {
 		if ($this->model->is_translated_post_type($post->post_type)) {
-			if (isset($_REQUEST['lang']))
-				$this->model->set_post_language($post_id, $_REQUEST['lang']);
+			$post_type_object = get_post_type_object($post->post_type);
+			if (($update && !current_user_can($post_type_object->cap->edit_post, $post_id)) || (!$update && !current_user_can($post_type_object->cap->create_posts)))
+				wp_die( __( 'Cheatin&#8217; uh?' ) );
 
-			elseif ($this->model->get_post_language($post_id))
-				{}
+			if (!$this->model->get_post_language($post_id)) {
+				if (isset($_REQUEST['lang']))
+					$this->model->set_post_language($post_id, $_REQUEST['lang']);
 
-			elseif (($parent_id = wp_get_post_parent_id($post_id)) && $parent_lang = $this->model->get_post_language($parent_id))
-				$this->model->set_post_language($post_id, $parent_lang);
+				elseif (($parent_id = wp_get_post_parent_id($post_id)) && $parent_lang = $this->model->get_post_language($parent_id))
+					$this->model->set_post_language($post_id, $parent_lang);
 
-			else
-				$this->model->set_post_language($post_id, $this->curlang);
+				else
+					$this->model->set_post_language($post_id, $this->curlang);
+			}
 		}
 	}
 
 	/*
 	 * called when a category or post tag is created or edited
 	 * does nothing except on taxonomies which are filterable
+	 * sets the language but does not allow to modify it
 	 *
 	 * @since 1.1
 	 *
@@ -217,17 +222,20 @@ class PLL_Frontend_Filters extends PLL_Filters{
 	 */
 	public function save_term($term_id, $tt_id, $taxonomy) {
 		if ($this->model->is_translated_taxonomy($taxonomy)) {
-			if (isset($_REQUEST['lang']))
-				$this->model->set_term_language($term_id, $_REQUEST['lang']);
+			$tax = get_taxonomy($taxonomy);
+			if (!current_user_can($tax->cap->edit_terms))
+				wp_die( __( 'Cheatin&#8217; uh?' ) );
 
-			elseif ($this->model->get_term_language($term_id))
-				{}
+			if (!$this->model->get_term_language($term_id)) {
+				if (isset($_REQUEST['lang']))
+					$this->model->set_term_language($term_id, $_REQUEST['lang']);
 
-			elseif (($term = get_term($term_id, $taxonomy)) && !empty($term->parent) && $parent_lang = $this->model->get_term_language($term->parent))
-				$this->model->set_term_language($term_id, $parent_lang);
+				elseif (($term = get_term($term_id, $taxonomy)) && !empty($term->parent) && $parent_lang = $this->model->get_term_language($term->parent))
+					$this->model->set_term_language($term_id, $parent_lang);
 
-			else
-				$this->model->set_term_language($term_id, $this->curlang);
+				else
+					$this->model->set_term_language($term_id, $this->curlang);
+			}
 		}
 	}
 }

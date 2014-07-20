@@ -21,6 +21,14 @@ function pll_define_wpml_constants() {
 		if(!defined('ICL_LANGUAGE_NAME'))
 			define('ICL_LANGUAGE_NAME', $polylang->curlang->name);
 	}
+
+	elseif (PLL_ADMIN) {
+		if(!defined('ICL_LANGUAGE_CODE'))
+			define('ICL_LANGUAGE_CODE', 'all');
+
+		if(!defined('ICL_LANGUAGE_NAME'))
+			define('ICL_LANGUAGE_NAME', '');
+	}
 }
 
 add_action('pll_language_defined', 'pll_define_wpml_constants');
@@ -78,7 +86,7 @@ if (!function_exists('icl_get_languages')) {
 		$arr = array();
 
 		foreach ($polylang->model->get_languages_list(array('hide_empty' => true, 'orderby' => $orderby, 'order' => $order)) as $lang) {
-			$url = $polylang->get_translation_url($lang);
+			$url = $polylang->links->get_translation_url($lang);
 
 			if (empty($url) && !empty($skip_missing))
 				continue;
@@ -119,7 +127,7 @@ if (!function_exists('icl_link_to_element')) {
 		if ($type == 'tag')
 			$type = 'post_tag';
 
-		if (isset($polylang) && ($lang = pll_current_language()) && $tr_id = $polylang->model->get_translation($type, $id, $lang))
+		if (isset($polylang) && ($lang = pll_current_language()) && ($tr_id = $polylang->model->get_translation($type, $id, $lang)) && $polylang->links->current_user_can_read($tr_id))
 			$id = $tr_id;
 
 		if (post_type_exists($type)) {
@@ -661,7 +669,7 @@ class PLL_WPML_Config {
 				if (is_string($value) && $strings[$name] == 1)
 					$values[$name] = pll__($value);
 				elseif (is_array($value) && is_array($strings[$name]))
-					$value = $this->translate_strings_recursive($strings[$name], $value);
+					$values[$name] = $this->translate_strings_recursive($strings[$name], $value);
 			}
 		}
 		return $values;

@@ -12,14 +12,13 @@ class PLL_Admin_Filters extends PLL_Filters {
 	 *
 	 * @since 1.2
 	 *
-	 * @param object $links_model
-	 * @param object $curlang language chosen in admin filter
+	 * @param object $polylang
 	 */
-	public function __construct(&$links_model, &$curlang) {
-		parent::__construct($links_model, $curlang);
+	public function __construct(&$polylang) {
+		parent::__construct($polylang);
 
 		// widgets languages filter
-		add_action('in_widget_form', array(&$this, 'in_widget_form'));
+		add_action('in_widget_form', array(&$this, 'in_widget_form'), 10, 3);
 		add_filter('widget_update_callback', array(&$this, 'widget_update_callback'), 10, 4);
 
 		// language management for users
@@ -39,7 +38,7 @@ class PLL_Admin_Filters extends PLL_Filters {
 	 *
 	 * @param object $widget
 	 */
-	public function in_widget_form($widget) {
+	public function in_widget_form($widget, $return, $instance) {
 		$dropdown = new PLL_Walker_Dropdown();
 		printf('<p><label for="%1$s">%2$s %3$s</label></p>',
 			esc_attr( $widget->id.'_lang_choice'),
@@ -52,7 +51,7 @@ class PLL_Admin_Filters extends PLL_Filters {
 				array(
 					'name'        => $widget->id.'_lang_choice',
 					'class'       => 'tags-input',
-					'selected'    => empty($this->options['widgets'][$widget->id]) ? '' : $this->options['widgets'][$widget->id]
+					'selected'    => empty($instance['pll_lang']) ? '' : $instance['pll_lang']
 				)
 			)
 		);
@@ -64,15 +63,18 @@ class PLL_Admin_Filters extends PLL_Filters {
 	 *
 	 * @since 0.3
 	 *
-	 * @param array $instance not used
+	 * @param array $instance widget options
 	 * @param array $new_instance not used
 	 * @param array $old_instance not used
 	 * @param object $widget WP_Widget object
-	 * @return array unmodified $instance
+	 * @return array widget options
 	 */
 	public function widget_update_callback($instance, $new_instance, $old_instance, $widget) {
-		$this->options['widgets'][$widget->id] = $_POST[$widget->id.'_lang_choice'];
-		update_option('polylang', $this->options);
+		if (!empty($_POST[$widget->id.'_lang_choice']))
+			$instance['pll_lang'] = $_POST[$widget->id.'_lang_choice'];
+		else
+			unset($instance['pll_lang']);
+
 		return $instance;
 	}
 
@@ -84,12 +86,16 @@ class PLL_Admin_Filters extends PLL_Filters {
 	 * @param int $user_id
 	 */
 	public function personal_options_update($user_id) {
-		update_user_meta($user_id, 'user_lang', $_POST['user_lang']); // admin language
+		// admin language
+		$user_lang = in_array($_POST['user_lang'], $this->model->get_languages_list(array('fields' => 'locale'))) ? $_POST['user_lang'] : 0;
+		update_user_meta($user_id, 'user_lang', $_POST['user_lang']);
 
 		// biography translations
 		foreach ($this->model->get_languages_list() as $lang) {
 			$meta = $lang->slug == $this->options['default_lang'] ? 'description' : 'description_'.$lang->slug;
-			update_user_meta($user_id, $meta, $_POST['description_'.$lang->slug]);
+			$description = empty($_POST['description_'.$lang->slug]) ? '' : trim($_POST['description_'.$lang->slug]);
+			$description = apply_filters('pre_user_description', $description); // applies WP default filter wp_filter_kses
+			update_user_meta($user_id, $meta, $description);
 		}
 	}
 
@@ -124,10 +130,12 @@ class PLL_Admin_Filters extends PLL_Filters {
 		// hidden informations to modify the biography form with js
 		foreach ($this->model->get_languages_list() as $lang) {
 			$meta = $lang->slug == $this->options['default_lang'] ? 'description' : 'description_'.$lang->slug;
+			$description = apply_filters('user_description', get_user_meta($profileuser->ID, $meta, true)); // applies WP default filter wp_kses_data
+
 			printf('<input type="hidden" class="biography" name="%s-%s" value="%s" />',
 				esc_attr($lang->slug),
 				esc_attr($lang->name),
-				esc_attr(get_user_meta($profileuser->ID, $meta, true))
+				esc_attr($description)
 			);
 		}
 	}
@@ -142,7 +150,7 @@ class PLL_Admin_Filters extends PLL_Filters {
 	public function upgrade_languages($version) {
 		apply_filters('update_feedback', __('Upgrading language files&#8230;', 'polylang'));
 		foreach ($this->model->get_languages_list() as $language)
-			if ($language->locale != $_POST['locale']) // do not (re)update the language files of a localized WordPress
+			if (!empty($_POST['locale']) && $language->locale != $_POST['locale']) // do not (re)update the language files of a localized WordPress
 				PLL_Admin::download_mo($language->locale, $version);
 	}
 }

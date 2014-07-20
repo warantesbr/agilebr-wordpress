@@ -12,9 +12,9 @@ class PLL_Frontend_Nav_Menu {
 	 *
 	 * @since 1.2
 	 */
-	public function __construct($options, $curlang) {
-		$this->options = &$options;
-		$this->curlang = &$curlang;
+	public function __construct(&$polylang) {
+		$this->options = &$polylang->options;
+		$this->curlang = &$polylang->curlang;
 
 		// split the language switcher menu item in several language menu items
 		add_filter('wp_get_nav_menu_items', array(&$this, 'wp_get_nav_menu_items'));
@@ -93,18 +93,21 @@ class PLL_Frontend_Nav_Menu {
 		$r_ids = $k_ids = array();
 
 		foreach ($items as $item) {
-			if (is_array($item->classes) && in_array('current-lang', $item->classes)) {
-				$item->classes = array_diff($item->classes, array('current-menu-item'));
-				$r_ids = array_merge($r_ids, $this->get_ancestors($item)); // remove the classes for these ancestors
+			if (!empty($item->classes) && is_array($item->classes)) {
+				if (in_array('current-lang', $item->classes)) {
+					$item->classes = array_diff($item->classes, array('current-menu-item'));
+					$r_ids = array_merge($r_ids, $this->get_ancestors($item)); // remove the classes for these ancestors
+				}
+				elseif (in_array('current-menu-item', $item->classes)) {
+					$k_ids = array_merge($k_ids, $this->get_ancestors($item)); // keep the classes for these ancestors
+				}
 			}
-			elseif (is_array($item->classes) && in_array('current-menu-item', $item->classes))
-				$k_ids = array_merge($k_ids, $this->get_ancestors($item)); // keep the classes for these ancestors
 		}
 
 		$r_ids = array_diff($r_ids, $k_ids);
 
 		foreach ($items as $item) {
-			if (in_array($item->db_id, $r_ids))
+			if (!empty($item->db_id) && in_array($item->db_id, $r_ids))
 				$item->classes = array_diff($item->classes, array('current-menu-ancestor', 'current-menu-parent', 'current_page_parent', 'current_page_ancestor'));
 		}
 
@@ -137,7 +140,7 @@ class PLL_Frontend_Nav_Menu {
 	public function nav_menu_locations($menus) {
 		if (is_array($menus)) {
 			// support for theme customizer
-			// let's look for multilingual menu locations directly in $_POST as tehre are not in customizer object
+			// let's look for multilingual menu locations directly in $_POST as there are not in customizer object
 			if (isset($_POST['wp_customize'], $_POST['customized'])) {
 				$customized = json_decode(wp_unslash($_POST['customized']));
 
@@ -158,10 +161,8 @@ class PLL_Frontend_Nav_Menu {
 			else {
 				$theme = get_option('stylesheet');
 
-				foreach ($menus as $loc => $menu) {
-					if (!empty($this->options['nav_menus'][$theme][$loc][$this->curlang->slug]))
-						$menus[$loc] = $this->options['nav_menus'][$theme][$loc][$this->curlang->slug];
-				}
+				foreach ($menus as $loc => $menu)
+					$menus[$loc] = empty($this->options['nav_menus'][$theme][$loc][$this->curlang->slug]) ? 0 : $this->options['nav_menus'][$theme][$loc][$this->curlang->slug];
 			}
 		}
 		return $menus;

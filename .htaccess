@@ -1,12 +1,12 @@
+#AuthType Basic
+#AuthName "AgileBrazil Staging"
+#AuthUserFile /vagrant/public/_data/.htpasswd
+#Require valid-user
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-
-RewriteCond %{HTTP_HOST} !^2014\.staging\.agilebrazil\.com$
-RewriteRule ^(.*)$ "http\:\/\/2014\.staging\.agilebrazil\.com\/$1" [R=301,L]
-
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

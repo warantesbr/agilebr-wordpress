@@ -7,18 +7,19 @@
  * @since 1.2
  */
 class PLL_Admin_Filters_Columns {
-	public $model, $curlang;
+	public $links, $model, $curlang;
 
 	/*
 	 * constructor: setups filters and actions
 	 *
 	 * @since 1.2
 	 *
-	 * @param object $model instance of PLL_Model
+	 * @param object $polylang
 	 */
-	public function __construct(&$model, &$curlang) {
-		$this->model = &$model;
-		$this->curlang = &$curlang;
+	public function __construct(&$polylang) {
+		$this->links = &$polylang->links;
+		$this->model = &$polylang->model;
+		$this->curlang = &$polylang->curlang;
 
 		// add the language and translations columns in 'All Posts', 'All Pages' and 'Media library' panels
 		foreach ($this->model->get_translated_post_types() as $type) {
@@ -77,7 +78,7 @@ class PLL_Admin_Filters_Columns {
 				$columns[] = 'language_'.$language->slug;
 		}
 
-		return reset($columns);
+		return empty($columns) ? '' : reset($columns);
 	}
 
 	/*
@@ -109,31 +110,34 @@ class PLL_Admin_Filters_Columns {
 		if (false === strpos($column, 'language_') || !$lang)
 			return;
 
-		$post_type = isset($GLOBALS['post_type']) ? $GLOBALS['post_type'] : $_POST['post_type']; // 2nd case for quick edit
 		$language = $this->model->get_language(substr($column, 9));
 
 		// hidden field containing the post language for quick edit
 		if ($column == $this->get_first_language_column())
 			printf('<div class="hidden" id="lang_%d">%s</div>', esc_attr($post_id), esc_html($lang->slug));
 
+		$post_type_object = get_post_type_object(get_post_type($post_id));
 
 		// link to edit post (or a translation)
 		// use $_POST['old_lang'] to detect if the language has been modified in quick edit
+		// check capabilities before creating links thanks to Solinx. See http://wordpress.org/support/topic/feature-request-incl-code-check-for-capabilities-in-admin-screens
 		if ($id = ($inline && $lang->slug != $_POST['old_lang']) ? ($language->slug == $lang->slug ? $post_id : 0) : $this->model->get_post($post_id, $language)) {
-			printf('<a class="%1$s" title="%2$s" href="%3$s"></a>',
-				$id == $post_id ? 'pll_icon_tick' : 'pll_icon_edit',
-				esc_attr(get_post($id)->post_title),
-				esc_url(get_edit_post_link($id))
-			);
+			if (current_user_can($post_type_object->cap->edit_post, $post_id)) {
+				printf('<a class="%1$s" title="%2$s" href="%3$s"></a>',
+					$id == $post_id ? 'pll_icon_tick' : 'pll_icon_edit',
+					esc_attr(get_post($id)->post_title),
+					esc_url(get_edit_post_link($id))
+				);
+			}
+			elseif ($id == $post_id) {
+				echo '<span class="pll_icon_tick"></span>';
+			}
 		}
 		// link to add a new translation
-		else {
+		elseif (current_user_can($post_type_object->cap->create_posts)) {
 			printf('<a class="pll_icon_add" title="%1$s" href="%2$s"></a>',
 				__('Add new translation', 'polylang'),
-				esc_url(admin_url('manage_media_custom_column' == current_filter() ?
-					'admin.php?action=translate_media&from_media=' . $post_id . '&new_lang=' . $language->slug :
-					'post-new.php?post_type=' . $post_type . '&from_post=' . $post_id . '&new_lang=' . $language->slug
-				))
+				esc_url($this->links->get_new_post_translation_link($post_id, $language))
 			);
 		}
 	}
@@ -218,15 +222,9 @@ class PLL_Admin_Filters_Columns {
 
 		// link to add a new translation
 		else {
-			$args = array(
-				'taxonomy'  => $taxonomy,
-				'post_type' => $post_type,
-				'from_tag'  => $term_id,
-				'new_lang'  => $language->slug
-			);
 			printf('<a class="pll_icon_add" title="%1$s" href="%2$s"></a>',
 				__('Add new translation', 'polylang'),
-				esc_url(add_query_arg($args, admin_url('edit-tags.php')))
+				esc_url($this->links->get_new_term_translation_link($term_id, $taxonomy, $post_type, $language))
 			);
 		}
 	}
